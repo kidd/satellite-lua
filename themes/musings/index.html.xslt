@@ -162,7 +162,7 @@
               <img src="{atom:source/atom:icon}" class="icon" alt="" />
 	    </xsl:when>
 	    <xsl:otherwise>
-              <xsl:text>&#x2014;</xsl:text>
+              <xsl:text> - </xsl:text>
 	    </xsl:otherwise>
           </xsl:choose>
 	  <xsl:text>&#x20;</xsl:text>
