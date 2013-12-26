@@ -1,0 +1,877 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+	<title>Planet Lua</title>
+	<link>http://planet-lua.com</link>
+	<language>en</language>
+	<description>Planet Lua - http://planet-lua.com</description>
+	<atom:link rel="self" href="http://planet-lua.com/rss20.xml" type="application/rss+xml"/>
+
+<item>
+	<title>Raimon Grau: lua and luajit</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-8696405790788556158.post-1742570247623193361</guid>
+	<link>http://puntoblogspot.blogspot.com/2013/12/lua-and-luajit.html</link>
+	<description>In the lua workshop, lots of nice topics were raised, but something that striked me was when everyone agreed that writting lua for luajit or for the official lua VM was totally different, and ppl had different mindsets when writting for one or the other.  I know there's a big difference on how to write bindings to C (luajit being more fond of ffi and stock lua prefering the Lua C Api.&lt;br /&gt;&lt;div&gt;&lt;br /&gt;&lt;br /&gt;If you wanna know a bit more on how luajit works and where it gets its blazing speed, here you have some links to explore it, and to get a grasp of differences between lua implementations. &lt;br /&gt;&lt;br /&gt;Agentzh talking about why he (and cloudflare) are &lt;a href=&quot;https://groups.google.com/forum/#!searchin/openresty-en/luajit/openresty-en/Fd370Ly3Upg/tBKuMNCzDDsJ&quot;&gt;targeting mostly luajit&lt;/a&gt;:&lt;/div&gt;&lt;div&gt;&lt;br /&gt;Nice &lt;a href=&quot;http://cellux.github.io/articles/introduction-to-luajit-part-1/&quot;&gt;introduction to luajit&lt;/a&gt;. In fact it's mostly lua, but maybe the second part will be more targeted to luajit&lt;/div&gt;&lt;div&gt;&lt;br /&gt;Mike Pall has written a few times about how &lt;a href=&quot;http://article.gmane.org/gmane.comp.lang.lua.general/58908&quot;&gt;luajit&lt;/a&gt; &lt;a href=&quot;http://www.freelists.org/post/luajit/How-does-LuaJITs-trace-compiler-work,1&quot;&gt;tracer&lt;/a&gt; &lt;a href=&quot;http://www.reddit.com/user/mikemike&quot;&gt;works&lt;/a&gt;. &lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;And here it's a &lt;a href=&quot;http://rtsisyk.github.io/luafun/intro.html&quot;&gt;functional library&lt;/a&gt; which, not being directly linked to luajit, it makes a really nice usage of iterators to build code structures lazily and make the traces jittable by luajit. nice code read.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;If you're on the stock lua vm, here you have a paper with a good overview of &lt;a href=&quot;http://www.lua.org/doc/jucs05.pdf&quot;&gt;how lua 5.0 was implemented&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;Also, there are a &lt;a href=&quot;https://github.com/pygy/strung.lua&quot;&gt;lot&lt;/a&gt; &lt;a href=&quot;http://worp.zevv.nl/&quot;&gt;of&lt;/a&gt; &lt;a href=&quot;https://github.com/richardhundt/nyanga&quot;&gt;libraries&lt;/a&gt; &lt;a href=&quot;https://cowlark.com/luje/doc/stable/doc/index.wiki&quot;&gt;and&lt;/a&gt; &lt;a href=&quot;https://github.com/wg/wrk&quot;&gt;apps&lt;/a&gt; that are targeting just the luajit implementation. It creates some nasty splits on the community, but you know... these things happen. &lt;/div&gt;</description>
+	<pubDate>Thu, 19 Dec 2013 02:01:23 +0000</pubDate>
+	<author>noreply@blogger.com (Raimon Grau)</author>
+</item>
+<item>
+	<title>Raimon Grau: Reading lua source</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-8696405790788556158.post-4286959252711803356</guid>
+	<link>http://puntoblogspot.blogspot.com/2013/12/reading-lua-source.html</link>
+	<description>As I'm digging deeper into lua, I'm from time to time looking at the lua C source code itself, to see how something is implemented.&lt;br /&gt;&lt;br /&gt;It's nice to see a highly commented code with some quite clear parts which goes right to the point. Quite tough though and dense at many other parts.  The whole lua 5.2.2 has a bit more than 14K lines. Not bad for the language, compiler, vm, repl, C Api, and libs.&lt;br /&gt;&lt;br /&gt;Anyway, here's a couple of links I found useful in case you want to have a deep look at the lua source:&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://www.reddit.com/comments/63hth/ask_reddit_which_oss_codebases_out_there_are_so/c02pxbp&quot;&gt;Mike Pall suggestions on a sane reading order of the lua 5.1 source&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://lua-users.org/wiki/LuaSource&quot;&gt;Guide from the Lua Wiki &lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+	<pubDate>Tue, 10 Dec 2013 01:07:29 +0000</pubDate>
+	<author>noreply@blogger.com (Raimon Grau)</author>
+</item>
+<item>
+	<title>Paul Kulchenko: Lua package managers and integration with ZeroBrane Studio</title>
+	<guid isPermaLink="false">tag:notebook.kulchenko.com,2013://2.178</guid>
+	<link>http://notebook.kulchenko.com/zerobrane/lua-package-managers-luadist-luarocks-and-integration-with-zerobrane-studio</link>
+	<description>&lt;p&gt;Lua ecosystem has two package managers: &lt;a href=&quot;http://luadist.org/&quot;&gt;LuaDist&lt;/a&gt; and &lt;a href=&quot;http://luarocks.org/&quot;&gt;LuaRocks&lt;/a&gt;. Both managers allow users to install Lua and C modules and work on Windows, Mac OS X and Linux, but have some important differences in how they operate, which I'll briefly go over.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;LuaDist&lt;/b&gt;:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Unified build system for all modules based on CMake.&lt;/li&gt;
+&lt;li&gt;Mixed binary/source distribution that allows to use whatever dependency is available in the &lt;a href=&quot;http://github.com/LuaDist&quot;&gt;repository&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Everything is stored in git (using github as host) including the &lt;a href=&quot;http://github.com/LuaDist/Repository&quot;&gt;repository manifest&lt;/a&gt;. Tags are used for versions and branches for binary distributions.&lt;/li&gt;
+&lt;li&gt;Provides &quot;batteries included&quot; binary distributions (as a successor to Lua for Windows). &lt;/li&gt;
+&lt;li&gt;Relies on few Lua modules (luasocket, lfs, lua-git) for its implementation.&lt;/li&gt;
+&lt;li&gt;Allows for building the modules manually without using LuaDist.&lt;/li&gt;
+&lt;li&gt;Can be used from a command line or as a library (&lt;code&gt;local ld = require &quot;dist&quot;;  ld.install(&quot;luaexpat&quot;)&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Uses dist.info files for package specification information (mostly for dependency tracking, no build information).&lt;/li&gt;
+&lt;li&gt;Provides support for packaging modules for distribution.&lt;/li&gt;
+&lt;li&gt;Includes about 260 projects (as of November 2013; based on the number of sub-modules in the repository).&lt;/li&gt;
+&lt;li&gt;Includes a good number of pre-compiled binaries for Windows, but many for outdated module versions.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;p&gt;&lt;b&gt;LuaRocks&lt;/b&gt;:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Supports local and remote repositories. &lt;/li&gt;
+&lt;li&gt;Distributed as a Lua scripts without dependencies, but relies on Unix tools for module deployment and installation.&lt;/li&gt;
+&lt;li&gt;Uses .rockspec files as a package specification file.&lt;/li&gt;
+&lt;li&gt;Uses &quot;native&quot; build instructions for each rock.&lt;/li&gt;
+&lt;li&gt;Includes rocks for 330 projects (as of November 2013).&lt;/li&gt;
+&lt;li&gt;Have several repositories: &lt;a href=&quot;http://luarocks.org/repositories/rocks&quot;&gt;main one&lt;/a&gt; with manual curation and &lt;a href=&quot;http://rocks.moonscript.org/&quot;&gt;rocks.moonscript repository&lt;/a&gt; that supports (non-curated) rock submission and download statistics.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;p&gt;As we are talking about Lua module distribution, I'll also mention a nice project of Pierre Chapuis: &lt;a href=&quot;https://lua-toolbox.com/&quot;&gt;lua toolbox&lt;/a&gt;. It provides a list of modules with short descriptions and their endorsement by various users (along with a simple tagging mechanism).&lt;/p&gt;
+
+&lt;p&gt;Both systems are easy to use as command-line tools. When you have one of the package managers installed, it's a matter of running &lt;code&gt;luarocks install module&lt;/code&gt; or &lt;code&gt;luadist install module&lt;/code&gt; commands to get the modules you need (assuming you have the tools available and don't run into compilation issues). It is certainly possible to setup LuaDist and LuaRocks to deploy modules to the directories you need and make those directories available to your project (see for example this nice write up by Thijs Schreijer on &lt;a href=&quot;http://www.thijsschreijer.nl/blog/?p=772&quot;&gt;Setting up Lua installation on Windows using Lua Rocks and ZeroBrane Studio&lt;/a&gt;), but I'd prefer to have something simpler for users who may be new to programming and Lua. &lt;/p&gt;
+
+&lt;p&gt;I teach a semester long computer science class at a local high school during summer (using Lua and &lt;a href=&quot;http://studio.zerobrane.com&quot;&gt;ZeroBrane Studio&lt;/a&gt;) and sometimes want to install Lua modules like &lt;a href=&quot;http://stevedonovan.github.io/Penlight&quot;&gt;penlight&lt;/a&gt; to my students' computers and use them from ZeroBrane Studio. I have 18 students using their own laptops running different systems and want to be able to say &quot;install penlight&quot; and then make &quot;require 'pl.strict'&quot; to work in their Lua scripts. The coming version (v0.40) of ZeroBrane Studio (and the &lt;a href=&quot;https://github.com/pkulchenko/ZeroBraneStudio&quot;&gt;current master branch&lt;/a&gt;) integrates with LuaDist and allows you to do just that.&lt;/p&gt;
+        &lt;p&gt;ZeroBrane Studio now includes LuaDist module dependencies and if you install &lt;a href=&quot;https://github.com/pkulchenko/ZeroBraneStudio/issues/225#issuecomment-27532676&quot;&gt;luadist plugin&lt;/a&gt;, you will be able to &lt;b&gt;run LuaDist commands in the Local console of ZeroBrane Studio&lt;/b&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; luadist.install('penlight')
+Running 'install' for Lua 5.1 in '...\luadist\5.1'.
+Downloading repository information...
+Finding out available versions of penlight...
+ - trying another candidate due to: Error when resolving dependencies: Error when retrieving the info about 'penlight': Error fetching package 'penlight-1.2.1' from 'git://github.com/LuaDist/penlight.git' to '...\luadist\5.1\tmp': Binary version of module not available and using source modules disabled.
+Getting penlight-1.1 (binary)...
+Finding out available versions of luafilesystem...
+Getting luafilesystem-1.6.2 (binary)...
+Finding out available versions of alien...
+Getting alien-0.7.0 (binary)...
+Finding out available versions of libffi...
+Getting libffi-3.0.9 (binary)...
+Installation successful.
+Completed in 25 second(s).
+
+&amp;gt; require 'pl.strict'
+{closed_module = function() --[[..skipped..]] end, make_all_strict = function() --[[..skipped..]] end, module = function() --[[..skipped..]] end} --[[table: 0x03e4b790]]&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can then use penlight modules from the console or from your Lua scripts. Some of the other commands you may use:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;luadist.install('lpeg')&lt;/code&gt; -- install lpeg &lt;b&gt;binary&lt;/b&gt; version for Lua 5.1 on Windows/OSX (if available) and &lt;b&gt;source&lt;/b&gt; version on Linux.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;luadist.remove('lpeg')&lt;/code&gt; -- remove lpeg module (for Lua 5.1)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;luadist.install('lpeg', {source = true})&lt;/code&gt; -- install lpeg source version (will likely get Lua as well)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;luadist.install('lpeg', {source = true, debug = true})&lt;/code&gt; -- include all cmake commands and verbose output&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;luadist.install('lpeg', {source = true, verbose = true})&lt;/code&gt; -- include verbose output, but not cmake commands&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;luadist.install(5.2, 'lpeg', {source = true})&lt;/code&gt; -- install lpeg source version for Lua 5.2 (will likely get Lua as well)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;luadist.install('lua-5.1.3')&lt;/code&gt; -- install specific Lua version; you may need to remove the current one first using &lt;code&gt;luadist.remove('lua-5.1.5')&lt;/code&gt; command.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;p&gt;You can also try other LuaDist commands &lt;code&gt;show&lt;/code&gt;, &lt;code&gt;info&lt;/code&gt;, &lt;code&gt;search&lt;/code&gt;, &lt;code&gt;tree&lt;/code&gt;, and so on. All commands that don't include Lua version will work with default Lua 5.1 interpreter and if you &lt;b&gt;include 5.2&lt;/b&gt;, the commands will use 5.2 interpreter. Modules for Lua 5.1 and Lua 5.2 are installed into different folders, so you can use both interpreters without conflicts.&lt;/p&gt;
+
+&lt;p&gt;If you get an error during installation, try running the same command with &lt;code&gt;debug=true&lt;/code&gt; option to see what the actual cmake error is.&lt;/p&gt;
+
+&lt;p&gt;What &lt;b&gt;works&lt;/b&gt;:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Windows binary installs (where available) and source installations using Lua 5.1 and Lua 5.2. Tested with cmake 2.8.10+ and &lt;a href=&quot;http://tdm-gcc.tdragon.net/download&quot;&gt;mingw-tdm&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;caps&quot;&gt;OSX &lt;/span&gt;source installs using Lua 5.1 and Lua 5.2 (configured to build universal binaries); you'll need CMake 2.8.10+.&lt;/li&gt;
+&lt;li&gt;Linux source installs using Lua 5.1 and Lua 5.2 (both 32bit and 64bit)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;p&gt;What &lt;b&gt;doesn't work&lt;/b&gt;:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Windows binary install using Lua 5.2 (this retrieves the same module as for Lua 5.1, which doesn't load)&lt;/li&gt;
+&lt;/ul&gt;</description>
+	<pubDate>Sun, 08 Dec 2013 01:16:08 +0000</pubDate>
+</item>
+<item>
+	<title>Paul Kulchenko: Saving debugging output to a file</title>
+	<guid isPermaLink="false">tag:notebook.kulchenko.com,2013://2.179</guid>
+	<link>http://notebook.kulchenko.com/zerobrane/saving-debugging-output-to-file</link>
+	<description>&lt;p&gt;ZeroBrane Studio is often used for &lt;b&gt;remote debugging&lt;/b&gt;, when the application being debugged is running on a different computer or a device, and it is very convenient to be able to &quot;redirect&quot; its printed output to the &lt;span class=&quot;caps&quot;&gt;IDE.&lt;/span&gt; The &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;supports this functionality and not only allows &lt;b&gt;&quot;redirecting&quot; of the printed output&lt;/b&gt;, but also &lt;b&gt;pretty prints&lt;/b&gt; the results such that &lt;code&gt;local t = {a = 1, b = 2} print(t)&lt;/code&gt; will print &lt;code&gt;{a = 1, b = 2}&lt;/code&gt;. This option is turned on by default for some interpreters and can be explicitly enabled using &lt;a href=&quot;http://studio.zerobrane.com/doc-general-preferences.html#debugger&quot;&gt;debugger.redirect&lt;/a&gt; configuration option.&lt;/p&gt;
+
+&lt;p&gt;This is all good, but what if you have a long running process and want to be able to &lt;b&gt;use this &quot;remote&quot; printing as a log file&lt;/b&gt;. The plugin below allows you to do just that: it will dump all the &quot;remote&quot; output to a file (&lt;code&gt;output.log&lt;/code&gt; by default) in the current project folder. It also limits the number of records in the Output window (100 by default) to allow you to generate a large number of records without taking more memory.&lt;/p&gt;
+        &lt;p&gt;You can save the plugin to &lt;code&gt;packages/outputtofile.lua&lt;/code&gt; and after restarting the &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;all the &lt;b&gt;remote output will be dumped to a local log file&lt;/b&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;local filter, fname
+local function append(fname, s)
+  if not fname then return end
+  local f = io.open(fname, &quot;a&quot;)
+    or error((&quot;Can't open file '%s' for writing&quot;):format(fname))
+  f:write(s)
+  f:close()
+end
+
+return {
+  name = &quot;Output to file&quot;,
+  description = &quot;Redirects debugging output to a file.&quot;,
+  author = &quot;Paul Kulchenko&quot;,
+  version = 0.1,
+
+  onRegister = function(self)
+    local config = ide:GetConfig()
+    local output = ide:GetOutput()
+    local maxlines = self:GetConfig().maxlines or 100
+
+    filter = config.debugger.outputfilter
+    config.debugger.outputfilter = function(s)
+      local start  = output:GetLineCount() - maxlines
+      if start &amp;gt;= 0 then -- trim the output to the right number of lines
+        local readonly = output:GetReadOnly()
+        output:SetReadOnly(false)
+        output:SetTargetStart(0)
+        output:SetTargetEnd(output:PositionFromLine(start+1))
+        output:ReplaceTarget(&quot;&quot;)
+        output:SetReadOnly(readonly)
+      end
+      append(fname, s)
+      return s
+    end
+  end,
+
+  onUnRegister = function(self)
+    ide:GetConfig().debugger.outputfilter = filter
+  end,
+  onProjectLoad = function(self, project)
+    fname = MergeFullPath(project, self:GetConfig().fname or &quot;output.log&quot;)
+  end,
+}&lt;/code&gt;&lt;/pre&gt;</description>
+	<pubDate>Sun, 08 Dec 2013 01:09:05 +0000</pubDate>
+</item>
+<item>
+	<title>Paul Kulchenko: Remote file editing while debugging</title>
+	<guid isPermaLink="false">tag:notebook.kulchenko.com,2013://2.175</guid>
+	<link>http://notebook.kulchenko.com/zerobrane/remote-file-editing-while-debugging</link>
+	<description>&lt;p&gt;After &lt;a href=&quot;http://studio.zerobrane.com/vera.html&quot;&gt;ZeroBrane Studio for Vera&lt;/a&gt; was released, I received several questions whether it is possible to load files from the device and edit them. The product already allows to upload files to Vera devices and to download log files, but it doesn't support &lt;b&gt;editing of remote files&lt;/b&gt; and I thought it would be useful and interesting to implement this.&lt;/p&gt;
+
+&lt;p&gt;What you see below is the plugin that does just that. It adds a new menu item (&lt;code&gt;File | Open Remotely...&lt;/code&gt;) that asks for a file name and then loads that file in a new editor tab. You can edit and save that file as you'd do with any other file. The main difference is that it only &lt;b&gt;works when a debugging session is in progress&lt;/b&gt; as it uses the debugging mechanism to retrieve and save the files.&lt;/p&gt;
+        &lt;p&gt;To install this plugin, you need to save it as &lt;code&gt;remoteedit.lua&lt;/code&gt; into &lt;code&gt;packages/&lt;/code&gt; directory inside ZeroBrane Studio or inside &lt;code&gt;&amp;lt;HOME&amp;gt;/.zbstudio&lt;/code&gt; directory. If you are on &lt;span class=&quot;caps&quot;&gt;OSX, &lt;/span&gt;use the later location (&lt;code&gt;&amp;lt;HOME&amp;gt;/.zbstudio/packages/remoteedit.lua&lt;/code&gt;) to avoid overwriting the plugin when you upgrade ZeroBrane Studio.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;local G = ...
+local id = G.ID(&quot;remoteedit.openremotefile&quot;)
+local lastfile, menuid, debugger = &quot;&quot;
+local editors = {}
+local function reportErr(err) return(err:gsub('.-:%d+:%s*','')) end
+
+local mobdebug = require(&quot;mobdebug&quot;)
+local copas = require(&quot;copas&quot;)
+
+return {
+  name = &quot;Remote edit plugin&quot;,
+  description = &quot;Allows to edit files remotely while debugging is in progress.&quot;,
+  author = &quot;Paul Kulchenko&quot;,
+  version = 0.1,
+
+  onRegister = function(self)
+    local menu = ide:GetMenuBar():GetMenu(ide:GetMenuBar():FindMenu(TR(&quot;&amp;amp;File&quot;)))
+    menuid = menu:Insert(2, id, &quot;Open Remotely...&quot;)
+    debugger = ide.debugger
+
+    ide:GetMainFrame():Connect(id, wx.wxEVT_COMMAND_MENU_SELECTED,
+      function()
+        local file = wx.wxGetTextFromUser(&quot;Enter name (with path) of the remote file&quot;,
+          &quot;Open remote file&quot;, lastfile)
+        if file and #file &amp;gt; 0 then
+          self:loadFile(file)
+          lastfile = file
+        end
+      end)
+    ide:GetMainFrame():Connect(id, wx.wxEVT_UPDATE_UI,
+      function (event) event:Enable(debugger.server and not debugger.running) end)
+
+    -- this is a workaround for an API call missing in v0.39
+    if tonumber(ide.VERSION) and tonumber(ide.VERSION) &amp;lt;= 0.39 then
+      local sf = SaveFile
+      SaveFile = function(...)
+        if PackageEventHandle(&quot;onEditorPreSave&quot;, ...) ~= false then sf(...) end
+      end
+    end
+  end,
+
+  onUnRegister = function(self)
+    local menu = ide:GetMenuBar():GetMenu(ide:GetMenuBar():FindMenu(TR(&quot;&amp;amp;File&quot;)))
+    ide:GetMainFrame():Disconnect(id, wx.wxID_ANY, wx.wxEVT_COMMAND_MENU_SELECTED)
+    if menuid then menu:Destroy(menuid) end
+  end,
+
+  onEditorClose = function(self, editor)
+    editors[editor] = nil
+  end,
+
+  onEditorPreSave = function(self, editor, filepath)
+    local remote = editors[editor]
+    if remote and ide:GetDocument(editor):IsModified() then
+      self:saveFile(remote, editor)
+    end
+    return false
+  end,
+
+  loadFile = function(self, remote)
+    if not debugger then return end
+    if not debugger.server or debugger.running then return end
+    local code = ([[(function() local f, err = io.open(%s); if not f then error(err) end; local c = f:read('*a'); f:close(); return c end)()]])
+      :format(mobdebug.line(remote))
+    copas.addthread(function()
+      local res, _, err = debugger.evaluate(code)
+      if err then
+        DisplayOutputLn((&quot;Failed to load file '%s': %s.&quot;)
+          :format(remote, reportErr(err)))
+        return
+      end
+
+      local ok, content = LoadSafe(&quot;return &quot;..res)
+      if ok then
+        DisplayOutputLn((&quot;Loaded file '%s'.&quot;):format(remote))
+        self.onIdleOnce = function()
+          local editor = NewFile(remote)
+          editor:SetText(content)
+          editor:SetSavePoint()
+          editors[editor] = remote
+        end
+      else
+        DisplayOutputLn((&quot;Failed to load file '%s': %s.&quot;)
+          :format(remote, content))
+      end
+    end)
+  end,
+
+  saveFile = function(self, remote, editor)
+    if not debugger then return end
+    if not debugger.server or debugger.running then return end
+    local content = editor:GetText()
+    local code = ([[local f, err = io.open(%s, 'w'); if not f then error(err) end; f:write(%s); f:close()]])
+      :format(mobdebug.line(remote), mobdebug.line(content))
+    copas.addthread(function()
+      local err = select(3, debugger.execute(code))
+      if not err then
+        editor:SetSavePoint()
+        DisplayOutputLn((&quot;Saved file '%s'.&quot;):format(remote))
+      else
+        DisplayOutputLn((&quot;Failed to save file '%s': %s.&quot;)
+          :format(remote, reportErr(err)))
+      end
+    end)
+  end,
+}&lt;/code&gt;&lt;/pre&gt;</description>
+	<pubDate>Tue, 03 Dec 2013 18:36:42 +0000</pubDate>
+</item>
+<item>
+	<title>Raimon Grau: Lua Workshop 2013</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-8696405790788556158.post-1850212486864828574</guid>
+	<link>http://puntoblogspot.blogspot.com/2013/12/lua-workshop-2013.html</link>
+	<description>I was lucky enough to be in the &lt;a href=&quot;http://www.lua.org/wshop13.html&quot;&gt;Lua Workshop 2013&lt;/a&gt;. Held in Toulouse.&lt;br /&gt;&lt;br /&gt;I had lots of fun there, both in the conference and outside it. For me, one of the most important topics raised were the speciation of the Lua world.  Stock Lua, LuaJIT, openresty, luvit ... Many different environments for which lots of packages do not work in different environments (lua-redis and lua-resty-redis, for example). &lt;br /&gt;&lt;br /&gt;This 'problem' extends to other parts of the language and comunity, like packaging. You cannot use &lt;a href=&quot;http://luarocks.org/&quot;&gt;luarocks&lt;/a&gt; for &lt;a href=&quot;http://luvit.io/&quot;&gt;Luvit&lt;/a&gt;, or, the &lt;a href=&quot;http://openresty.org/&quot;&gt;openresty&lt;/a&gt; packages are not in LuaRocks. The community is aware of that, and trying to find some compromises to create a healthy ecosystem.  I loved when LuaDist, LuaRocks and the debian packager of lua started an 'impro' discussion on issues they had, pros and cons.&lt;br /&gt;&lt;br /&gt;Other talks were also amazing, like &lt;a href=&quot;http://www.inf.puc-rio.br/~roberto/&quot;&gt;Roberto&lt;/a&gt;'s one: 'Lua, past present and future'. Great way to expose the Lua history and philosophy and reasoning behind some of the features that Lua came to have nowadays. (Spoiler for the future: They are working on Macros!!!)&lt;br /&gt;&lt;br /&gt;People modifying the vm to adapt it to their needs were also  really wicked cool things we saw there.&lt;br /&gt;&lt;br /&gt;Thanks to &lt;a href=&quot;http://www.3scale.net/&quot;&gt;3scale&lt;/a&gt; for sponsoring my trip, and to the Lua community for being so awesome :).</description>
+	<pubDate>Mon, 02 Dec 2013 23:46:00 +0000</pubDate>
+	<author>noreply@blogger.com (Raimon Grau)</author>
+</item>
+<item>
+	<title>Paul Kulchenko: Debugging on Vera devices with ZeroBrane Studio</title>
+	<guid isPermaLink="false">tag:notebook.kulchenko.com,2013://2.176</guid>
+	<link>http://notebook.kulchenko.com/zerobrane/debugging-on-vera-devices-with-zerobrane-studio</link>
+	<description>&lt;p&gt;&lt;a href=&quot;http://studio.zerobrane.com&quot;&gt;ZeroBrane Studio&lt;/a&gt; has already been used to debug Lua in various applications, from &lt;a href=&quot;http://notebook.kulchenko.com/zerobrane/love2d-debugging&quot;&gt;game&lt;/a&gt; &lt;a href=&quot;http://notebook.kulchenko.com/zerobrane/debugging-and-live-coding-with-corona-sdk-applications-and-zerobrane-studio&quot;&gt;engines&lt;/a&gt; to &lt;a href=&quot;http://ingenium.home.xs4all.nl/dicom.html&quot;&gt;medical systems&lt;/a&gt;. Several months ago one of the ZeroBrane Studio users asked if it would be possible to debug Lua application running on &lt;a href=&quot;http://getvera.com&quot;&gt;Vera home automation devices&lt;/a&gt;. It turned out to be possible, but not trivial and I decided to release this integration as a separate product that allows Vera users to debug their Lua applications while they are running on Vera devices.&lt;/p&gt;
+
+&lt;p&gt;These devices look like network routers with additional functionality to control various devices and access sensors using &lt;a href=&quot;http://en.wikipedia.org/wiki/Z-Wave&quot;&gt;z-wave&lt;/a&gt; protocol. This integration allows you to write a Lua script that may start a sprinkler system at a specific time, but only if it wasn't raining that day. Or to turn lights on when a motion detector is triggered. Or to turn the heating system on before you come home. You can probably come up with many other interesting uses that are only limited by the devices you may have (and your budget).&lt;/p&gt;
+
+&lt;p&gt;As you can see in the demo (you may want to switch to 720p for better quality), &lt;a href=&quot;http://studio.zerobrane.com/vera.html&quot;&gt;ZeroBrane Studio for Vera&lt;/a&gt; allows Vera users to not only debug their Lua scripts, but also provides auto-complete for luup (Lua Universal PnP &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;) calls, ability to upload files and download logs, restart the Lua engine and &lt;a href=&quot;http://studio.zerobrane.com/vera-features.html&quot;&gt;some other device-specific functions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://studio.zerobrane.com/vera-documentation.html&quot;&gt;documentation page&lt;/a&gt; for the project provides links to Vera resources and detailed descriptions for debugging of Lua &lt;a href=&quot;http://studio.zerobrane.com/vera-debugging.html&quot;&gt;scripts started the &lt;span class=&quot;caps&quot;&gt;IDE&lt;/span&gt;&lt;/a&gt; and scripts in plugins and scenes that are &lt;a href=&quot;http://studio.zerobrane.com/vera-remote-debugging.html&quot;&gt;triggered from the device&lt;/a&gt; itself.&lt;/p&gt;</description>
+	<pubDate>Sat, 30 Nov 2013 20:21:35 +0000</pubDate>
+</item>
+<item>
+	<title>Raimon Grau: Memoize in lua</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-8696405790788556158.post-5237196832766338834</guid>
+	<link>http://puntoblogspot.blogspot.com/2013/10/i-love-how-simple-and-codeless-it-looks.html</link>
+	<description>I love how simple and codeless it looks.</description>
+	<pubDate>Sat, 26 Oct 2013 20:46:02 +0000</pubDate>
+	<author>noreply@blogger.com (Raimon Grau)</author>
+</item>
+<item>
+	<title>Paul Kulchenko: ZeroBrane application for small business grant</title>
+	<guid isPermaLink="false">tag:notebook.kulchenko.com,2013://2.174</guid>
+	<link>http://notebook.kulchenko.com/business/zerobrane-application-for-small-business-grant</link>
+	<description>&lt;p&gt;ZeroBrane &lt;span class=&quot;caps&quot;&gt;LLC, &lt;/span&gt;the company behind &lt;a href=&quot;http://studio.zerobrane.com&quot;&gt;ZeroBrane Studio&lt;/a&gt;, has applied for a &lt;a href=&quot;https://www.missionmainstreetgrants.com/&quot;&gt;small business grant from Chase&lt;/a&gt;.  We now &lt;b&gt;need 250 votes to get to the second round&lt;/b&gt; where applications are being considered by a panel of judges and &lt;b&gt;would appreciate your help&lt;/b&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please &lt;a href=&quot;https://www.missionmainstreetgrants.com/business/detail/71974&quot;&gt;&lt;b&gt;cast your vote&lt;/b&gt;&lt;/a&gt; and &lt;b&gt;spread the word&lt;/b&gt; to help us be considered for the grant! The grant will allow us to &lt;b&gt;provide more educational content, enable collaborative editing, add version control integration, and more&lt;/b&gt;.&lt;/p&gt;
+
+&lt;p&gt;The voting is only available through Facebook Connect; if you don't see your vote accepted, try enabling popups and disabling Facebook filters you may have. Thank you!&lt;/p&gt;</description>
+	<pubDate>Tue, 22 Oct 2013 04:08:29 +0000</pubDate>
+</item>
+<item>
+	<title>Paul Kulchenko: ZeroBrane Studio Bug Bounty</title>
+	<guid isPermaLink="false">tag:notebook.kulchenko.com,2013://2.168</guid>
+	<link>http://notebook.kulchenko.com/zerobrane/zerobrane-studio-bug-bounty</link>
+	<description>&lt;p&gt;&lt;strong&gt;[Update 10/18/2013]&lt;/strong&gt; The bounty was for a specific issue with ZeroBrane Studio &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;(as documented below) and not for any problem related to this website.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;[Update 10/04/2013]&lt;/strong&gt; The bounty has been &lt;b&gt;withdrawn&lt;/b&gt; as the issue appears to be &lt;a href=&quot;https://github.com/pkulchenko/ZeroBraneStudio/issues/164#ref-commit-762baba&quot;&gt;fixed&lt;/a&gt;. If you can still reproduce it with the current master, please leave a comment.&lt;/p&gt;
+
+&lt;p&gt;Bug bounty programs are nothing new; &lt;a href=&quot;http://www.google.com/about/appsecurity/reward-program/&quot;&gt;Google&lt;/a&gt;, &lt;a href=&quot;http://www.mozilla.org/security/bug-bounty.html&quot;&gt;Mozilla&lt;/a&gt;, &lt;a href=&quot;http://www.microsoft.com/security/msrc/report/bountyprograms.aspx&quot;&gt;Microsoft&lt;/a&gt; and &lt;a href=&quot;http://blog.hackaserver.com/bug-bounty-programs-part-1/&quot;&gt;many&lt;/a&gt; &lt;a href=&quot;http://www.tarsnap.com/bugbounty.html&quot;&gt;others&lt;/a&gt; use them to find security vulnerabilities and bugs (and these program are &lt;a href=&quot;http://it.slashdot.org/story/13/07/10/1634259/study-finds-bug-bounty-programs-extremely-cost-effective&quot;&gt;reported&lt;/a&gt; to be cost effective). There has been an issue in &lt;a href=&quot;http://studio.zerobrane.com&quot;&gt;ZeroBrane Studio&lt;/a&gt; that have been bugging me for almost two months, so I decided to &lt;b&gt;offer a bounty for it&lt;/b&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;&quot; class=&quot;right&quot; height=&quot;240&quot; src=&quot;http://notebook.kulchenko.com/images/gold-50-dollars.png&quot; style=&quot;float: right;&quot; width=&quot;241&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I offer $250 dollars to the first person who can figure out what's causing the bug and I'll add $150 if you can provide a fix for it (so &lt;b&gt;$400 &lt;span class=&quot;caps&quot;&gt;USD &lt;/span&gt;total for a fix&lt;/b&gt;), payable via PayPal or as an Amazon giftcard. All the &lt;a href=&quot;https://github.com/pkulchenko/ZeroBraneStudio&quot;&gt;source code for ZeroBrane Studio&lt;/a&gt; is available on github and the code for &lt;a href=&quot;http://svn.wxwidgets.org/svn/wx/wxWidgets/trunk/&quot;&gt;wxwidgets&lt;/a&gt; and &lt;a href=&quot;http://sourceforge.net/p/wxlua/svn/&quot;&gt;wxlua&lt;/a&gt; is available as well.&lt;/p&gt;
+
+&lt;p&gt;The &lt;b&gt;details of the crash as well as associated stack traces&lt;/b&gt; are available &lt;a href=&quot;https://github.com/pkulchenko/ZeroBraneStudio/issues/164&quot;&gt;in this ticket&lt;/a&gt;. Please use the ticket for discussion.&lt;/p&gt;
+
+&lt;p&gt;The bug only happens under &lt;b&gt;Windows 7 64bit&lt;/b&gt;. I have received several reports of the same crash happening on different computers, all running Windows 7 64bit. I also have several users who use the same system, but have never experienced this crash. The crash most likely happens when typing text and is likely to be related to auto-complete, but I have so far been unable to reproduce it.&lt;/p&gt;
+
+&lt;p&gt;There are some strange things showing up on the stack trace that I've &lt;a href=&quot;http://www.mail-archive.com/wxlua-users@lists.sourceforge.net/msg03307.html&quot;&gt;discussed with John Labenski&lt;/a&gt; (the author of wxlua). I can provide &lt;code&gt;wx.dll&lt;/code&gt; built with debug information (it's rather large, 186M) or you can build one yourself using this &lt;a href=&quot;https://github.com/pkulchenko/ZeroBraneStudio/blob/master/build/build-win32.sh&quot;&gt;build script&lt;/a&gt; (run it as &lt;code&gt;bash build-win32.sh wxwidgets lua wxlua debug&lt;/code&gt;). Note that you don't need to build anything else and can run ZeroBrane Studio from a cloned repository.&lt;/p&gt;
+
+&lt;p&gt;The fix has to include code that can be applied to ZeroBrane Studio or upstream (wxlua or wxwidgets) to eliminate the issue. The bounty will not be awarded if it is illegal to do so.&lt;/p&gt;</description>
+	<pubDate>Sat, 19 Oct 2013 16:03:23 +0000</pubDate>
+</item>
+<item>
+	<title>Paul Kulchenko: Real-time watches with ZeroBrane Studio</title>
+	<guid isPermaLink="false">tag:notebook.kulchenko.com,2013://2.173</guid>
+	<link>http://notebook.kulchenko.com/zerobrane/real-time-watches-plugin-zerobrane-studio</link>
+	<description>&lt;p&gt;It's expected to be able to watch an expression in the debugger and &lt;a href=&quot;http://studio.zerobrane.com&quot;&gt;ZeroBrane Studio&lt;/a&gt; provides that functionality. You can specify an expression and it will be evaluated when the application is stopped in the debugger.&lt;/p&gt;
+
+&lt;p&gt;This is all good, but the application needs to be stopped to refresh the values and there are situations when you want to &lt;b&gt;see the values while your application is running&lt;/b&gt;. ZeroBrane Studio supports redirecting of program output to the Output window in the &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;(when debugging) and (with a bit of magic) this can be leveraged to send the values you want to appear in the Watch window.&lt;/p&gt;
+
+&lt;p&gt;What does it give you? You can then include in your code &lt;code&gt;print&lt;/code&gt; statements of the form &lt;code&gt;print(&quot;foo=&quot;, someValue)&lt;/code&gt; and &lt;code&gt;print(&quot;bar=&quot;, someOtherValue)&lt;/code&gt; and those values will be shown in the Watch window as &lt;code&gt;foo&lt;/code&gt; and &lt;code&gt;bar&lt;/code&gt;. The values can be complex values that will be pretty-printed for you (this is the same functionality that &quot;prints&quot; complex values to the Output window during debugging). For example, the script below will show values for a, b, c, and d as defined in the &lt;code&gt;print&lt;/code&gt; expressions:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for i = 1, 1000 do
+  require('socket').sleep(0.01)
+  print(&quot;a=&quot;, {i, i*2})
+  if 0 == i % 10 then print(&quot;b=&quot;, {i, i*3}, collectgarbage(&quot;count&quot;)) end
+  if 0 == i % 100 then print(&quot;c=&quot;, {i, i*4}, os.clock()) end
+  print(&quot;d=&quot;, math.random())
+end&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Since the &quot;printed&quot; output is sent over sockets, this also &lt;b&gt;works when you debug your application remotely&lt;/b&gt;, for example, when you debug something running on a mobile device from ZeroBrane Studio running on a desktop.&lt;/p&gt;
+
+&lt;p&gt;For simple values (like d in the example above) the plugin will also calculate min, max, avg, and count values. The result may look similar to this (if you run it you will see that the numbers are updated while your app is running):&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;&quot; height=&quot;310&quot; src=&quot;http://notebook.kulchenko.com/images/zerobrane-studio-real-time-watch.png&quot; width=&quot;668&quot; /&gt;&lt;/p&gt;
+        &lt;p&gt;Here is the plugin code; you can save it into &lt;code&gt;packages/&lt;/code&gt; folder in the ZeroBrane Studio folder as &lt;code&gt;realtimewatch.lua&lt;/code&gt; and restart the &lt;span class=&quot;caps&quot;&gt;IDE&lt;/span&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;local lastrow, redirect, filter = {}
+local stats = {}
+
+return {
+  name = &quot;Real-time watches&quot;,
+  description = &quot;Displays real-time values during debugging.&quot;,
+  author = &quot;Paul Kulchenko&quot;,
+  version = 0.1,
+
+  onRegister = function()
+    local config = ide:GetConfig()
+    redirect = config.debugger.redirect
+    filter = config.debugger.outputfilter
+
+    config.debugger.redirect = &quot;r&quot;
+    config.debugger.outputfilter = function(s)
+      local label, value = s:match('&quot;(.-)%s*=%s*&quot;\t(.+)')
+      if not label or not value then return s end
+
+      local watchCtrl = ide.debugger.watchCtrl
+
+      local row = lastrow[label]
+      if not row or watchCtrl:GetItemText() ~= label then
+        row = nil -- reset in case it's not found in the control
+        for idx = 0, watchCtrl:GetItemCount() - 1 do
+          if label == watchCtrl:GetItemText(idx) then
+            row = idx
+            break
+          end
+        end
+      end
+
+      if not row then
+        row = watchCtrl:InsertItem(watchCtrl:GetItemCount(), label)
+      end
+
+      local num = tonumber(value)
+      -- for numbers report min/max/count/avg
+      if num then
+        stats[label] = stats[label] or {}
+        -- count, sum, min, max
+        local stat = stats[label]
+        stat[1] = (stat[1] or 0) + 1
+        stat[2] = (stat[2] or 0) + num
+        stat[3] = math.min(stat[3] or math.huge, num)
+        stat[4] = math.max(stat[4] or -math.huge, num)
+        value = (&quot;%s (min: %s, max: %s, cnt: %s, avg: %s)&quot;)
+          :format(num, stat[3], stat[4], stat[1], stat[2]/stat[1])
+      end
+
+      watchCtrl:SetItem(row, 0, label)
+      watchCtrl:SetItem(row, 1, (value:gsub(&quot;\t&quot;, &quot;; &quot;)))
+
+      return
+    end
+  end,
+
+  onUnRegister = function(self)
+    local config = ide:GetConfig()
+    config.debugger.redirect = redirect
+    config.debugger.outputfilter = filter
+  end,
+}&lt;/code&gt;&lt;/pre&gt;</description>
+	<pubDate>Thu, 26 Sep 2013 23:43:28 +0000</pubDate>
+</item>
+<item>
+	<title>Paul Kulchenko: Clone view plugin for ZeroBrane Studio</title>
+	<guid isPermaLink="false">tag:notebook.kulchenko.com,2013://2.171</guid>
+	<link>http://notebook.kulchenko.com/zerobrane/clone-editor-view-plugin-for-zerobrane-studio</link>
+	<description>&lt;p&gt;&lt;img alt=&quot;&quot; class=&quot;right&quot; height=&quot;230&quot; src=&quot;http://notebook.kulchenko.com/images/zerobrane-studio-plugin-clone-view.png&quot; style=&quot;float: right;&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I received several questions about whether it's possible to add ability to see the same file in different editor tabs in &lt;a href=&quot;http://studio.zerobrane.com&quot;&gt;ZeroBrane Studio&lt;/a&gt; and thought it would be a good test for the current plugin interface.&lt;/p&gt;
+
+&lt;p&gt;The Scintilla editor component that is used in ZeroBrane Studio includes a nice feature that allows two &lt;a href=&quot;http://www.scintilla.org/ScintillaDoc.html#MultipleViews&quot;&gt;editors to share the same document&lt;/a&gt;, with changes made in one editor being immediately seen in the other one. The code is very simple ('e1' is the editor you are cloning and 'e2' is the new editor):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; local docpointer = e1:GetDocPointer()
+ e2:SetDocPointer(docpointer)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I wrapped this code in a plugin that allows users to clone an editor tab vertically or horizontally. Save this plugin as &lt;code&gt;cloneview.lua&lt;/code&gt; to &lt;code&gt;packages/&lt;/code&gt; folder, restart ZeroBrane Studio, and right click on one of editor tabs to select 'Clone Vertically' and 'Clone Horizontally'.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;return {
+  name = &quot;Clone view plugin&quot;,
+  description = &quot;Clones the current editor tab.&quot;,
+  author = &quot;Paul Kulchenko&quot;,
+  version = 0.11,
+
+  onMenuEditorTab = function(self, menu, notebook, event, index)
+    local idvert = ID(self.fname..&quot;.clone.vert&quot;)
+    local idhorz = ID(self.fname..&quot;.clone.horz&quot;)
+
+    local cloner = function(event)
+      local e1 = ide:GetEditor(index)
+      local e2 = NewFile(&quot;clone: &quot;..ide:GetDocument(e1):GetFileName())
+      local docpointer = e1:GetDocPointer()
+      e2:SetDocPointer(docpointer)
+      ide:GetEditorNotebook():Split(notebook:GetSelection(),
+        event:GetId() == idhorz and wx.wxRIGHT or wx.wxBOTTOM)
+      notebook:SetSelection(index)
+    end
+
+    menu:AppendSeparator()
+    menu:Append(idhorz, &quot;Clone Horizontally&quot;)
+    menu:Append(idvert, &quot;Clone Vertically&quot;)
+    notebook:Connect(idvert, wx.wxEVT_COMMAND_MENU_SELECTED, cloner)
+    notebook:Connect(idhorz, wx.wxEVT_COMMAND_MENU_SELECTED, cloner)
+  end,
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;[Updated on 09/21/2013]&lt;/strong&gt; The plugin code has been updated to use &lt;code&gt;index&lt;/code&gt; parameter that refers to a correct index in split notebook situations. This functionality requires using v0.39 of ZeroBrane Studio (when released) or the current master.&lt;/p&gt;</description>
+	<pubDate>Sun, 22 Sep 2013 04:22:18 +0000</pubDate>
+</item>
+<item>
+	<title>Paul Kulchenko: ZeroBrane Studio LuaJIT, Lua5.2 and luasocket changes</title>
+	<guid isPermaLink="false">tag:notebook.kulchenko.com,2013://2.172</guid>
+	<link>http://notebook.kulchenko.com/zerobrane/zerobrane-studio-luajit-lua52-and-luasocket-changes</link>
+	<description>&lt;p&gt;The &lt;a href=&quot;https://github.com/pkulchenko/ZeroBraneStudio/archive/master.zip&quot;&gt;latest version&lt;/a&gt; of &lt;a href=&quot;http://studio.zerobrane.com&quot;&gt;ZeroBrane Studio&lt;/a&gt; includes several recent updates: &lt;strong&gt;LuaJIT is now a default interpreter&lt;/strong&gt; instead of Lua 5.1, &lt;strong&gt;Lua 5.2 is included&lt;/strong&gt; for all supported platforms (just select &quot;Lua 5.2&quot; from the list of interpreters), and &lt;strong&gt;luasocket has been upgraded to v3.0&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Note that &quot;normal&quot; &lt;strong&gt;Lua5.1 interpreter is no longer included&lt;/strong&gt;, but as before you can continue using the &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;to debug your Lua 5.1 applications (you can also use your own Lua 5.1 interpreter if you want).&lt;/p&gt;
+
+&lt;p&gt;LuaJIT is compiled with &lt;code&gt;LUAJIT_ENABLE_LUA52COMPAT&lt;/code&gt;, which enables some of Lua5.2 features (see &lt;a href=&quot;http://luajit.org/extensions.html&quot;&gt;this link&lt;/a&gt; for details) and allows to do syntax checks for &quot;goto&quot; and other features. The local console is using LuaJIT as well.&lt;/p&gt;
+
+&lt;p&gt;All these changes are going to be included in the coming release (0.39), so &lt;strong&gt;please report any issues or incompatibilities&lt;/strong&gt; you notice.&lt;/p&gt;
+
+&lt;p&gt;Note that while Lua 5.2 (and luasocket compiled against Lua 5.2) are included, you may still run into issues if you debug your own Lua 5.2 applications that statically link the interpreter (at least on Windows). The reason for that is that when you load luasocket, it loads &lt;code&gt;lua52.dll&lt;/code&gt; and you end up with multiple VMs (and may get &quot;PANIC: unprotected error in call to Lua &lt;span class=&quot;caps&quot;&gt;API &lt;/span&gt;(multiple Lua VMs detected)&quot; message). There are (at least) two ways to resolve this: (1) compile luasocket into your app the same way you include lua interpreter itself; you won't need anything else except one mobdebug.lua file to debug your app, or (2) use proxy dll; it will look like lua52.dll, but will actually proxy your calls to your statically compiled lua library, avoiding problems with multiple VMs. The &lt;a href=&quot;http://lua-users.org/wiki/LuaProxyDllFour&quot;&gt;proxy dll&lt;/a&gt; is for Lua 5.1, but you can tweak the script to make it work for Lua 5.2. See &lt;a href=&quot;http://stackoverflow.com/a/18680820/1442917&quot;&gt;this SO answer&lt;/a&gt; for related discussion.&lt;/p&gt;</description>
+	<pubDate>Wed, 11 Sep 2013 01:47:13 +0000</pubDate>
+</item>
+<item>
+	<title>Paul Kulchenko: Cocos2d-x simulator and on-device debugging with ZeroBrane Studio</title>
+	<guid isPermaLink="false">tag:notebook.kulchenko.com,2013://2.170</guid>
+	<link>http://notebook.kulchenko.com/zerobrane/cocos2d-x-simulator-and-on-device-debugging-with-zerobrane-studio</link>
+	<description>&lt;p&gt;There has been &lt;a href=&quot;http://www.cocos2d-x.org/boards/11/topics/15813?r=32270%23message-32270&quot;&gt;recent&lt;/a&gt; &lt;a href=&quot;http://www.cocos2d-x.org/boards/11/topics/23384?r=32329%23message-32329&quot;&gt;interest&lt;/a&gt; in getting &lt;a href=&quot;http://studio.zerobrane.com&quot;&gt;ZeroBrane Studio&lt;/a&gt; to work with Cocos2d-x, so I decided to put my notes together on how this can be accomplished.&lt;/p&gt;
+
+&lt;p&gt;Debugging with ZeroBrane Studio &lt;b&gt;requires using luasocket&lt;/b&gt; and because it can be integrated with a Cocos2d-x project in different ways, you may have several options to consider.&lt;/p&gt;
+        &lt;h2&gt;Debugging using luasocket as an external library.&lt;/h2&gt;
+
+&lt;p&gt;This option uses luasocket dll/dylib/so library that comes with ZeroBrane Studio. This is probably the easiest way to get the debugging working, but it &lt;b&gt;won't work when your application is running in the Android/iOS simulator or on the device&lt;/b&gt;. Still, since it's easy to setup, let's review the steps.&lt;/p&gt;
+
+&lt;p&gt;First, take &lt;code&gt;HelloLua&lt;/code&gt; demo and compile HelloLua executable (this is all on Windows, but this should work on other platforms as well).&lt;/p&gt;
+
+&lt;p&gt;Add a call to the debugger to &lt;code&gt;hello.lua&lt;/code&gt; file (see the code below):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;local function main()
+    ...
+    cclog(&quot;debugging...&quot;)
+    require('mobdebug').start() --&amp;lt;-- this line
+    require &quot;hello2&quot;
+    cclog(&quot;result is &quot; .. myadd(3, 5))&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next, follow the &lt;a href=&quot;http://studio.zerobrane.com/doc-remote-debugging.html&quot;&gt;instructions on remote debugging&lt;/a&gt; (especially Setup Environment for Debugging section). I just have a simple batch file that sets &lt;code&gt;LUA_PATH&lt;/code&gt; and &lt;code&gt;LUA_CPATH&lt;/code&gt; such that they point to &lt;code&gt;lualibs/mobdebug/mobdebug.lua and bin/clibs/?.dll&lt;/code&gt; files so that &lt;code&gt;socket&lt;/code&gt; and &lt;code&gt;mobdebug&lt;/code&gt; modules are properly loaded from &lt;span class=&quot;caps&quot;&gt;ZBS.&lt;/span&gt; The last line simply runs &lt;code&gt;HelloLua.exe&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now open ZeroBrane Studio and load &lt;code&gt;hello.lua&lt;/code&gt; file in the editor. Set the project directory to the folder where you have &lt;code&gt;hello.lua&lt;/code&gt;. Start debugger server by going to &lt;code&gt;Project | Start Debugger Server&lt;/code&gt;; (these are all instructions from the page referenced earlier).&lt;/p&gt;
+
+&lt;p&gt;If you run the batch file now, you should get an error that it can't find &lt;code&gt;lua51.dll&lt;/code&gt;. luasocket needs it and it's in &lt;code&gt;ZBS/bin&lt;/code&gt; folder. You can either add that folder to &lt;code&gt;PATH&lt;/code&gt; or copy the dll to the folder with your executable.&lt;/p&gt;
+
+&lt;p&gt;Run it again and you should see the green arrow pointing to the instruction next to the &lt;code&gt;start()&lt;/code&gt; call and you should be able to debug your application and use the stack view, breakpoints, and other debugger features.&lt;/p&gt;
+
+&lt;h2&gt;iOS simulator and on-device debugging with integrated luasocket (instructions courtesy of Andres Ispani).&lt;/h2&gt;
+
+&lt;p&gt;The last project I worked on was an iOS only project based on cocos2d. For our next project, we were searching for something cross platform that would also allow us to iterate faster. There are many frameworks out there that promise this (you can code in JavaScript, C#, Lua, etc), but we chose Cocos2d-x because it's open source and it allows us to have greater control of what is happening behind the scenes. We can code most of our game in javascript or lua, and still tweak any rough edges in c++. Also being able to use our previous experience with Cocos2d didn't hurt.&lt;/p&gt;
+
+&lt;p&gt;I would not start any serious long term project without a working debugger though, so I started looking at ways to debug lua code running on an iPhone, and I found ZeroBrane. All you need is getting luasocket running in cocos2d-x. I found &lt;a href=&quot;http://www.cocos2d-x.org/boards/11/topics/6348&quot;&gt;this old forum post&lt;/a&gt; explaining how to do it. Unfortunately it's really old. You are supposed to get the luasocket implementation from a github cocos2d-x fork, but the repo has since deleted luasocket support. So I looked through github history looking for the &lt;a href=&quot;https://github.com/dualface/cocos2d-x/tree/30b0444b86b0393307c934b34034c110c4a6e735&quot;&gt;revision mentioned in the post&lt;/a&gt;. Then I followed this modified steps from the forum thread:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Download that revision of cocos2d-x.&lt;/li&gt;
+&lt;li&gt;Copy it's &lt;code&gt;lua/exts&lt;/code&gt; folder to your project's libs folder, and add them to your XCode target. Remove &lt;code&gt;wsocket.c&lt;/code&gt; from your target.&lt;/li&gt;
+&lt;li&gt;Open &lt;code&gt;libs/lua/cocos2dx_support/CCLuaStack.cpp&lt;/code&gt; and add this include:&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;pre&gt;&lt;code&gt;extern &quot;C&quot; {
+  #include &quot;lualoadexts.h&quot;
+}&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;At the end of &lt;code&gt;bool CCLuaStack::init(void)&lt;/code&gt; add:&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;pre&gt;&lt;code&gt;luax_loadexts(m_state);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, copy &lt;code&gt;mobdebug.lua&lt;/code&gt; to the &lt;code&gt;Resources&lt;/code&gt; folder, add &lt;code&gt;require('mobdebug').start(&quot;IDE.machine.ip.address&quot;)&lt;/code&gt; to the main lua file, and now you can &lt;b&gt;debug lua from either the iOS simulator or an actual device in the same network&lt;/b&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Android simulator and on-device debugging with integrated luasocket (instructions courtesy of Peter Yiap, slightly updated).&lt;/h2&gt;
+
+&lt;p&gt;I managed to find a working luasockets integration from the DualFace github:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Download &lt;a href=&quot;https://github.com/dualface/quick-cocos2d-x&quot;&gt;dualface/quick-cocos2d-x&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Copy over the luasockets source into &lt;code&gt;cocos2d-x-2.1.4\scripting\lua\lua_extensions&lt;/code&gt; and integrate it into the liblua project. You will need to use &lt;code&gt;lua_extensions.c&lt;/code&gt; and &lt;code&gt;lua_extensions.h&lt;/code&gt; included below.&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;luaopen_lua_extensions(m_state);&lt;/code&gt; to &lt;code&gt;CCLuaStack::init()&lt;/code&gt;.  I added it below &lt;code&gt;toluafix_open(m_state);&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Within the HelloLua test project, link against the &lt;code&gt;Ws2_32.lib&lt;/code&gt; file since luasocket had a dependency on winsock on the win32 platform.  The other platforms were fine. Add the new luasocket files to the &lt;code&gt;cocos2d-x-2.1.4\scripting\lua\proj.android\Android.mk&lt;/code&gt; file.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;p&gt;I use Cygwin on my PC to do android builds; use &lt;a href=&quot;http://www.cocos2d-x.org/projects/cocos2d-x/wiki/How_to_set_up_the_android_cocos2d-x_development_environment_on_Windows_7&quot;&gt;this tutorial to get your environment&lt;/a&gt;. Once the ndk stuff is all setup you should just be able to navigate to &lt;code&gt;cocos2d-x-2.1.4\samples\Lua\HelloLua\proj.android&lt;/code&gt; and execute build_native.sh script. When that's compiled you'll need to create the eclipse project and publish to the device.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// ----- lua_extensions.h -----
+
+#ifndef __LUA_EXTRA_H_
+#define __LUA_EXTRA_H_
+
+#if defined(_USRDLL)
+    #define LUA_EXTENSIONS_DLL     __declspec(dllexport)
+#else         /* use a DLL library */
+    #define LUA_EXTENSIONS_DLL
+#endif
+
+#if __cplusplus
+extern &quot;C&quot; {
+#endif
+
+#include &quot;lauxlib.h&quot;
+
+void LUA_EXTENSIONS_DLL luaopen_lua_extensions(lua_State *L);
+    
+#if __cplusplus
+}
+#endif
+
+#endif /* __LUA_EXTRA_H_ */&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;// ----- lua_extensions.c -----
+
+#include &quot;lua_extensions.h&quot;
+
+#if __cplusplus
+extern &quot;C&quot; {
+#endif
+
+// socket
+#include &quot;luasocket.h&quot;
+#include &quot;mime.h&quot;
+
+static luaL_Reg luax_exts[] = {
+    {&quot;socket.core&quot;, luaopen_socket_core},
+    {&quot;mime.core&quot;, luaopen_mime_core},
+
+    {NULL, NULL}
+};
+
+#include &quot;tolua_fix.h&quot;
+
+void luaopen_lua_extensions(lua_State *L)
+{
+    luaL_Reg* lib = luax_exts;
+    lua_getglobal(L, &quot;package&quot;);
+    lua_getfield(L, -1, &quot;preload&quot;);
+    for (; lib-&amp;gt;func; lib++)
+    {
+        lua_pushcfunction(L, lib-&amp;gt;func);
+        lua_setfield(L, -2, lib-&amp;gt;name);
+    }
+    lua_pop(L, 2);
+
+    // load extensions script
+    luaopen_socket_scripts(L);
+}
+
+#if __cplusplus
+} // extern &quot;C&quot;
+#endif&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Note on debugging in the iOS simulator.&lt;/h2&gt;
+
+&lt;p&gt;As Lua files included with your application are copied to a different location when the application is packaged to run in the simulator, the debugging may be triggered for files in the packaged application, rather than in your project folder. This may affect some of the debugging features as the breakpoints you toggle in the &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;are set on files in your project folder, not on files in the packaged application.&lt;/p&gt;
+
+&lt;p&gt;The current version of ZeroBrane Studio in the &lt;a href=&quot;https://github.com/pkulchenko/ZeroBraneStudio&quot;&gt;repository&lt;/a&gt; starts debugging using the project files, but earlier versions of &lt;span class=&quot;caps&quot;&gt;ZBS &lt;/span&gt;(v0.38 and before) may use files in the packaged application (which is likely to break breakpoints).&lt;/p&gt;
+
+&lt;p&gt;When this remapping is active (this should work in v0.39 and later), you may see a message similar to the one below in the Output window:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Mapped remote request for '/users/..../library/application support/iphone simulator/6.1/applications/13e34ef7-594a-4d62-a2c7-9451d726275c/luatest2.app/' to '/Users/..../Documents/Projects/LuaTest2/LuaTest2/Resources/'.&lt;/code&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 26 Jul 2013 03:06:49 +0000</pubDate>
+</item>
+<item>
+	<title>Paul Kulchenko: ZeroBrane Studio in seven languages</title>
+	<guid isPermaLink="false">tag:notebook.kulchenko.com,2013://2.169</guid>
+	<link>http://notebook.kulchenko.com/zerobrane/zerobrane-studio-in-seven-languages</link>
+	<description>&lt;p&gt;&lt;a href=&quot;http://studio.zerobrane.com&quot;&gt;ZeroBrane Studio&lt;/a&gt; is now &lt;b&gt;available in seven languages&lt;/b&gt;! Thanks to all who contributed translations:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/toiffel&quot;&gt;toiffel&lt;/a&gt; for &lt;b&gt;Russian&lt;/b&gt; translation;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/yonaba&quot;&gt;Roland Yonaba&lt;/a&gt; and &lt;a href=&quot;https://github.com/Fringale&quot;&gt;Alexis Jarreau&lt;/a&gt; for &lt;b&gt;French&lt;/b&gt; translation;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/isola009&quot;&gt;Inigo Sola&lt;/a&gt; for &lt;b&gt;Spahish&lt;/b&gt; translation;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/bartoleo&quot;&gt;Leo Bartoloni&lt;/a&gt; for &lt;b&gt;Italian&lt;/b&gt; translation;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/riidom&quot;&gt;riidom&lt;/a&gt; for &lt;b&gt;German&lt;/b&gt; translation; and&lt;/li&gt;
+&lt;li&gt;Chow CheeWen for &lt;b&gt;Chinese&lt;/b&gt; translation.&lt;/li&gt;
+&lt;/ul&gt;</description>
+	<pubDate>Wed, 24 Jul 2013 06:30:14 +0000</pubDate>
+</item>
+<item>
+	<title>Paul Kulchenko: Scope aware variable indicators</title>
+	<guid isPermaLink="false">tag:notebook.kulchenko.com,2013://2.166</guid>
+	<link>http://notebook.kulchenko.com/zerobrane/scope-aware-variable-indicators-zerobrane-studio</link>
+	<description>&lt;p&gt;Starting from v0.38 &lt;a href=&quot;http://studio.zerobrane.com&quot;&gt;ZeroBrane Studio&lt;/a&gt; includes experimental support for &lt;b&gt;scope aware variable indicators&lt;/b&gt;. These indicators are added to &lt;b&gt;mark local, global, masked, and masking variables&lt;/b&gt; and are calculated in real-time as the code is being written. Having this ability &lt;a href=&quot;https://github.com/pkulchenko/ZeroBraneStudio/issues/168&quot;&gt;changes the way you write code, and does catch a lot of errors and 'wrong thinking' cases&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;&quot; height=&quot;370&quot; src=&quot;http://notebook.kulchenko.com/images/zerobrane-studio-variable-indicators.png&quot; width=&quot;540&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ZeroBrane Studio provides default indicators that can be updated; both the colors and the appearance can be changed as described in the &lt;a href=&quot;http://studio.zerobrane.com/doc-styles-color-schemes.html#indicators&quot;&gt;documentation&lt;/a&gt;. For example, &lt;code&gt;styles.indicator.varmasked = nil&lt;/code&gt; will disable masked indicator.&lt;/p&gt;
+
+&lt;p&gt;In addition to providing real-time indicators, the &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;uses the same mechanism to provide &quot;Go To Definition&quot; and &quot;Rename All Instances&quot; options available from the popup menu in the editor. The items in the popup menu also show the number of instances detected and the line where the definition is found. &quot;Go To Definition&quot; item is enabled for local variables/functions, function parameters, and loop variables.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;b&gt;quickly select instances of a variable&lt;/b&gt; by doing &lt;code&gt;Ctrl/Cmd-DblClick on&lt;/code&gt; it. All instances get selected with the main one having slightly darker background and can be &lt;b&gt;edited to update the name&lt;/b&gt;. In addition to that you can &lt;b&gt;navigate selected instances&lt;/b&gt; using &lt;code&gt;Find Next/F3&lt;/code&gt; and &lt;code&gt;Find Previous/Shift-F3&lt;/code&gt;; it will move the selection to the next/previous instance (and scroll the editor to make it visible).&lt;/p&gt;</description>
+	<pubDate>Sat, 13 Jul 2013 14:55:17 +0000</pubDate>
+</item>
+<item>
+	<title>Raimon Grau: Iterating through closures</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-8696405790788556158.post-3686766259161624312</guid>
+	<link>http://puntoblogspot.blogspot.com/2013/07/iterating-through-closures.html</link>
+	<description>At &lt;a href=&quot;http://www.3scale.net/&quot;&gt;3scale&lt;/a&gt; we're developing a product using &lt;a href=&quot;http://www.lua.org/&quot;&gt;lua&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;It's kind of fun to work in a new project and even more to work with a small and malleable language (and even *more* working with a top-notch &lt;a href=&quot;https://github.com/kikito&quot;&gt;lua guy&lt;/a&gt;).&lt;br /&gt;&lt;br /&gt;Part of the fun working with lua is that the language is so minimal that you have to build your own helpers for some functions that you'd have in other languages, but lua makes it really easy and straighforward.&lt;br /&gt;&lt;br /&gt;Here's an example that just appeared when I was writing some tests (using busted, of course)&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;                &lt;br /&gt;                local f = function()&lt;br /&gt;                  local c = false&lt;br /&gt;                  return function()&lt;br /&gt;                    c = not c&lt;br /&gt;                    return c&lt;br /&gt;                  end&lt;br /&gt;                end&lt;br /&gt;                local l = f()&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;It's a plain simple closure, I know, but maybe it'll be ilustrative to some ppl not used to this approach.&lt;br /&gt;&lt;br /&gt;It's just an iterator that returns true/false as you keep calling it.&lt;br /&gt;&lt;br /&gt;You know, closures are the poor-man's objects, and objects are the poor-man's closures. &lt;br /&gt;&lt;br /&gt;</description>
+	<pubDate>Wed, 10 Jul 2013 15:57:14 +0000</pubDate>
+	<author>noreply@blogger.com (Raimon Grau)</author>
+</item>
+<item>
+	<title>Paul Kulchenko: Debugging embedded code fragments</title>
+	<guid isPermaLink="false">tag:notebook.kulchenko.com,2013://2.167</guid>
+	<link>http://notebook.kulchenko.com/zerobrane/debugging-embedded-code-fragments-zerobrane-studio</link>
+	<description>&lt;p&gt;From its very first version &lt;a href=&quot;http://studio.zerobrane.com&quot;&gt;ZeroBrane Studio&lt;/a&gt; supported &lt;b&gt;debugging of embedded Lua code&lt;/b&gt;; it was only a matter of adding &lt;code&gt;require('mobdebug').start()&lt;/code&gt; (when running on the same computer) and it would start a debugging session in the &lt;span class=&quot;caps&quot;&gt;IDE.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;There was one case though when it didn't work: if the environment that loads some Lua code doesn't provide a file name, the &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;doesn't have information about what resource to load for debugging. The simplest example to see this to try to try to do something like &lt;code&gt;loadstring(&quot;print(1); print(2)&quot;)&lt;/code&gt;. When this code is executed under the debugger, the source of this code is shown as &lt;code&gt;print(1); print(2)&lt;/code&gt;. One workaround for this was to specify the second parameter to &lt;code&gt;loadstring&lt;/code&gt;: chunkname, which is then used by the Lua debug interface where it reports the source.&lt;/p&gt;
+
+&lt;p&gt;This workaround only works when you can modify the fragment that loads Lua code and in those cases where this is not an option (for example, when  you need to use &lt;code&gt;luaL_loadstring&lt;/code&gt;, which provides no way to label the chunk with its file path) you were out of luck.&lt;/p&gt;
+
+&lt;p&gt;This situation has changed now. Starting from v0.38, &lt;b&gt;ZeroBrane Studio provides a way to debug these code chunks without any additional configuration&lt;/b&gt;. When it gets a request that has a code fragment instead of a file name as its source, it will try to find an open editor with the content that matches that source and if there is no match will open a new editor and load the fragment in it.&lt;/p&gt;
+
+&lt;p&gt;This allows to use the debugger to &quot;step into&quot; calls to functions returned by &lt;code&gt;loadstring&lt;/code&gt; and also debug Lua scripts executed in environments like LuaJava. You can also look at the stack trace, set breakpoints, and use local console as you can normally do in the debugger.&lt;/p&gt;</description>
+	<pubDate>Sat, 22 Jun 2013 22:22:42 +0000</pubDate>
+</item>
+<item>
+	<title>Raimon Grau: Lua vs javascript</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-8696405790788556158.post-6723780142699280324</guid>
+	<link>http://puntoblogspot.blogspot.com/2013/05/lua-vs-javascript.html</link>
+	<description>I &lt;a href=&quot;https://love2d.org/&quot;&gt;love&lt;/a&gt; &lt;a href=&quot;http://www.lua.org/&quot;&gt;lua&lt;/a&gt;.  Well, I &lt;a href=&quot;http://luvit.io/&quot;&gt;luvit&lt;/a&gt; so far.&lt;br /&gt;&lt;br /&gt;I haven't programmed many many things in lua, but the simplicity of it reminds me of smalltalk (in a veery different meaning of simplicity), or scheme.  &lt;br /&gt;&lt;br /&gt;The fact that it relies in very few known concepts as lexical scope, tables, and.... and that's it.&lt;br /&gt;&lt;br /&gt;More that a language, is a language builder toolset.  It lets you do metaprogramming without really feeling that you're doing metaprogramming.  It makes it so simple you'd say it's &quot;the normal thing&quot;.&lt;br /&gt;&lt;ul&gt;&lt;li&gt;loops? ok, you have 'for', and iterators. made from closures, or whatever, but that's it.&lt;/li&gt;&lt;li&gt;TCO? yes, but just if it's explicit.&lt;/li&gt;&lt;li&gt;splat arrays by default? as in Perl?... yes, just in the last position, perfect for apply-like calls. or you have unpack.&lt;/li&gt;&lt;li&gt;Varargs functions? yup.&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;With that and a bit of syntax sugar here and there, you have a really powerful language with near to no friction.  Provided you know a few other languages, you can always say: &quot;ah, it behaves like js in the everything is hash, but it has proper scoping, and TCO ....&quot;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I don't know much js, but I think lua is like a well done js.  Here's some funny Hacker News opinion&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://1.bp.blogspot.com/-xVYSjddS8ms/UZyBnfaJHcI/AAAAAAAAAhk/upTWyzauwqw/s1600/large-lua.png&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;146&quot; src=&quot;http://1.bp.blogspot.com/-xVYSjddS8ms/UZyBnfaJHcI/AAAAAAAAAhk/upTWyzauwqw/s640/large-lua.png&quot; width=&quot;640&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;That and the community. #lua is &lt;a href=&quot;https://github.com/hoelzro&quot;&gt;full&lt;/a&gt; of &lt;a href=&quot;https://github.com/mniip&quot;&gt;people&lt;/a&gt; with background in many other languages, wise and helpful. and quite hacker style. I like it :)&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;br /&gt;Ah! and there's also &lt;a href=&quot;http://metalua.luaforge.net/&quot;&gt;metalua&lt;/a&gt;, which sounds like great fun. something like tcl's block syntax or lisp quasiquoting to mold lua to your needs.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;</description>
+	<pubDate>Thu, 23 May 2013 13:58:41 +0000</pubDate>
+	<author>noreply@blogger.com (Raimon Grau)</author>
+</item>
+<item>
+	<title>Paul Kulchenko: Marmalade Quick debugging with ZeroBrane Studio</title>
+	<guid isPermaLink="false">tag:notebook.kulchenko.com,2013://2.164</guid>
+	<link>http://notebook.kulchenko.com/zerobrane/marmalade-quick-debugging-with-zerobrane-studio</link>
+	<description>&lt;p&gt;&lt;a href=&quot;http://www.madewithmarmalade.com&quot;&gt;Marmalade &lt;span class=&quot;caps&quot;&gt;SDK&lt;/span&gt;&lt;/a&gt; is a cross-platform toolkit for developing games and mobile applications on a variety of desktop and mobile platforms. It also provides &lt;a href=&quot;http://www.madewithmarmalade.com/marmaladesdk/benefits/marmalade-quick-%E2%80%93-fast-cross-platform-2d-application-development&quot;&gt;Marmalade Quick&lt;/a&gt;, a flexible programming environment based on Cocos2d-x with Lua scripting, which makes it a good fit to support in ZeroBrane Studio. Starting from v0.35, &lt;a href=&quot;http://studio.zerobrane.com/&quot;&gt;ZeroBrane Studio&lt;/a&gt; provides integration with Marmalade Quick and implements debugging support for Quick scripts; the video below demonstrates these capabilities (you may need to switch the video to 720p to make the text more readable):&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;The first thing you need to do is to open &lt;code&gt;main.lua&lt;/code&gt; file from the project you want to work with (you can do this by using &lt;code&gt;File | Open...&lt;/code&gt;) and then set the project directory to the directory with your &lt;code&gt;main.lua&lt;/code&gt; file. You can do this by going to &lt;code&gt;Project | Project Directory | Choose...&lt;/code&gt;&lt;br /&gt;
+or using &lt;code&gt;Project | Project Directory | Set From Current File&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To enable the integration shown in the demo, you need to select Marmalade Quick as an interpreter in ZeroBrane Studio by going to &lt;code&gt;Program | Lua Interpreters | Marmalade Quick&lt;/code&gt;. If you installed Marmalade in the default location on &lt;span class=&quot;caps&quot;&gt;OSX &lt;/span&gt;(&lt;code&gt;/Developer/Marmalade&lt;/code&gt;) or on Windows (&lt;code&gt;C:\Marmalade&lt;/code&gt; or &lt;code&gt;D:\Marmalade&lt;/code&gt;, or in &lt;code&gt;\Program Files\Marmalade&lt;/code&gt;), it will be found and used by the &lt;span class=&quot;caps&quot;&gt;IDE.&lt;/span&gt; The &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;will also check for the Marmalade .MKB file in the project folder or its parent folder and will use the information from that file to set the environment for running your project.&lt;/p&gt;
+
+&lt;p&gt;After this is done, you can use &lt;code&gt;Project | Run&lt;/code&gt; command to run the application. If there is a problem with finding the Marmalade Quick environment, you will see an error message in the Output window. &lt;/p&gt;
+
+&lt;h2&gt;Enabling debugging&lt;/h2&gt;
+
+&lt;p&gt;Add &lt;code&gt;require(&quot;mobdebug&quot;).start()&lt;/code&gt; line to your &lt;code&gt;main.lua&lt;/code&gt; script. This will allow you to use &lt;code&gt;Project | Start Debugging&lt;/code&gt; to debug your application.&lt;/p&gt;
+        &lt;h2&gt;Debugger functions&lt;/h2&gt;
+
+&lt;p&gt;The debugger in the &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;provides access to all debugging functions you would expect: &lt;strong&gt;breakpoints&lt;/strong&gt;, &lt;strong&gt;stepping in/over/out&lt;/strong&gt;, the &lt;strong&gt;stack view&lt;/strong&gt; (to access a stack trace and all local/upvalue values, including complex ones), the &lt;strong&gt;watch view&lt;/strong&gt; (to evaluate arbitrary expressions), and &lt;strong&gt;the console&lt;/strong&gt; (to run code fragments and modify values in your application while it is suspended in the debugger). You may want to spend few minutes reviewing the &lt;a href=&quot;http://studio.zerobrane.com/doc-getting-started.html&quot;&gt;Getting Started&lt;/a&gt; page to get familiar with &lt;a href=&quot;http://studio.zerobrane.com/doc-getting-started.html#debugging_programs&quot;&gt;debugging&lt;/a&gt; and other functions in the &lt;span class=&quot;caps&quot;&gt;IDE.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Two things to keep in mind: (1) you need to &lt;em&gt;set a breakpoint before you start debugging your application&lt;/em&gt;, and (2) you can &lt;em&gt;step through only those files from your application that have been opened in the &lt;span class=&quot;caps&quot;&gt;IDE&lt;/span&gt;&lt;/em&gt;; you can configure the &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;to auto-open files you are trying to step into by setting &lt;code&gt;editor.autoactivate = true&lt;/code&gt; in &lt;code&gt;cfg/user.lua file&lt;/code&gt; (see &lt;a href=&quot;http://studio.zerobrane.com/doc-configuration.html&quot;&gt;configuration documentation&lt;/a&gt; and this &lt;a href=&quot;https://github.com/pkulchenko/ZeroBraneStudio/blob/master/cfg/user-sample.lua#L70&quot;&gt;configuration sample&lt;/a&gt; for details).&lt;/p&gt;
+
+&lt;h2&gt;Selective debugging&lt;/h2&gt;
+
+&lt;p&gt;You may notice that in some cases the application you are debugging runs slow; when you run it without the debugger the speed is likely to be at least ten times faster. This may be okay for some situations, but in many cases when the application is complex, things may get slow.&lt;/p&gt;
+
+&lt;p&gt;The debugger provides two methods that allow you to &lt;strong&gt;temporarily turn the debugging on and off&lt;/strong&gt;. If you turn it on/off right around where the changes need to be applied, you can get almost the same performance you see without the debugger.&lt;/p&gt;
+
+&lt;p&gt;For example, you may want to break when a body collision is detected in &lt;code&gt;Physics/Collision Events&lt;/code&gt; example. You can turn the debugging off at the end of &lt;code&gt;main.lua&lt;/code&gt; script (&lt;code&gt;require(&quot;mobdebug&quot;).off()&lt;/code&gt;) and then turn it on and off around the section you are interested in:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function bodyCollision(event)
+    local target = event.target
+    if event.phase == &quot;began&quot; then
+        require(&quot;mobdebug&quot;).on() --&amp;lt;-- turn the debugger on
+        local c = director:createSprite(event.x, event.y, &quot;textures/redcross8.png&quot;)
+        c.xAnchor = 0.5; c.yAnchor = 0.5
+        tween:to(c, {time=0.25, xScale=3, yScale=3})
+        tween:to(c, {delay=0.25, time=0.25, xScale=0, yScale=0, onComplete=crossDestroy})
+        require(&quot;mobdebug&quot;).off() --&amp;lt;-- turn the debugger off
+    end
+end&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you set a breakpoint somewhere between &lt;code&gt;on@ and @off&lt;/code&gt; calls, it will fire as expected. The rest of the application is running with a &quot;normal&quot; speed in this case (you can see the difference if you remove all &lt;code&gt;off()&lt;/code&gt; calls).&lt;/p&gt;
+
+&lt;h2&gt;Opening other files&lt;/h2&gt;
+
+&lt;p&gt;You can step into functions and put breakpoints into other files (including those Lua files that are part of Quick itself), but they either need to be opened in the &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;or you need to configure the &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;to &lt;a href=&quot;http://studio.zerobrane.com/doc-faq.html#why_stepping_into_function_calls_doesnt_work_in_some_cases&quot;&gt;auto-open&lt;/a&gt; those files for you. &lt;/p&gt;
+
+&lt;h2&gt;Known bugs and limitations&lt;/h2&gt;
+
+&lt;p&gt;&lt;s&gt;Some user events (like clicking on a button) may not reliably trigger breakpoints set in them (even though the event handler is executed as expected). This is likely to be fixed in the future; one possible workaround is to add &lt;code&gt;require(&quot;socket&quot;).select = function() return {} end&lt;/code&gt; at the end of the &lt;code&gt;main.lua&lt;/code&gt; script. Other non-user triggered events (like collisions) are not affected by this and should trigger a breakpoint every time the event handler is called.&lt;/s&gt; This has been addressed in Marmalade Quick 1.1, so the workaround is no longer needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;s&gt;Another current limitation is that it is not possible to break into a running application using &lt;code&gt;Project | Break&lt;/code&gt; functionality. This will also be fixed in a future version.&lt;/s&gt; This has been fixed in Marmalade Quick 1.1 and ZeroBrane Studio 0.36+.&lt;/p&gt;</description>
+	<pubDate>Fri, 03 May 2013 23:26:14 +0000</pubDate>
+</item>
+<item>
+	<title>Raimon Grau: Embedding Lua, embedding Guile</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-8696405790788556158.post-1340207357385685190</guid>
+	<link>http://puntoblogspot.blogspot.com/2013/04/embedding-lua-embedding-guile.html</link>
+	<description>&lt;p&gt;  Lately I've spent a quite few hours hacking on &lt;a href=&quot;http://www.lua.org/versions.html#5.2&quot;&gt;Lua&lt;/a&gt;.  I love its   simplicity, and the way it exposes lots of inner aspects of the   programming language, that are usually hidden from the user in other   programming languages. &lt;/p&gt;&lt;p&gt;  One of the cool aspects of lua is the easiness of embedding it into   your C app.  But let's make it more fun. Embed Guile also inthere. &lt;/p&gt;  &lt;h3 id=&quot;sec-1-1&quot;&gt;Lua&lt;/h3&gt;&lt;div class=&quot;outline-text-3&quot; id=&quot;text-1-1&quot;&gt;  &lt;p&gt;   The process to embed Lua in a C app is quite easy, and simple (for     really simple things), but I guess it gets more cumbersome when the     complexity of the embedding system increases.  Being a stack based     vm makes it non-trivial to write some embedding functions     (recursive functions, for example).   &lt;/p&gt;&lt;/div&gt; &lt;h3 id=&quot;sec-1-2&quot;&gt;Guile.&lt;/h3&gt;&lt;div class=&quot;outline-text-3&quot; id=&quot;text-1-2&quot;&gt;  &lt;p&gt;   The way to embed &lt;a href=&quot;http://www.gnu.org/software/guile/&quot;&gt;guile&lt;/a&gt;      into an app is also, really easy.  And     Powerful. And you're not bound to interact with it using a stack     based machine, but you just register your functions, and use the     generic SCM type for all inputs and outputs. I find it easier than Lua   &lt;/p&gt;&lt;/div&gt; &lt;h3 id=&quot;sec-1-3&quot;&gt;The Code&lt;/h3&gt;&lt;div class=&quot;outline-text-3&quot; id=&quot;text-1-3&quot;&gt;  &lt;p&gt;   Here's a minimal example that does some trivial calculations and     the flux of the code passes from C to guile, guile calls another C     function, and after this, we call lua which also calls a function     we have defined in C. In the end it's doing something like (n! +     1).   &lt;/p&gt;  &lt;/div&gt;</description>
+	<pubDate>Sun, 14 Apr 2013 21:16:55 +0000</pubDate>
+	<author>noreply@blogger.com (Raimon Grau)</author>
+</item>
+<item>
+	<title>Raimon Grau: Armagetron advanced, a few years after</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-8696405790788556158.post-1673733724746959270</guid>
+	<link>http://puntoblogspot.blogspot.com/2013/02/armagetron-advanced.html</link>
+	<description>Some years ago I got really addicted to &lt;a href=&quot;http://www.blogger.com/www.armagetronad.net/&quot;&gt;armagetron advanced&lt;/a&gt;. A Snake-like game where you drive Tron Light cycles.&lt;br /&gt;&lt;br /&gt; It's dead simple, but the simplicity itself is what makes it so awesome. In fact, The only kind of games that trapped me in the last 10 years where playable with 4 buttons max. (sdmkun, elastomania, *cave, and most ABA games).&lt;br /&gt;&lt;br /&gt; So I installed armagetronad again and went to the internetz to play some styball. It's a bummer that there are no styball servers anymore. But thanks to that I fetched the source to see if I could find the styball mode, and.... besides finding it, I also found a branch which embeded &lt;a href=&quot;http://www.lua.org/&quot;&gt;lua&lt;/a&gt; into armagetronad.  Yeah, modding arma in lua will be great.&lt;br /&gt;&lt;br /&gt; I hope I don't get addicted again.&lt;br /&gt;&lt;br /&gt; And, as a gift, here you have an &lt;a href=&quot;http://wiki.armagetronad.org/index.php?title=Rubber&quot;&gt;explanation of rubber&lt;/a&gt;, a great concept to deal with latency in armagetron. I think it's one of the things that make aa so amazing.&lt;br /&gt;&lt;br /&gt; Ah, and here's a &lt;a href=&quot;http://wiki.armagetronad.org/index.php/Console_Commands&quot;&gt;cheatlist&lt;/a&gt; for armagetronad. nice to have, eh? :)&lt;br /&gt;&lt;br /&gt; Btw, it's funny that I loved that game before watching the movie, and before knowing that this movie was somehow related to smalltalk. Hey, even in the 'Tron legacy' movie, there's &lt;a href=&quot;http://jtnimoy.net/workviewer.php?q=178&quot;&gt;emacs appearing &lt;/a&gt;in some occasion :)</description>
+	<pubDate>Sun, 24 Feb 2013 03:06:19 +0000</pubDate>
+	<author>noreply@blogger.com (Raimon Grau)</author>
+</item>
+<item>
+	<title>Paul Kulchenko: Debugging and live coding with Corona SDK</title>
+	<guid isPermaLink="false">tag:notebook.kulchenko.com,2013://2.159</guid>
+	<link>http://notebook.kulchenko.com/zerobrane/debugging-and-live-coding-with-corona-sdk-applications-and-zerobrane-studio</link>
+	<description>&lt;p&gt;&lt;a href=&quot;http://www.coronalabs.com/products/corona-sdk/&quot;&gt;Corona &lt;span class=&quot;caps&quot;&gt;SDK&lt;/span&gt;&lt;/a&gt; is a mobile application development framework that supports Lua scripting. While the integration and debugging of Corona applications has been available in ZeroBrane Studio since v0.34, starting from v0.35, &lt;a href=&quot;http://studio.zerobrane.com/&quot;&gt;ZeroBrane Studio&lt;/a&gt; also provides live coding. The video below demonstrates how you can use debugging and live coding with Corona applications (you may need to switch the video to 720p to make the text more readable):&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;The first thing you need to do is to open &lt;code&gt;main.lua&lt;/code&gt; file from the project you want to work with (you can do this by using &lt;code&gt;File | Open...&lt;/code&gt;) and then set the project directory to the directory with your &lt;code&gt;main.lua&lt;/code&gt; file. You can do this by going to &lt;code&gt;Project | Project Directory | Choose...&lt;/code&gt;&lt;br /&gt;
+or using &lt;code&gt;Project | Project Directory | Set From Current File&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To enable the integration shown in the demo, you need to select Corona as an interpreter in ZeroBrane Studio by going to &lt;code&gt;Program | Lua Interpreters | Corona&lt;/code&gt;. If you installed Corona in the default location on &lt;span class=&quot;caps&quot;&gt;OSX &lt;/span&gt;(&lt;code&gt;/Applications/CoronaSDK&lt;/code&gt;) or on Windows (&lt;code&gt;C:\Program Files\Corona Labs\Corona SDK&lt;/code&gt; or &lt;code&gt;D:\Program Files\Corona Labs\Corona SDK&lt;/code&gt;), it will be found and used by the &lt;span class=&quot;caps&quot;&gt;IDE.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;After this is done, you can use &lt;code&gt;Project | Run&lt;/code&gt; command to run the application. If there is a problem with finding the Corona simulator, you will see an error message in the Output window. &lt;/p&gt;
+
+&lt;h2&gt;Enabling debugging&lt;/h2&gt;
+
+&lt;p&gt;Add &lt;code&gt;require(&quot;mobdebug&quot;).start()&lt;/code&gt; line to your &lt;code&gt;main.lua&lt;/code&gt; script. This will allow you to use &lt;code&gt;Project | Start Debugging&lt;/code&gt; to debug your application.&lt;/p&gt;
+        &lt;h2&gt;Debugger functions&lt;/h2&gt;
+
+&lt;p&gt;The debugger in the &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;provides access to all debugging functions you would expect: &lt;strong&gt;breakpoints&lt;/strong&gt;, &lt;strong&gt;stepping in/over/out&lt;/strong&gt;, the &lt;strong&gt;stack view&lt;/strong&gt; (to access a stack trace and all local/upvalue values, including complex ones), the &lt;strong&gt;watch view&lt;/strong&gt; (to evaluate arbitrary expressions), and &lt;strong&gt;the console&lt;/strong&gt; (to run code fragments and modify values in your application while it is suspended in the debugger). Some additional details are available in the &lt;a href=&quot;http://studio.zerobrane.com/doc-getting-started.html&quot;&gt;Getting Started&lt;/a&gt; section of the documentation.&lt;/p&gt;
+
+&lt;p&gt;If you don't set a breakpoint before you start debugging your application, you can go to &lt;code&gt;Project | Break&lt;/code&gt; (or use the toolbar button) to pause your application and inspect its state and set breakpoints you need. If the exact location where the application is stopped cannot be determined (as it may be inside the Corona engine itself), you may see a message &lt;code&gt;Debugging suspended at =?:0 (couldn't activate the file).&lt;/code&gt; in the Output window. The application is indeed suspended and after you are done inspecting it and changing breakpoints, you can continue its execution by going to &lt;code&gt;Project | Continue&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;There is one more thing that is worth mentioning. The Corona &lt;span class=&quot;caps&quot;&gt;SDK &lt;/span&gt;engine seems to include a check that automatically restarts your application when it detects that the application is &quot;stalled&quot;. This is exactly what happens when the application is being debugged as it passes the control back to the &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;(even though for a short time), so it may look like the application is started twice (if you put a breakpoint in your main script). To avoid this effect, you can start debugging inside &lt;code&gt;enterFrame&lt;/code&gt; event handler, which I'm going to demonstrate in the next section.&lt;/p&gt;
+
+&lt;h2&gt;Live coding&lt;/h2&gt;
+
+&lt;p&gt;Live coding allows you to make changes to your application and immediately see the effect of those changes (as you saw in the demo). This is enabled by going to &lt;code&gt;Project | Run as Scratchpad&lt;/code&gt;, but before showing you the code, it may be useful to review how live coding works with ZeroBrane Studio. When a change is detected in the &lt;span class=&quot;caps&quot;&gt;IDE, &lt;/span&gt;three things have to happen:&lt;/p&gt;
+
+&lt;p&gt;1. The currently executed application is suspended or aborted (this is configurable, but for Corona interpreter the application is suspended).&lt;br /&gt;
+2. The new code is being executed in the environment of your application, thus making effective all changes to global variables and functions.&lt;br /&gt;
+3. The application is then continued from the same point where it's suspended.&lt;/p&gt;
+
+&lt;p&gt;These aspects are important, because you may need to apply small changes to your code to make it &quot;live coding&quot; friendly. For example, a usual way to registering an event handler is this (assuming &lt;code&gt;onUpdate&lt;/code&gt; is the event handler function):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Runtime:addEventListener(&quot;enterFrame&quot;, onUpdate)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;However, if you modify this function while running as scratchpad, nothing visible happens. As you may guess, when you register an event listener, the engine stores a reference to the &lt;code&gt;onUpdate&lt;/code&gt; function and any change to the function doesn't invalidate the reference. You may remove and re-add the event listener, but there is a simpler way: we can wrap a call to &lt;code&gt;onUpdate&lt;/code&gt; into an anonymous function, thus allowing us make changes to &lt;code&gt;onUpdate&lt;/code&gt; that the engine will see:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Runtime:addEventListener(&quot;enterFrame&quot;, function(event) pcall(onUpdate, event) end)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We can also add &lt;code&gt;pcall&lt;/code&gt; around a call to &lt;code&gt;onUpdate&lt;/code&gt; so that any run-time errors happening in that function when you make changes, don't kill your application. All the compilation error will be reported to you in the &lt;span class=&quot;caps&quot;&gt;IDE &lt;/span&gt;and only valid Lua code will be executed in the application.&lt;/p&gt;
+
+&lt;p&gt;Now we can look at the &lt;code&gt;onUpdate&lt;/code&gt; handler:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;done = nil
+function onUpdate(event)
+  -- let the first call to onUpdate to return quickly;
+  -- start the debugging during the second call to trick Corona SDK
+  -- and avoid restarting the app.
+  if done == nil then done = false return end
+  if not done then
+    require(&quot;mobdebug&quot;).start()
+    done = true
+  end
+  -- try to modify the following three lines while running this code live
+  -- (using `Project | Run as Scratchpad`)
+  ball:setFillColor(0, 127, 255, 255)
+  bkgd:setFillColor(127, 0, 127)
+  xspeed, yspeed = 6, 9
+end&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this fragment we use a global variable &lt;code&gt;done&lt;/code&gt; to control the logic in the &lt;code&gt;onUpdate&lt;/code&gt; handled. The first time the handler is called, the variable is &lt;code&gt;nil&lt;/code&gt;, which sets &lt;code&gt;done&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt; and returns from the method. On the second call the debugger is started and the variable is set to &lt;code&gt;true&lt;/code&gt; to avoid starting the debugger again. The reason why we want to return quickly from the method during the first call is to trick that check that Corona &lt;span class=&quot;caps&quot;&gt;SDK &lt;/span&gt;does that causes the app to be restarted when doing debugging.&lt;/p&gt;
+
+&lt;p&gt;The last three lines in the &lt;code&gt;onUpdate&lt;/code&gt; method can be modified during live coding (as shown in the demo) and the changes are immediately executed with results immediately shown. You can apply the same type of structure to your projects to pick a code fragment  you want to experiment with. Note that &lt;code&gt;ball, bkgd, xspeed, and yspeed&lt;/code&gt; are global variables; the current implementation will not work with upvalues as the newly created version of &lt;code&gt;onUpdate&lt;/code&gt; will not &quot;see&quot; the current values of those upvalues.&lt;/p&gt;
+
+&lt;p&gt;The code for this demo application is available in &lt;a href=&quot;https://github.com/pkulchenko/ZeroBraneEduPack/tree/master/corona-samples/live-coding-simple&quot;&gt;corona samples&lt;/a&gt; as part of the &lt;a href=&quot;https://github.com/pkulchenko/ZeroBraneEduPack&quot;&gt;ZeroBraneEduPack&lt;/a&gt;.&lt;/p&gt;</description>
+	<pubDate>Tue, 12 Feb 2013 00:50:59 +0000</pubDate>
+</item>
+
+</channel>
+</rss>

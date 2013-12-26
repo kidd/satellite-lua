@@ -1,0 +1,1618 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:planet="http://planet.intertwingly.net/" xmlns:indexing="urn:atom-extension:indexing" indexing:index="no"><access:restriction xmlns:access="http://www.bloglines.com/about/specs/fac-1.0" relationship="deny"/>
+  <title>Planet Lua</title>
+  <updated>2013-12-25T23:34:27Z</updated>
+  <generator uri="http://intertwingly.net/code/venus/">Venus</generator>
+  <author>
+    <name>Raimon Grau</name>
+    <email>raimonster@gmail.com</email>
+  </author>
+  <id>http://planet-lua.com/atom.xml</id>
+  <link href="http://planet-lua.com/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="http://planet-lua.com" rel="alternate"/>
+
+  <entry>
+    <id>tag:blogger.com,1999:blog-8696405790788556158.post-1742570247623193361</id>
+    <link href="http://puntoblogspot.blogspot.com/feeds/1742570247623193361/comments/default" rel="replies" title="Enviar comentarios" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/comment.g?blogID=8696405790788556158&amp;postID=1742570247623193361" rel="replies" title="0 comentarios" type="text/html"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/1742570247623193361" rel="edit" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/1742570247623193361" rel="self" type="application/atom+xml"/>
+    <link href="http://puntoblogspot.blogspot.com/2013/12/lua-and-luajit.html" rel="alternate" title="lua and luajit" type="text/html"/>
+    <title>lua and luajit</title>
+    <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">In the lua workshop, lots of nice topics were raised, but something that striked me was when everyone agreed that writting lua for luajit or for the official lua VM was totally different, and ppl had different mindsets when writting for one or the other.  I know there's a big difference on how to write bindings to C (luajit being more fond of ffi and stock lua prefering the Lua C Api.<br/><div><br/><br/>If you wanna know a bit more on how luajit works and where it gets its blazing speed, here you have some links to explore it, and to get a grasp of differences between lua implementations. <br/><br/>Agentzh talking about why he (and cloudflare) are <a href="https://groups.google.com/forum/#!searchin/openresty-en/luajit/openresty-en/Fd370Ly3Upg/tBKuMNCzDDsJ">targeting mostly luajit</a>:</div><div><br/>Nice <a href="http://cellux.github.io/articles/introduction-to-luajit-part-1/">introduction to luajit</a>. In fact it's mostly lua, but maybe the second part will be more targeted to luajit</div><div><br/>Mike Pall has written a few times about how <a href="http://article.gmane.org/gmane.comp.lang.lua.general/58908">luajit</a> <a href="http://www.freelists.org/post/luajit/How-does-LuaJITs-trace-compiler-work,1">tracer</a> <a href="http://www.reddit.com/user/mikemike">works</a>. </div><div><br/></div><div>And here it's a <a href="http://rtsisyk.github.io/luafun/intro.html">functional library</a> which, not being directly linked to luajit, it makes a really nice usage of iterators to build code structures lazily and make the traces jittable by luajit. nice code read.</div><div><br/></div><div>If you're on the stock lua vm, here you have a paper with a good overview of <a href="http://www.lua.org/doc/jucs05.pdf">how lua 5.0 was implemented</a>.<br/><br/>Also, there are a <a href="https://github.com/pygy/strung.lua">lot</a> <a href="http://worp.zevv.nl/">of</a> <a href="https://github.com/richardhundt/nyanga">libraries</a> <a href="https://cowlark.com/luje/doc/stable/doc/index.wiki">and</a> <a href="https://github.com/wg/wrk">apps</a> that are targeting just the luajit implementation. It creates some nasty splits on the community, but you know... these things happen. </div></div>
+    </content>
+    <updated>2013-12-19T02:01:23Z</updated>
+    <published>2013-12-19T02:01:00Z</published>
+    <category scheme="http://www.blogger.com/atom/ns#" term="lua"/>
+    <author>
+      <name>Raimon Grau</name>
+      <email>noreply@blogger.com</email>
+      <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+    </author>
+    <source>
+      <id>tag:blogger.com,1999:blog-8696405790788556158</id>
+      <category term="linux"/>
+      <category term="ruby"/>
+      <category term="screen"/>
+      <category term="scheme"/>
+      <category term="gtd"/>
+      <category term="squeak"/>
+      <category term="emacs"/>
+      <category term="javascript"/>
+      <category term="erlang"/>
+      <category term="lftp"/>
+      <category term="security"/>
+      <category term="smalltalk"/>
+      <category term="latex"/>
+      <category term="conkeror"/>
+      <category term="perl"/>
+      <category term="genetic algorithms"/>
+      <category term="vector linux"/>
+      <category term="lisp"/>
+      <category term="irclog"/>
+      <category term="lua"/>
+      <category term="git"/>
+      <category term="python"/>
+      <category term="rails"/>
+      <category term="zsh"/>
+      <category term="TodayILearnt"/>
+      <category term="scp"/>
+      <category term="vim"/>
+      <category term="general programming"/>
+      <category term="Io"/>
+      <category term="mercurial"/>
+      <category term="mis cosas"/>
+      <author>
+        <name>Raimon Grau</name>
+        <email>noreply@blogger.com</email>
+        <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+      </author>
+      <link href="http://puntoblogspot.blogspot.com/feeds/posts/default" rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml"/>
+      <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/-/lua" rel="self" type="application/atom+xml"/>
+      <link href="http://puntoblogspot.blogspot.com/search/label/lua" rel="alternate" type="text/html"/>
+      <link href="http://pubsubhubbub.appspot.com/" rel="hub" type="text/html"/>
+      <subtitle>Technical stuff, mostly</subtitle>
+      <title>puntoblogspot</title>
+      <updated>2013-12-19T02:01:23Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:blogger.com,1999:blog-8696405790788556158.post-4286959252711803356</id>
+    <link href="http://puntoblogspot.blogspot.com/feeds/4286959252711803356/comments/default" rel="replies" title="Enviar comentarios" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/comment.g?blogID=8696405790788556158&amp;postID=4286959252711803356" rel="replies" title="0 comentarios" type="text/html"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/4286959252711803356" rel="edit" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/4286959252711803356" rel="self" type="application/atom+xml"/>
+    <link href="http://puntoblogspot.blogspot.com/2013/12/reading-lua-source.html" rel="alternate" title="Reading lua source" type="text/html"/>
+    <title>Reading lua source</title>
+    <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">As I'm digging deeper into lua, I'm from time to time looking at the lua C source code itself, to see how something is implemented.<br/><br/>It's nice to see a highly commented code with some quite clear parts which goes right to the point. Quite tough though and dense at many other parts.  The whole lua 5.2.2 has a bit more than 14K lines. Not bad for the language, compiler, vm, repl, C Api, and libs.<br/><br/>Anyway, here's a couple of links I found useful in case you want to have a deep look at the lua source:<br/><br/><ul><li><a href="http://www.reddit.com/comments/63hth/ask_reddit_which_oss_codebases_out_there_are_so/c02pxbp">Mike Pall suggestions on a sane reading order of the lua 5.1 source</a></li><li><a href="http://lua-users.org/wiki/LuaSource">Guide from the Lua Wiki </a></li></ul></div>
+    </content>
+    <updated>2013-12-10T01:07:29Z</updated>
+    <published>2013-12-10T00:56:00Z</published>
+    <category scheme="http://www.blogger.com/atom/ns#" term="lua"/>
+    <author>
+      <name>Raimon Grau</name>
+      <email>noreply@blogger.com</email>
+      <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+    </author>
+    <source>
+      <id>tag:blogger.com,1999:blog-8696405790788556158</id>
+      <category term="linux"/>
+      <category term="ruby"/>
+      <category term="screen"/>
+      <category term="scheme"/>
+      <category term="gtd"/>
+      <category term="squeak"/>
+      <category term="emacs"/>
+      <category term="javascript"/>
+      <category term="erlang"/>
+      <category term="lftp"/>
+      <category term="security"/>
+      <category term="smalltalk"/>
+      <category term="latex"/>
+      <category term="conkeror"/>
+      <category term="perl"/>
+      <category term="genetic algorithms"/>
+      <category term="vector linux"/>
+      <category term="lisp"/>
+      <category term="irclog"/>
+      <category term="lua"/>
+      <category term="git"/>
+      <category term="python"/>
+      <category term="rails"/>
+      <category term="zsh"/>
+      <category term="TodayILearnt"/>
+      <category term="scp"/>
+      <category term="vim"/>
+      <category term="general programming"/>
+      <category term="Io"/>
+      <category term="mercurial"/>
+      <category term="mis cosas"/>
+      <author>
+        <name>Raimon Grau</name>
+        <email>noreply@blogger.com</email>
+        <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+      </author>
+      <link href="http://puntoblogspot.blogspot.com/feeds/posts/default" rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml"/>
+      <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/-/lua" rel="self" type="application/atom+xml"/>
+      <link href="http://puntoblogspot.blogspot.com/search/label/lua" rel="alternate" type="text/html"/>
+      <link href="http://pubsubhubbub.appspot.com/" rel="hub" type="text/html"/>
+      <subtitle>Technical stuff, mostly</subtitle>
+      <title>puntoblogspot</title>
+      <updated>2013-12-19T02:01:23Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:notebook.kulchenko.com,2013://2.178</id>
+    <link href="http://notebook.kulchenko.com/zerobrane/lua-package-managers-luadist-luarocks-and-integration-with-zerobrane-studio" rel="alternate" type="text/html"/>
+    <title>Lua package managers and integration with ZeroBrane Studio</title>
+    <summary>Lua ecosystem has two package managers: LuaDist and LuaRocks. Both managers allow users to install Lua and C modules and work on Windows, Mac OS X and Linux, but have some important differences in how they operate, which I'll briefly...</summary>
+    <content type="xhtml" xml:lang="en"><div xmlns="http://www.w3.org/1999/xhtml"><p>Lua ecosystem has two package managers: <a href="http://luadist.org/">LuaDist</a> and <a href="http://luarocks.org/">LuaRocks</a>. Both managers allow users to install Lua and C modules and work on Windows, Mac OS X and Linux, but have some important differences in how they operate, which I'll briefly go over.</p>
+
+<p><b>LuaDist</b>:</p>
+
+
+<ul>
+<li>Unified build system for all modules based on CMake.</li>
+<li>Mixed binary/source distribution that allows to use whatever dependency is available in the <a href="http://github.com/LuaDist">repository</a>.</li>
+<li>Everything is stored in git (using github as host) including the <a href="http://github.com/LuaDist/Repository">repository manifest</a>. Tags are used for versions and branches for binary distributions.</li>
+<li>Provides "batteries included" binary distributions (as a successor to Lua for Windows). </li>
+<li>Relies on few Lua modules (luasocket, lfs, lua-git) for its implementation.</li>
+<li>Allows for building the modules manually without using LuaDist.</li>
+<li>Can be used from a command line or as a library (<code>local ld = require "dist";  ld.install("luaexpat")</code>)</li>
+<li>Uses dist.info files for package specification information (mostly for dependency tracking, no build information).</li>
+<li>Provides support for packaging modules for distribution.</li>
+<li>Includes about 260 projects (as of November 2013; based on the number of sub-modules in the repository).</li>
+<li>Includes a good number of pre-compiled binaries for Windows, but many for outdated module versions.</li>
+</ul>
+
+
+
+<p><b>LuaRocks</b>:</p>
+
+
+<ul>
+<li>Supports local and remote repositories. </li>
+<li>Distributed as a Lua scripts without dependencies, but relies on Unix tools for module deployment and installation.</li>
+<li>Uses .rockspec files as a package specification file.</li>
+<li>Uses "native" build instructions for each rock.</li>
+<li>Includes rocks for 330 projects (as of November 2013).</li>
+<li>Have several repositories: <a href="http://luarocks.org/repositories/rocks">main one</a> with manual curation and <a href="http://rocks.moonscript.org/">rocks.moonscript repository</a> that supports (non-curated) rock submission and download statistics.</li>
+</ul>
+
+
+
+<p>As we are talking about Lua module distribution, I'll also mention a nice project of Pierre Chapuis: <a href="https://lua-toolbox.com/">lua toolbox</a>. It provides a list of modules with short descriptions and their endorsement by various users (along with a simple tagging mechanism).</p>
+
+<p>Both systems are easy to use as command-line tools. When you have one of the package managers installed, it's a matter of running <code>luarocks install module</code> or <code>luadist install module</code> commands to get the modules you need (assuming you have the tools available and don't run into compilation issues). It is certainly possible to setup LuaDist and LuaRocks to deploy modules to the directories you need and make those directories available to your project (see for example this nice write up by Thijs Schreijer on <a href="http://www.thijsschreijer.nl/blog/?p=772">Setting up Lua installation on Windows using Lua Rocks and ZeroBrane Studio</a>), but I'd prefer to have something simpler for users who may be new to programming and Lua. </p>
+
+<p>I teach a semester long computer science class at a local high school during summer (using Lua and <a href="http://studio.zerobrane.com">ZeroBrane Studio</a>) and sometimes want to install Lua modules like <a href="http://stevedonovan.github.io/Penlight">penlight</a> to my students' computers and use them from ZeroBrane Studio. I have 18 students using their own laptops running different systems and want to be able to say "install penlight" and then make "require 'pl.strict'" to work in their Lua scripts. The coming version (v0.40) of ZeroBrane Studio (and the <a href="https://github.com/pkulchenko/ZeroBraneStudio">current master branch</a>) integrates with LuaDist and allows you to do just that.</p>
+        <p>ZeroBrane Studio now includes LuaDist module dependencies and if you install <a href="https://github.com/pkulchenko/ZeroBraneStudio/issues/225#issuecomment-27532676">luadist plugin</a>, you will be able to <b>run LuaDist commands in the Local console of ZeroBrane Studio</b>:</p>
+
+<pre><code>&gt; luadist.install('penlight')
+Running 'install' for Lua 5.1 in '...\luadist\5.1'.
+Downloading repository information...
+Finding out available versions of penlight...
+ - trying another candidate due to: Error when resolving dependencies: Error when retrieving the info about 'penlight': Error fetching package 'penlight-1.2.1' from 'git://github.com/LuaDist/penlight.git' to '...\luadist\5.1\tmp': Binary version of module not available and using source modules disabled.
+Getting penlight-1.1 (binary)...
+Finding out available versions of luafilesystem...
+Getting luafilesystem-1.6.2 (binary)...
+Finding out available versions of alien...
+Getting alien-0.7.0 (binary)...
+Finding out available versions of libffi...
+Getting libffi-3.0.9 (binary)...
+Installation successful.
+Completed in 25 second(s).
+
+&gt; require 'pl.strict'
+{closed_module = function() --[[..skipped..]] end, make_all_strict = function() --[[..skipped..]] end, module = function() --[[..skipped..]] end} --[[table: 0x03e4b790]]</code></pre>
+
+<p>You can then use penlight modules from the console or from your Lua scripts. Some of the other commands you may use:</p>
+
+
+<ul>
+<li><code>luadist.install('lpeg')</code> -- install lpeg <b>binary</b> version for Lua 5.1 on Windows/OSX (if available) and <b>source</b> version on Linux.</li>
+<li><code>luadist.remove('lpeg')</code> -- remove lpeg module (for Lua 5.1)</li>
+<li><code>luadist.install('lpeg', {source = true})</code> -- install lpeg source version (will likely get Lua as well)</li>
+<li><code>luadist.install('lpeg', {source = true, debug = true})</code> -- include all cmake commands and verbose output</li>
+<li><code>luadist.install('lpeg', {source = true, verbose = true})</code> -- include verbose output, but not cmake commands</li>
+<li><code>luadist.install(5.2, 'lpeg', {source = true})</code> -- install lpeg source version for Lua 5.2 (will likely get Lua as well)</li>
+<li><code>luadist.install('lua-5.1.3')</code> -- install specific Lua version; you may need to remove the current one first using <code>luadist.remove('lua-5.1.5')</code> command.</li>
+</ul>
+
+
+
+<p>You can also try other LuaDist commands <code>show</code>, <code>info</code>, <code>search</code>, <code>tree</code>, and so on. All commands that don't include Lua version will work with default Lua 5.1 interpreter and if you <b>include 5.2</b>, the commands will use 5.2 interpreter. Modules for Lua 5.1 and Lua 5.2 are installed into different folders, so you can use both interpreters without conflicts.</p>
+
+<p>If you get an error during installation, try running the same command with <code>debug=true</code> option to see what the actual cmake error is.</p>
+
+<p>What <b>works</b>:</p>
+
+
+<ul>
+<li>Windows binary installs (where available) and source installations using Lua 5.1 and Lua 5.2. Tested with cmake 2.8.10+ and <a href="http://tdm-gcc.tdragon.net/download">mingw-tdm</a>.</li>
+<li><span class="caps">OSX </span>source installs using Lua 5.1 and Lua 5.2 (configured to build universal binaries); you'll need CMake 2.8.10+.</li>
+<li>Linux source installs using Lua 5.1 and Lua 5.2 (both 32bit and 64bit)</li>
+</ul>
+
+
+
+<p>What <b>doesn't work</b>:</p>
+
+
+<ul>
+<li>Windows binary install using Lua 5.2 (this retrieves the same module as for Lua 5.1, which doesn't load)</li>
+</ul></div>
+    </content>
+    <updated>2013-12-08T01:16:08Z</updated>
+    <published>2013-12-04T01:18:12Z</published>
+    <category scheme="http://www.sixapart.com/ns/types#category" term="zerobrane"/>
+    <category label="lua" scheme="http://www.sixapart.com/ns/types#tag" term="lua"/>
+    <category label="plugin" scheme="http://www.sixapart.com/ns/types#tag" term="plugin"/>
+    <category label="zerobrane" scheme="http://www.sixapart.com/ns/types#tag" term="zerobrane"/>
+    <author>
+      <name>Paul Kulchenko</name>
+    </author>
+    <source>
+      <id>tag:notebook.kulchenko.com,2009-04-10://2</id>
+      <link href="http://notebook.kulchenko.com/" rel="alternate" type="text/html"/>
+      <link href="http://notebook.kulchenko.com/atom.xml" rel="self" type="application/atom+xml"/>
+      <subtitle>By seeking, you will discover...</subtitle>
+      <title>ZeroBrane</title>
+      <updated>2013-12-08T01:09:05Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:notebook.kulchenko.com,2013://2.179</id>
+    <link href="http://notebook.kulchenko.com/zerobrane/saving-debugging-output-to-file" rel="alternate" type="text/html"/>
+    <title>Saving debugging output to a file</title>
+    <summary>ZeroBrane Studio is often used for remote debugging, when the application being debugged is running on a different computer or a device, and it is very convenient to be able to "redirect" its printed output to the IDE. The IDE...</summary>
+    <content type="xhtml" xml:lang="en"><div xmlns="http://www.w3.org/1999/xhtml"><p>ZeroBrane Studio is often used for <b>remote debugging</b>, when the application being debugged is running on a different computer or a device, and it is very convenient to be able to "redirect" its printed output to the <span class="caps">IDE.</span> The <span class="caps">IDE </span>supports this functionality and not only allows <b>"redirecting" of the printed output</b>, but also <b>pretty prints</b> the results such that <code>local t = {a = 1, b = 2} print(t)</code> will print <code>{a = 1, b = 2}</code>. This option is turned on by default for some interpreters and can be explicitly enabled using <a href="http://studio.zerobrane.com/doc-general-preferences.html#debugger">debugger.redirect</a> configuration option.</p>
+
+<p>This is all good, but what if you have a long running process and want to be able to <b>use this "remote" printing as a log file</b>. The plugin below allows you to do just that: it will dump all the "remote" output to a file (<code>output.log</code> by default) in the current project folder. It also limits the number of records in the Output window (100 by default) to allow you to generate a large number of records without taking more memory.</p>
+        <p>You can save the plugin to <code>packages/outputtofile.lua</code> and after restarting the <span class="caps">IDE </span>all the <b>remote output will be dumped to a local log file</b>.</p>
+
+<pre><code>local filter, fname
+local function append(fname, s)
+  if not fname then return end
+  local f = io.open(fname, "a")
+    or error(("Can't open file '%s' for writing"):format(fname))
+  f:write(s)
+  f:close()
+end
+
+return {
+  name = "Output to file",
+  description = "Redirects debugging output to a file.",
+  author = "Paul Kulchenko",
+  version = 0.1,
+
+  onRegister = function(self)
+    local config = ide:GetConfig()
+    local output = ide:GetOutput()
+    local maxlines = self:GetConfig().maxlines or 100
+
+    filter = config.debugger.outputfilter
+    config.debugger.outputfilter = function(s)
+      local start  = output:GetLineCount() - maxlines
+      if start &gt;= 0 then -- trim the output to the right number of lines
+        local readonly = output:GetReadOnly()
+        output:SetReadOnly(false)
+        output:SetTargetStart(0)
+        output:SetTargetEnd(output:PositionFromLine(start+1))
+        output:ReplaceTarget("")
+        output:SetReadOnly(readonly)
+      end
+      append(fname, s)
+      return s
+    end
+  end,
+
+  onUnRegister = function(self)
+    ide:GetConfig().debugger.outputfilter = filter
+  end,
+  onProjectLoad = function(self, project)
+    fname = MergeFullPath(project, self:GetConfig().fname or "output.log")
+  end,
+}</code></pre></div>
+    </content>
+    <updated>2013-12-08T01:09:05Z</updated>
+    <published>2013-12-08T00:19:25Z</published>
+    <category scheme="http://www.sixapart.com/ns/types#category" term="zerobrane"/>
+    <category label="ide" scheme="http://www.sixapart.com/ns/types#tag" term="ide"/>
+    <category label="lua" scheme="http://www.sixapart.com/ns/types#tag" term="lua"/>
+    <category label="plugin" scheme="http://www.sixapart.com/ns/types#tag" term="plugin"/>
+    <category label="zerobrane" scheme="http://www.sixapart.com/ns/types#tag" term="zerobrane"/>
+    <author>
+      <name>Paul Kulchenko</name>
+    </author>
+    <source>
+      <id>tag:notebook.kulchenko.com,2009-04-10://2</id>
+      <link href="http://notebook.kulchenko.com/" rel="alternate" type="text/html"/>
+      <link href="http://notebook.kulchenko.com/atom.xml" rel="self" type="application/atom+xml"/>
+      <subtitle>By seeking, you will discover...</subtitle>
+      <title>ZeroBrane</title>
+      <updated>2013-12-08T01:09:05Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:notebook.kulchenko.com,2013://2.175</id>
+    <link href="http://notebook.kulchenko.com/zerobrane/remote-file-editing-while-debugging" rel="alternate" type="text/html"/>
+    <title>Remote file editing while debugging</title>
+    <summary>After ZeroBrane Studio for Vera was released, I received several questions whether it is possible to load files from the device and edit them. The product already allows to upload files to Vera devices and to download log files, but...</summary>
+    <content type="xhtml" xml:lang="en"><div xmlns="http://www.w3.org/1999/xhtml"><p>After <a href="http://studio.zerobrane.com/vera.html">ZeroBrane Studio for Vera</a> was released, I received several questions whether it is possible to load files from the device and edit them. The product already allows to upload files to Vera devices and to download log files, but it doesn't support <b>editing of remote files</b> and I thought it would be useful and interesting to implement this.</p>
+
+<p>What you see below is the plugin that does just that. It adds a new menu item (<code>File | Open Remotely...</code>) that asks for a file name and then loads that file in a new editor tab. You can edit and save that file as you'd do with any other file. The main difference is that it only <b>works when a debugging session is in progress</b> as it uses the debugging mechanism to retrieve and save the files.</p>
+        <p>To install this plugin, you need to save it as <code>remoteedit.lua</code> into <code>packages/</code> directory inside ZeroBrane Studio or inside <code>&lt;HOME&gt;/.zbstudio</code> directory. If you are on <span class="caps">OSX, </span>use the later location (<code>&lt;HOME&gt;/.zbstudio/packages/remoteedit.lua</code>) to avoid overwriting the plugin when you upgrade ZeroBrane Studio.</p>
+
+<pre><code>local G = ...
+local id = G.ID("remoteedit.openremotefile")
+local lastfile, menuid, debugger = ""
+local editors = {}
+local function reportErr(err) return(err:gsub('.-:%d+:%s*','')) end
+
+local mobdebug = require("mobdebug")
+local copas = require("copas")
+
+return {
+  name = "Remote edit plugin",
+  description = "Allows to edit files remotely while debugging is in progress.",
+  author = "Paul Kulchenko",
+  version = 0.1,
+
+  onRegister = function(self)
+    local menu = ide:GetMenuBar():GetMenu(ide:GetMenuBar():FindMenu(TR("&amp;File")))
+    menuid = menu:Insert(2, id, "Open Remotely...")
+    debugger = ide.debugger
+
+    ide:GetMainFrame():Connect(id, wx.wxEVT_COMMAND_MENU_SELECTED,
+      function()
+        local file = wx.wxGetTextFromUser("Enter name (with path) of the remote file",
+          "Open remote file", lastfile)
+        if file and #file &gt; 0 then
+          self:loadFile(file)
+          lastfile = file
+        end
+      end)
+    ide:GetMainFrame():Connect(id, wx.wxEVT_UPDATE_UI,
+      function (event) event:Enable(debugger.server and not debugger.running) end)
+
+    -- this is a workaround for an API call missing in v0.39
+    if tonumber(ide.VERSION) and tonumber(ide.VERSION) &lt;= 0.39 then
+      local sf = SaveFile
+      SaveFile = function(...)
+        if PackageEventHandle("onEditorPreSave", ...) ~= false then sf(...) end
+      end
+    end
+  end,
+
+  onUnRegister = function(self)
+    local menu = ide:GetMenuBar():GetMenu(ide:GetMenuBar():FindMenu(TR("&amp;File")))
+    ide:GetMainFrame():Disconnect(id, wx.wxID_ANY, wx.wxEVT_COMMAND_MENU_SELECTED)
+    if menuid then menu:Destroy(menuid) end
+  end,
+
+  onEditorClose = function(self, editor)
+    editors[editor] = nil
+  end,
+
+  onEditorPreSave = function(self, editor, filepath)
+    local remote = editors[editor]
+    if remote and ide:GetDocument(editor):IsModified() then
+      self:saveFile(remote, editor)
+    end
+    return false
+  end,
+
+  loadFile = function(self, remote)
+    if not debugger then return end
+    if not debugger.server or debugger.running then return end
+    local code = ([[(function() local f, err = io.open(%s); if not f then error(err) end; local c = f:read('*a'); f:close(); return c end)()]])
+      :format(mobdebug.line(remote))
+    copas.addthread(function()
+      local res, _, err = debugger.evaluate(code)
+      if err then
+        DisplayOutputLn(("Failed to load file '%s': %s.")
+          :format(remote, reportErr(err)))
+        return
+      end
+
+      local ok, content = LoadSafe("return "..res)
+      if ok then
+        DisplayOutputLn(("Loaded file '%s'."):format(remote))
+        self.onIdleOnce = function()
+          local editor = NewFile(remote)
+          editor:SetText(content)
+          editor:SetSavePoint()
+          editors[editor] = remote
+        end
+      else
+        DisplayOutputLn(("Failed to load file '%s': %s.")
+          :format(remote, content))
+      end
+    end)
+  end,
+
+  saveFile = function(self, remote, editor)
+    if not debugger then return end
+    if not debugger.server or debugger.running then return end
+    local content = editor:GetText()
+    local code = ([[local f, err = io.open(%s, 'w'); if not f then error(err) end; f:write(%s); f:close()]])
+      :format(mobdebug.line(remote), mobdebug.line(content))
+    copas.addthread(function()
+      local err = select(3, debugger.execute(code))
+      if not err then
+        editor:SetSavePoint()
+        DisplayOutputLn(("Saved file '%s'."):format(remote))
+      else
+        DisplayOutputLn(("Failed to save file '%s': %s.")
+          :format(remote, reportErr(err)))
+      end
+    end)
+  end,
+}</code></pre></div>
+    </content>
+    <updated>2013-12-03T18:36:42Z</updated>
+    <published>2013-11-30T05:46:56Z</published>
+    <category scheme="http://www.sixapart.com/ns/types#category" term="zerobrane"/>
+    <category label="vera" scheme="http://www.sixapart.com/ns/types#tag" term="vera"/>
+    <category label="zerobrane" scheme="http://www.sixapart.com/ns/types#tag" term="zerobrane"/>
+    <author>
+      <name>Paul Kulchenko</name>
+    </author>
+    <source>
+      <id>tag:notebook.kulchenko.com,2009-04-10://2</id>
+      <link href="http://notebook.kulchenko.com/" rel="alternate" type="text/html"/>
+      <link href="http://notebook.kulchenko.com/atom.xml" rel="self" type="application/atom+xml"/>
+      <subtitle>By seeking, you will discover...</subtitle>
+      <title>ZeroBrane</title>
+      <updated>2013-12-08T01:09:05Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:blogger.com,1999:blog-8696405790788556158.post-1850212486864828574</id>
+    <link href="http://puntoblogspot.blogspot.com/feeds/1850212486864828574/comments/default" rel="replies" title="Enviar comentarios" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/comment.g?blogID=8696405790788556158&amp;postID=1850212486864828574" rel="replies" title="0 comentarios" type="text/html"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/1850212486864828574" rel="edit" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/1850212486864828574" rel="self" type="application/atom+xml"/>
+    <link href="http://puntoblogspot.blogspot.com/2013/12/lua-workshop-2013.html" rel="alternate" title="Lua Workshop 2013" type="text/html"/>
+    <title>Lua Workshop 2013</title>
+    <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">I was lucky enough to be in the <a href="http://www.lua.org/wshop13.html">Lua Workshop 2013</a>. Held in Toulouse.<br/><br/>I had lots of fun there, both in the conference and outside it. For me, one of the most important topics raised were the speciation of the Lua world.  Stock Lua, LuaJIT, openresty, luvit ... Many different environments for which lots of packages do not work in different environments (lua-redis and lua-resty-redis, for example). <br/><br/>This 'problem' extends to other parts of the language and comunity, like packaging. You cannot use <a href="http://luarocks.org/">luarocks</a> for <a href="http://luvit.io/">Luvit</a>, or, the <a href="http://openresty.org/">openresty</a> packages are not in LuaRocks. The community is aware of that, and trying to find some compromises to create a healthy ecosystem.  I loved when LuaDist, LuaRocks and the debian packager of lua started an 'impro' discussion on issues they had, pros and cons.<br/><br/>Other talks were also amazing, like <a href="http://www.inf.puc-rio.br/~roberto/">Roberto</a>'s one: 'Lua, past present and future'. Great way to expose the Lua history and philosophy and reasoning behind some of the features that Lua came to have nowadays. (Spoiler for the future: They are working on Macros!!!)<br/><br/>People modifying the vm to adapt it to their needs were also  really wicked cool things we saw there.<br/><br/>Thanks to <a href="http://www.3scale.net/">3scale</a> for sponsoring my trip, and to the Lua community for being so awesome :).</div>
+    </content>
+    <updated>2013-12-02T23:46:00Z</updated>
+    <published>2013-12-02T23:46:00Z</published>
+    <category scheme="http://www.blogger.com/atom/ns#" term="lua"/>
+    <author>
+      <name>Raimon Grau</name>
+      <email>noreply@blogger.com</email>
+      <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+    </author>
+    <source>
+      <id>tag:blogger.com,1999:blog-8696405790788556158</id>
+      <category term="linux"/>
+      <category term="ruby"/>
+      <category term="screen"/>
+      <category term="scheme"/>
+      <category term="gtd"/>
+      <category term="squeak"/>
+      <category term="emacs"/>
+      <category term="javascript"/>
+      <category term="erlang"/>
+      <category term="lftp"/>
+      <category term="security"/>
+      <category term="smalltalk"/>
+      <category term="latex"/>
+      <category term="conkeror"/>
+      <category term="perl"/>
+      <category term="genetic algorithms"/>
+      <category term="vector linux"/>
+      <category term="lisp"/>
+      <category term="irclog"/>
+      <category term="lua"/>
+      <category term="git"/>
+      <category term="python"/>
+      <category term="rails"/>
+      <category term="zsh"/>
+      <category term="TodayILearnt"/>
+      <category term="scp"/>
+      <category term="vim"/>
+      <category term="general programming"/>
+      <category term="Io"/>
+      <category term="mercurial"/>
+      <category term="mis cosas"/>
+      <author>
+        <name>Raimon Grau</name>
+        <email>noreply@blogger.com</email>
+        <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+      </author>
+      <link href="http://puntoblogspot.blogspot.com/feeds/posts/default" rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml"/>
+      <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/-/lua" rel="self" type="application/atom+xml"/>
+      <link href="http://puntoblogspot.blogspot.com/search/label/lua" rel="alternate" type="text/html"/>
+      <link href="http://pubsubhubbub.appspot.com/" rel="hub" type="text/html"/>
+      <subtitle>Technical stuff, mostly</subtitle>
+      <title>puntoblogspot</title>
+      <updated>2013-12-19T02:01:23Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:notebook.kulchenko.com,2013://2.176</id>
+    <link href="http://notebook.kulchenko.com/zerobrane/debugging-on-vera-devices-with-zerobrane-studio" rel="alternate" type="text/html"/>
+    <title>Debugging on Vera devices with ZeroBrane Studio</title>
+    <summary>ZeroBrane Studio has already been used to debug Lua in various applications, from game engines to medical systems. Several months ago one of the ZeroBrane Studio users asked if it would be possible to debug Lua application running on Vera...</summary>
+    <content type="xhtml" xml:lang="en"><div xmlns="http://www.w3.org/1999/xhtml"><p><a href="http://studio.zerobrane.com">ZeroBrane Studio</a> has already been used to debug Lua in various applications, from <a href="http://notebook.kulchenko.com/zerobrane/love2d-debugging">game</a> <a href="http://notebook.kulchenko.com/zerobrane/debugging-and-live-coding-with-corona-sdk-applications-and-zerobrane-studio">engines</a> to <a href="http://ingenium.home.xs4all.nl/dicom.html">medical systems</a>. Several months ago one of the ZeroBrane Studio users asked if it would be possible to debug Lua application running on <a href="http://getvera.com">Vera home automation devices</a>. It turned out to be possible, but not trivial and I decided to release this integration as a separate product that allows Vera users to debug their Lua applications while they are running on Vera devices.</p>
+
+<p>These devices look like network routers with additional functionality to control various devices and access sensors using <a href="http://en.wikipedia.org/wiki/Z-Wave">z-wave</a> protocol. This integration allows you to write a Lua script that may start a sprinkler system at a specific time, but only if it wasn't raining that day. Or to turn lights on when a motion detector is triggered. Or to turn the heating system on before you come home. You can probably come up with many other interesting uses that are only limited by the devices you may have (and your budget).</p>
+
+<p>As you can see in the demo (you may want to switch to 720p for better quality), <a href="http://studio.zerobrane.com/vera.html">ZeroBrane Studio for Vera</a> allows Vera users to not only debug their Lua scripts, but also provides auto-complete for luup (Lua Universal PnP <span class="caps">API</span>) calls, ability to upload files and download logs, restart the Lua engine and <a href="http://studio.zerobrane.com/vera-features.html">some other device-specific functions</a>.</p>
+
+<p/>
+
+<p>The <a href="http://studio.zerobrane.com/vera-documentation.html">documentation page</a> for the project provides links to Vera resources and detailed descriptions for debugging of Lua <a href="http://studio.zerobrane.com/vera-debugging.html">scripts started the <span class="caps">IDE</span></a> and scripts in plugins and scenes that are <a href="http://studio.zerobrane.com/vera-remote-debugging.html">triggered from the device</a> itself.</p></div>
+    </content>
+    <updated>2013-11-30T20:21:35Z</updated>
+    <published>2013-11-27T18:20:27Z</published>
+    <category scheme="http://www.sixapart.com/ns/types#category" term="zerobrane"/>
+    <category label="vera" scheme="http://www.sixapart.com/ns/types#tag" term="vera"/>
+    <category label="zerobrane" scheme="http://www.sixapart.com/ns/types#tag" term="zerobrane"/>
+    <author>
+      <name>Paul Kulchenko</name>
+    </author>
+    <source>
+      <id>tag:notebook.kulchenko.com,2009-04-10://2</id>
+      <link href="http://notebook.kulchenko.com/" rel="alternate" type="text/html"/>
+      <link href="http://notebook.kulchenko.com/atom.xml" rel="self" type="application/atom+xml"/>
+      <subtitle>By seeking, you will discover...</subtitle>
+      <title>ZeroBrane</title>
+      <updated>2013-12-08T01:09:05Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:blogger.com,1999:blog-8696405790788556158.post-5237196832766338834</id>
+    <link href="http://puntoblogspot.blogspot.com/feeds/5237196832766338834/comments/default" rel="replies" title="Enviar comentarios" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/comment.g?blogID=8696405790788556158&amp;postID=5237196832766338834" rel="replies" title="0 comentarios" type="text/html"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/5237196832766338834" rel="edit" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/5237196832766338834" rel="self" type="application/atom+xml"/>
+    <link href="http://puntoblogspot.blogspot.com/2013/10/i-love-how-simple-and-codeless-it-looks.html" rel="alternate" title="Memoize in lua" type="text/html"/>
+    <title>Memoize in lua</title>
+    <content>I love how simple and codeless it looks.</content>
+    <updated>2013-10-26T20:46:02Z</updated>
+    <published>2013-10-26T20:45:00Z</published>
+    <category scheme="http://www.blogger.com/atom/ns#" term="lua"/>
+    <author>
+      <name>Raimon Grau</name>
+      <email>noreply@blogger.com</email>
+      <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+    </author>
+    <source>
+      <id>tag:blogger.com,1999:blog-8696405790788556158</id>
+      <category term="linux"/>
+      <category term="ruby"/>
+      <category term="screen"/>
+      <category term="scheme"/>
+      <category term="gtd"/>
+      <category term="squeak"/>
+      <category term="emacs"/>
+      <category term="javascript"/>
+      <category term="erlang"/>
+      <category term="lftp"/>
+      <category term="security"/>
+      <category term="smalltalk"/>
+      <category term="latex"/>
+      <category term="conkeror"/>
+      <category term="perl"/>
+      <category term="genetic algorithms"/>
+      <category term="vector linux"/>
+      <category term="lisp"/>
+      <category term="irclog"/>
+      <category term="lua"/>
+      <category term="git"/>
+      <category term="python"/>
+      <category term="rails"/>
+      <category term="zsh"/>
+      <category term="TodayILearnt"/>
+      <category term="scp"/>
+      <category term="vim"/>
+      <category term="general programming"/>
+      <category term="Io"/>
+      <category term="mercurial"/>
+      <category term="mis cosas"/>
+      <author>
+        <name>Raimon Grau</name>
+        <email>noreply@blogger.com</email>
+        <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+      </author>
+      <link href="http://puntoblogspot.blogspot.com/feeds/posts/default" rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml"/>
+      <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/-/lua" rel="self" type="application/atom+xml"/>
+      <link href="http://puntoblogspot.blogspot.com/search/label/lua" rel="alternate" type="text/html"/>
+      <link href="http://pubsubhubbub.appspot.com/" rel="hub" type="text/html"/>
+      <subtitle>Technical stuff, mostly</subtitle>
+      <title>puntoblogspot</title>
+      <updated>2013-12-19T02:01:23Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:notebook.kulchenko.com,2013://2.174</id>
+    <link href="http://notebook.kulchenko.com/business/zerobrane-application-for-small-business-grant" rel="alternate" type="text/html"/>
+    <title>ZeroBrane application for small business grant</title>
+    <summary>ZeroBrane LLC, the company behind ZeroBrane Studio, has applied for a small business grant from Chase. We now need 250 votes to get to the second round where applications are being considered by a panel of judges and would appreciate...</summary>
+    <content type="xhtml" xml:lang="en"><div xmlns="http://www.w3.org/1999/xhtml"><p>ZeroBrane <span class="caps">LLC, </span>the company behind <a href="http://studio.zerobrane.com">ZeroBrane Studio</a>, has applied for a <a href="https://www.missionmainstreetgrants.com/">small business grant from Chase</a>.  We now <b>need 250 votes to get to the second round</b> where applications are being considered by a panel of judges and <b>would appreciate your help</b>.</p>
+
+<p>Please <a href="https://www.missionmainstreetgrants.com/business/detail/71974"><b>cast your vote</b></a> and <b>spread the word</b> to help us be considered for the grant! The grant will allow us to <b>provide more educational content, enable collaborative editing, add version control integration, and more</b>.</p>
+
+<p>The voting is only available through Facebook Connect; if you don't see your vote accepted, try enabling popups and disabling Facebook filters you may have. Thank you!</p></div>
+    </content>
+    <updated>2013-10-22T04:08:29Z</updated>
+    <published>2013-10-21T21:41:24Z</published>
+    <category scheme="http://www.sixapart.com/ns/types#category" term="business"/>
+    <author>
+      <name>Paul Kulchenko</name>
+    </author>
+    <source>
+      <id>tag:notebook.kulchenko.com,2009-04-10://2</id>
+      <link href="http://notebook.kulchenko.com/" rel="alternate" type="text/html"/>
+      <link href="http://notebook.kulchenko.com/atom.xml" rel="self" type="application/atom+xml"/>
+      <subtitle>By seeking, you will discover...</subtitle>
+      <title>ZeroBrane</title>
+      <updated>2013-12-08T01:09:05Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:notebook.kulchenko.com,2013://2.168</id>
+    <link href="http://notebook.kulchenko.com/zerobrane/zerobrane-studio-bug-bounty" rel="alternate" type="text/html"/>
+    <title>ZeroBrane Studio Bug Bounty</title>
+    <summary>[Update 10/18/2013] The bounty was for a specific issue with ZeroBrane Studio IDE (as documented below) and not for any problem related to this website. [Update 10/04/2013] The bounty has been withdrawn as the issue appears to be fixed. If...</summary>
+    <content type="xhtml" xml:lang="en"><div xmlns="http://www.w3.org/1999/xhtml"><p><strong>[Update 10/18/2013]</strong> The bounty was for a specific issue with ZeroBrane Studio <span class="caps">IDE </span>(as documented below) and not for any problem related to this website.</p>
+
+<p><strong>[Update 10/04/2013]</strong> The bounty has been <b>withdrawn</b> as the issue appears to be <a href="https://github.com/pkulchenko/ZeroBraneStudio/issues/164#ref-commit-762baba">fixed</a>. If you can still reproduce it with the current master, please leave a comment.</p>
+
+<p>Bug bounty programs are nothing new; <a href="http://www.google.com/about/appsecurity/reward-program/">Google</a>, <a href="http://www.mozilla.org/security/bug-bounty.html">Mozilla</a>, <a href="http://www.microsoft.com/security/msrc/report/bountyprograms.aspx">Microsoft</a> and <a href="http://blog.hackaserver.com/bug-bounty-programs-part-1/">many</a> <a href="http://www.tarsnap.com/bugbounty.html">others</a> use them to find security vulnerabilities and bugs (and these program are <a href="http://it.slashdot.org/story/13/07/10/1634259/study-finds-bug-bounty-programs-extremely-cost-effective">reported</a> to be cost effective). There has been an issue in <a href="http://studio.zerobrane.com">ZeroBrane Studio</a> that have been bugging me for almost two months, so I decided to <b>offer a bounty for it</b>.</p>
+
+<p><img alt="" class="right" height="240" src="http://notebook.kulchenko.com/images/gold-50-dollars.png" style="float: right;" width="241"/></p>
+
+<p>I offer $250 dollars to the first person who can figure out what's causing the bug and I'll add $150 if you can provide a fix for it (so <b>$400 <span class="caps">USD </span>total for a fix</b>), payable via PayPal or as an Amazon giftcard. All the <a href="https://github.com/pkulchenko/ZeroBraneStudio">source code for ZeroBrane Studio</a> is available on github and the code for <a href="http://svn.wxwidgets.org/svn/wx/wxWidgets/trunk/">wxwidgets</a> and <a href="http://sourceforge.net/p/wxlua/svn/">wxlua</a> is available as well.</p>
+
+<p>The <b>details of the crash as well as associated stack traces</b> are available <a href="https://github.com/pkulchenko/ZeroBraneStudio/issues/164">in this ticket</a>. Please use the ticket for discussion.</p>
+
+<p>The bug only happens under <b>Windows 7 64bit</b>. I have received several reports of the same crash happening on different computers, all running Windows 7 64bit. I also have several users who use the same system, but have never experienced this crash. The crash most likely happens when typing text and is likely to be related to auto-complete, but I have so far been unable to reproduce it.</p>
+
+<p>There are some strange things showing up on the stack trace that I've <a href="http://www.mail-archive.com/wxlua-users@lists.sourceforge.net/msg03307.html">discussed with John Labenski</a> (the author of wxlua). I can provide <code>wx.dll</code> built with debug information (it's rather large, 186M) or you can build one yourself using this <a href="https://github.com/pkulchenko/ZeroBraneStudio/blob/master/build/build-win32.sh">build script</a> (run it as <code>bash build-win32.sh wxwidgets lua wxlua debug</code>). Note that you don't need to build anything else and can run ZeroBrane Studio from a cloned repository.</p>
+
+<p>The fix has to include code that can be applied to ZeroBrane Studio or upstream (wxlua or wxwidgets) to eliminate the issue. The bounty will not be awarded if it is illegal to do so.</p></div>
+    </content>
+    <updated>2013-10-19T16:03:23Z</updated>
+    <published>2013-07-24T02:01:49Z</published>
+    <category scheme="http://www.sixapart.com/ns/types#category" term="zerobrane"/>
+    <category label="lua" scheme="http://www.sixapart.com/ns/types#tag" term="lua"/>
+    <category label="zerobrane" scheme="http://www.sixapart.com/ns/types#tag" term="zerobrane"/>
+    <author>
+      <name>Paul Kulchenko</name>
+    </author>
+    <source>
+      <id>tag:notebook.kulchenko.com,2009-04-10://2</id>
+      <link href="http://notebook.kulchenko.com/" rel="alternate" type="text/html"/>
+      <link href="http://notebook.kulchenko.com/atom.xml" rel="self" type="application/atom+xml"/>
+      <subtitle>By seeking, you will discover...</subtitle>
+      <title>ZeroBrane</title>
+      <updated>2013-12-08T01:09:05Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:notebook.kulchenko.com,2013://2.173</id>
+    <link href="http://notebook.kulchenko.com/zerobrane/real-time-watches-plugin-zerobrane-studio" rel="alternate" type="text/html"/>
+    <title>Real-time watches with ZeroBrane Studio</title>
+    <summary>It's expected to be able to watch an expression in the debugger and ZeroBrane Studio provides that functionality. You can specify an expression and it will be evaluated when the application is stopped in the debugger. This is all good,...</summary>
+    <content type="xhtml" xml:lang="en"><div xmlns="http://www.w3.org/1999/xhtml"><p>It's expected to be able to watch an expression in the debugger and <a href="http://studio.zerobrane.com">ZeroBrane Studio</a> provides that functionality. You can specify an expression and it will be evaluated when the application is stopped in the debugger.</p>
+
+<p>This is all good, but the application needs to be stopped to refresh the values and there are situations when you want to <b>see the values while your application is running</b>. ZeroBrane Studio supports redirecting of program output to the Output window in the <span class="caps">IDE </span>(when debugging) and (with a bit of magic) this can be leveraged to send the values you want to appear in the Watch window.</p>
+
+<p>What does it give you? You can then include in your code <code>print</code> statements of the form <code>print("foo=", someValue)</code> and <code>print("bar=", someOtherValue)</code> and those values will be shown in the Watch window as <code>foo</code> and <code>bar</code>. The values can be complex values that will be pretty-printed for you (this is the same functionality that "prints" complex values to the Output window during debugging). For example, the script below will show values for a, b, c, and d as defined in the <code>print</code> expressions:</p>
+
+<pre><code>for i = 1, 1000 do
+  require('socket').sleep(0.01)
+  print("a=", {i, i*2})
+  if 0 == i % 10 then print("b=", {i, i*3}, collectgarbage("count")) end
+  if 0 == i % 100 then print("c=", {i, i*4}, os.clock()) end
+  print("d=", math.random())
+end</code></pre>
+
+<p>Since the "printed" output is sent over sockets, this also <b>works when you debug your application remotely</b>, for example, when you debug something running on a mobile device from ZeroBrane Studio running on a desktop.</p>
+
+<p>For simple values (like d in the example above) the plugin will also calculate min, max, avg, and count values. The result may look similar to this (if you run it you will see that the numbers are updated while your app is running):</p>
+
+<p><img alt="" height="310" src="http://notebook.kulchenko.com/images/zerobrane-studio-real-time-watch.png" width="668"/></p>
+        <p>Here is the plugin code; you can save it into <code>packages/</code> folder in the ZeroBrane Studio folder as <code>realtimewatch.lua</code> and restart the <span class="caps">IDE</span>:</p>
+
+<pre><code>local lastrow, redirect, filter = {}
+local stats = {}
+
+return {
+  name = "Real-time watches",
+  description = "Displays real-time values during debugging.",
+  author = "Paul Kulchenko",
+  version = 0.1,
+
+  onRegister = function()
+    local config = ide:GetConfig()
+    redirect = config.debugger.redirect
+    filter = config.debugger.outputfilter
+
+    config.debugger.redirect = "r"
+    config.debugger.outputfilter = function(s)
+      local label, value = s:match('"(.-)%s*=%s*"\t(.+)')
+      if not label or not value then return s end
+
+      local watchCtrl = ide.debugger.watchCtrl
+
+      local row = lastrow[label]
+      if not row or watchCtrl:GetItemText() ~= label then
+        row = nil -- reset in case it's not found in the control
+        for idx = 0, watchCtrl:GetItemCount() - 1 do
+          if label == watchCtrl:GetItemText(idx) then
+            row = idx
+            break
+          end
+        end
+      end
+
+      if not row then
+        row = watchCtrl:InsertItem(watchCtrl:GetItemCount(), label)
+      end
+
+      local num = tonumber(value)
+      -- for numbers report min/max/count/avg
+      if num then
+        stats[label] = stats[label] or {}
+        -- count, sum, min, max
+        local stat = stats[label]
+        stat[1] = (stat[1] or 0) + 1
+        stat[2] = (stat[2] or 0) + num
+        stat[3] = math.min(stat[3] or math.huge, num)
+        stat[4] = math.max(stat[4] or -math.huge, num)
+        value = ("%s (min: %s, max: %s, cnt: %s, avg: %s)")
+          :format(num, stat[3], stat[4], stat[1], stat[2]/stat[1])
+      end
+
+      watchCtrl:SetItem(row, 0, label)
+      watchCtrl:SetItem(row, 1, (value:gsub("\t", "; ")))
+
+      return
+    end
+  end,
+
+  onUnRegister = function(self)
+    local config = ide:GetConfig()
+    config.debugger.redirect = redirect
+    config.debugger.outputfilter = filter
+  end,
+}</code></pre></div>
+    </content>
+    <updated>2013-09-26T23:43:28Z</updated>
+    <published>2013-09-26T22:31:01Z</published>
+    <category scheme="http://www.sixapart.com/ns/types#category" term="zerobrane"/>
+    <category label="ide" scheme="http://www.sixapart.com/ns/types#tag" term="ide"/>
+    <category label="lua" scheme="http://www.sixapart.com/ns/types#tag" term="lua"/>
+    <category label="zerobrane" scheme="http://www.sixapart.com/ns/types#tag" term="zerobrane"/>
+    <author>
+      <name>Paul Kulchenko</name>
+    </author>
+    <source>
+      <id>tag:notebook.kulchenko.com,2009-04-10://2</id>
+      <link href="http://notebook.kulchenko.com/" rel="alternate" type="text/html"/>
+      <link href="http://notebook.kulchenko.com/atom.xml" rel="self" type="application/atom+xml"/>
+      <subtitle>By seeking, you will discover...</subtitle>
+      <title>ZeroBrane</title>
+      <updated>2013-12-08T01:09:05Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:notebook.kulchenko.com,2013://2.171</id>
+    <link href="http://notebook.kulchenko.com/zerobrane/clone-editor-view-plugin-for-zerobrane-studio" rel="alternate" type="text/html"/>
+    <title>Clone view plugin for ZeroBrane Studio</title>
+    <summary>I received several questions about whether it's possible to add ability to see the same file in different editor tabs in ZeroBrane Studio and thought it would be a good test for the current plugin interface. The Scintilla editor...</summary>
+    <content type="xhtml" xml:lang="en"><div xmlns="http://www.w3.org/1999/xhtml"><p><img alt="" class="right" height="230" src="http://notebook.kulchenko.com/images/zerobrane-studio-plugin-clone-view.png" style="float: right;" width="300"/></p>
+
+<p>I received several questions about whether it's possible to add ability to see the same file in different editor tabs in <a href="http://studio.zerobrane.com">ZeroBrane Studio</a> and thought it would be a good test for the current plugin interface.</p>
+
+<p>The Scintilla editor component that is used in ZeroBrane Studio includes a nice feature that allows two <a href="http://www.scintilla.org/ScintillaDoc.html#MultipleViews">editors to share the same document</a>, with changes made in one editor being immediately seen in the other one. The code is very simple ('e1' is the editor you are cloning and 'e2' is the new editor):</p>
+
+<pre><code> local docpointer = e1:GetDocPointer()
+ e2:SetDocPointer(docpointer)</code></pre>
+
+<p>I wrapped this code in a plugin that allows users to clone an editor tab vertically or horizontally. Save this plugin as <code>cloneview.lua</code> to <code>packages/</code> folder, restart ZeroBrane Studio, and right click on one of editor tabs to select 'Clone Vertically' and 'Clone Horizontally'.</p>
+
+<pre><code>return {
+  name = "Clone view plugin",
+  description = "Clones the current editor tab.",
+  author = "Paul Kulchenko",
+  version = 0.11,
+
+  onMenuEditorTab = function(self, menu, notebook, event, index)
+    local idvert = ID(self.fname..".clone.vert")
+    local idhorz = ID(self.fname..".clone.horz")
+
+    local cloner = function(event)
+      local e1 = ide:GetEditor(index)
+      local e2 = NewFile("clone: "..ide:GetDocument(e1):GetFileName())
+      local docpointer = e1:GetDocPointer()
+      e2:SetDocPointer(docpointer)
+      ide:GetEditorNotebook():Split(notebook:GetSelection(),
+        event:GetId() == idhorz and wx.wxRIGHT or wx.wxBOTTOM)
+      notebook:SetSelection(index)
+    end
+
+    menu:AppendSeparator()
+    menu:Append(idhorz, "Clone Horizontally")
+    menu:Append(idvert, "Clone Vertically")
+    notebook:Connect(idvert, wx.wxEVT_COMMAND_MENU_SELECTED, cloner)
+    notebook:Connect(idhorz, wx.wxEVT_COMMAND_MENU_SELECTED, cloner)
+  end,
+}</code></pre>
+
+<p><strong>[Updated on 09/21/2013]</strong> The plugin code has been updated to use <code>index</code> parameter that refers to a correct index in split notebook situations. This functionality requires using v0.39 of ZeroBrane Studio (when released) or the current master.</p></div>
+    </content>
+    <updated>2013-09-22T04:22:18Z</updated>
+    <published>2013-09-09T00:10:00Z</published>
+    <category scheme="http://www.sixapart.com/ns/types#category" term="zerobrane"/>
+    <category label="ide" scheme="http://www.sixapart.com/ns/types#tag" term="ide"/>
+    <category label="lua" scheme="http://www.sixapart.com/ns/types#tag" term="lua"/>
+    <category label="plugin" scheme="http://www.sixapart.com/ns/types#tag" term="plugin"/>
+    <category label="zerobrane" scheme="http://www.sixapart.com/ns/types#tag" term="zerobrane"/>
+    <author>
+      <name>Paul Kulchenko</name>
+    </author>
+    <source>
+      <id>tag:notebook.kulchenko.com,2009-04-10://2</id>
+      <link href="http://notebook.kulchenko.com/" rel="alternate" type="text/html"/>
+      <link href="http://notebook.kulchenko.com/atom.xml" rel="self" type="application/atom+xml"/>
+      <subtitle>By seeking, you will discover...</subtitle>
+      <title>ZeroBrane</title>
+      <updated>2013-12-08T01:09:05Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:notebook.kulchenko.com,2013://2.172</id>
+    <link href="http://notebook.kulchenko.com/zerobrane/zerobrane-studio-luajit-lua52-and-luasocket-changes" rel="alternate" type="text/html"/>
+    <title>ZeroBrane Studio LuaJIT, Lua5.2 and luasocket changes</title>
+    <summary>The latest version of ZeroBrane Studio includes several recent updates: LuaJIT is now a default interpreter instead of Lua 5.1, Lua 5.2 is included for all supported platforms (just select "Lua 5.2" from the list of interpreters), and luasocket has...</summary>
+    <content type="xhtml" xml:lang="en"><div xmlns="http://www.w3.org/1999/xhtml"><p>The <a href="https://github.com/pkulchenko/ZeroBraneStudio/archive/master.zip">latest version</a> of <a href="http://studio.zerobrane.com">ZeroBrane Studio</a> includes several recent updates: <strong>LuaJIT is now a default interpreter</strong> instead of Lua 5.1, <strong>Lua 5.2 is included</strong> for all supported platforms (just select "Lua 5.2" from the list of interpreters), and <strong>luasocket has been upgraded to v3.0</strong>.</p>
+
+<p>Note that "normal" <strong>Lua5.1 interpreter is no longer included</strong>, but as before you can continue using the <span class="caps">IDE </span>to debug your Lua 5.1 applications (you can also use your own Lua 5.1 interpreter if you want).</p>
+
+<p>LuaJIT is compiled with <code>LUAJIT_ENABLE_LUA52COMPAT</code>, which enables some of Lua5.2 features (see <a href="http://luajit.org/extensions.html">this link</a> for details) and allows to do syntax checks for "goto" and other features. The local console is using LuaJIT as well.</p>
+
+<p>All these changes are going to be included in the coming release (0.39), so <strong>please report any issues or incompatibilities</strong> you notice.</p>
+
+<p>Note that while Lua 5.2 (and luasocket compiled against Lua 5.2) are included, you may still run into issues if you debug your own Lua 5.2 applications that statically link the interpreter (at least on Windows). The reason for that is that when you load luasocket, it loads <code>lua52.dll</code> and you end up with multiple VMs (and may get "PANIC: unprotected error in call to Lua <span class="caps">API </span>(multiple Lua VMs detected)" message). There are (at least) two ways to resolve this: (1) compile luasocket into your app the same way you include lua interpreter itself; you won't need anything else except one mobdebug.lua file to debug your app, or (2) use proxy dll; it will look like lua52.dll, but will actually proxy your calls to your statically compiled lua library, avoiding problems with multiple VMs. The <a href="http://lua-users.org/wiki/LuaProxyDllFour">proxy dll</a> is for Lua 5.1, but you can tweak the script to make it work for Lua 5.2. See <a href="http://stackoverflow.com/a/18680820/1442917">this SO answer</a> for related discussion.</p></div>
+    </content>
+    <updated>2013-09-11T01:47:13Z</updated>
+    <published>2013-09-11T01:27:26Z</published>
+    <category scheme="http://www.sixapart.com/ns/types#category" term="zerobrane"/>
+    <category label="ide" scheme="http://www.sixapart.com/ns/types#tag" term="ide"/>
+    <category label="lua" scheme="http://www.sixapart.com/ns/types#tag" term="lua"/>
+    <category label="zerobrane" scheme="http://www.sixapart.com/ns/types#tag" term="zerobrane"/>
+    <author>
+      <name>Paul Kulchenko</name>
+    </author>
+    <source>
+      <id>tag:notebook.kulchenko.com,2009-04-10://2</id>
+      <link href="http://notebook.kulchenko.com/" rel="alternate" type="text/html"/>
+      <link href="http://notebook.kulchenko.com/atom.xml" rel="self" type="application/atom+xml"/>
+      <subtitle>By seeking, you will discover...</subtitle>
+      <title>ZeroBrane</title>
+      <updated>2013-12-08T01:09:05Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:notebook.kulchenko.com,2013://2.170</id>
+    <link href="http://notebook.kulchenko.com/zerobrane/cocos2d-x-simulator-and-on-device-debugging-with-zerobrane-studio" rel="alternate" type="text/html"/>
+    <title>Cocos2d-x simulator and on-device debugging with ZeroBrane Studio</title>
+    <summary>There has been recent interest in getting ZeroBrane Studio to work with Cocos2d-x, so I decided to put my notes together on how this can be accomplished. Debugging with ZeroBrane Studio requires using luasocket and because it can be integrated...</summary>
+    <content type="xhtml" xml:lang="en"><div xmlns="http://www.w3.org/1999/xhtml"><p>There has been <a href="http://www.cocos2d-x.org/boards/11/topics/15813?r=32270%23message-32270">recent</a> <a href="http://www.cocos2d-x.org/boards/11/topics/23384?r=32329%23message-32329">interest</a> in getting <a href="http://studio.zerobrane.com">ZeroBrane Studio</a> to work with Cocos2d-x, so I decided to put my notes together on how this can be accomplished.</p>
+
+<p>Debugging with ZeroBrane Studio <b>requires using luasocket</b> and because it can be integrated with a Cocos2d-x project in different ways, you may have several options to consider.</p>
+        <h2>Debugging using luasocket as an external library.</h2>
+
+<p>This option uses luasocket dll/dylib/so library that comes with ZeroBrane Studio. This is probably the easiest way to get the debugging working, but it <b>won't work when your application is running in the Android/iOS simulator or on the device</b>. Still, since it's easy to setup, let's review the steps.</p>
+
+<p>First, take <code>HelloLua</code> demo and compile HelloLua executable (this is all on Windows, but this should work on other platforms as well).</p>
+
+<p>Add a call to the debugger to <code>hello.lua</code> file (see the code below):</p>
+
+<pre><code>local function main()
+    ...
+    cclog("debugging...")
+    require('mobdebug').start() --&lt;-- this line
+    require "hello2"
+    cclog("result is " .. myadd(3, 5))</code></pre>
+
+<p>Next, follow the <a href="http://studio.zerobrane.com/doc-remote-debugging.html">instructions on remote debugging</a> (especially Setup Environment for Debugging section). I just have a simple batch file that sets <code>LUA_PATH</code> and <code>LUA_CPATH</code> such that they point to <code>lualibs/mobdebug/mobdebug.lua and bin/clibs/?.dll</code> files so that <code>socket</code> and <code>mobdebug</code> modules are properly loaded from <span class="caps">ZBS.</span> The last line simply runs <code>HelloLua.exe</code>.</p>
+
+<p>Now open ZeroBrane Studio and load <code>hello.lua</code> file in the editor. Set the project directory to the folder where you have <code>hello.lua</code>. Start debugger server by going to <code>Project | Start Debugger Server</code>; (these are all instructions from the page referenced earlier).</p>
+
+<p>If you run the batch file now, you should get an error that it can't find <code>lua51.dll</code>. luasocket needs it and it's in <code>ZBS/bin</code> folder. You can either add that folder to <code>PATH</code> or copy the dll to the folder with your executable.</p>
+
+<p>Run it again and you should see the green arrow pointing to the instruction next to the <code>start()</code> call and you should be able to debug your application and use the stack view, breakpoints, and other debugger features.</p>
+
+<h2>iOS simulator and on-device debugging with integrated luasocket (instructions courtesy of Andres Ispani).</h2>
+
+<p>The last project I worked on was an iOS only project based on cocos2d. For our next project, we were searching for something cross platform that would also allow us to iterate faster. There are many frameworks out there that promise this (you can code in JavaScript, C#, Lua, etc), but we chose Cocos2d-x because it's open source and it allows us to have greater control of what is happening behind the scenes. We can code most of our game in javascript or lua, and still tweak any rough edges in c++. Also being able to use our previous experience with Cocos2d didn't hurt.</p>
+
+<p>I would not start any serious long term project without a working debugger though, so I started looking at ways to debug lua code running on an iPhone, and I found ZeroBrane. All you need is getting luasocket running in cocos2d-x. I found <a href="http://www.cocos2d-x.org/boards/11/topics/6348">this old forum post</a> explaining how to do it. Unfortunately it's really old. You are supposed to get the luasocket implementation from a github cocos2d-x fork, but the repo has since deleted luasocket support. So I looked through github history looking for the <a href="https://github.com/dualface/cocos2d-x/tree/30b0444b86b0393307c934b34034c110c4a6e735">revision mentioned in the post</a>. Then I followed this modified steps from the forum thread:</p>
+
+
+<ul>
+<li>Download that revision of cocos2d-x.</li>
+<li>Copy it's <code>lua/exts</code> folder to your project's libs folder, and add them to your XCode target. Remove <code>wsocket.c</code> from your target.</li>
+<li>Open <code>libs/lua/cocos2dx_support/CCLuaStack.cpp</code> and add this include:</li>
+</ul>
+
+
+
+<pre><code>extern "C" {
+  #include "lualoadexts.h"
+}</code></pre>
+
+
+<ul>
+<li>At the end of <code>bool CCLuaStack::init(void)</code> add:</li>
+</ul>
+
+
+
+<pre><code>luax_loadexts(m_state);</code></pre>
+
+<p>Then, copy <code>mobdebug.lua</code> to the <code>Resources</code> folder, add <code>require('mobdebug').start("IDE.machine.ip.address")</code> to the main lua file, and now you can <b>debug lua from either the iOS simulator or an actual device in the same network</b>.</p>
+
+<h2>Android simulator and on-device debugging with integrated luasocket (instructions courtesy of Peter Yiap, slightly updated).</h2>
+
+<p>I managed to find a working luasockets integration from the DualFace github:</p>
+
+
+<ul>
+<li>Download <a href="https://github.com/dualface/quick-cocos2d-x">dualface/quick-cocos2d-x</a>.</li>
+<li>Copy over the luasockets source into <code>cocos2d-x-2.1.4\scripting\lua\lua_extensions</code> and integrate it into the liblua project. You will need to use <code>lua_extensions.c</code> and <code>lua_extensions.h</code> included below.</li>
+<li>Add <code>luaopen_lua_extensions(m_state);</code> to <code>CCLuaStack::init()</code>.  I added it below <code>toluafix_open(m_state);</code></li>
+<li>Within the HelloLua test project, link against the <code>Ws2_32.lib</code> file since luasocket had a dependency on winsock on the win32 platform.  The other platforms were fine. Add the new luasocket files to the <code>cocos2d-x-2.1.4\scripting\lua\proj.android\Android.mk</code> file.</li>
+</ul>
+
+
+
+<p>I use Cygwin on my PC to do android builds; use <a href="http://www.cocos2d-x.org/projects/cocos2d-x/wiki/How_to_set_up_the_android_cocos2d-x_development_environment_on_Windows_7">this tutorial to get your environment</a>. Once the ndk stuff is all setup you should just be able to navigate to <code>cocos2d-x-2.1.4\samples\Lua\HelloLua\proj.android</code> and execute build_native.sh script. When that's compiled you'll need to create the eclipse project and publish to the device.</p>
+
+<pre><code>// ----- lua_extensions.h -----
+
+#ifndef __LUA_EXTRA_H_
+#define __LUA_EXTRA_H_
+
+#if defined(_USRDLL)
+    #define LUA_EXTENSIONS_DLL     __declspec(dllexport)
+#else         /* use a DLL library */
+    #define LUA_EXTENSIONS_DLL
+#endif
+
+#if __cplusplus
+extern "C" {
+#endif
+
+#include "lauxlib.h"
+
+void LUA_EXTENSIONS_DLL luaopen_lua_extensions(lua_State *L);
+    
+#if __cplusplus
+}
+#endif
+
+#endif /* __LUA_EXTRA_H_ */</code></pre>
+
+<pre><code>// ----- lua_extensions.c -----
+
+#include "lua_extensions.h"
+
+#if __cplusplus
+extern "C" {
+#endif
+
+// socket
+#include "luasocket.h"
+#include "mime.h"
+
+static luaL_Reg luax_exts[] = {
+    {"socket.core", luaopen_socket_core},
+    {"mime.core", luaopen_mime_core},
+
+    {NULL, NULL}
+};
+
+#include "tolua_fix.h"
+
+void luaopen_lua_extensions(lua_State *L)
+{
+    luaL_Reg* lib = luax_exts;
+    lua_getglobal(L, "package");
+    lua_getfield(L, -1, "preload");
+    for (; lib-&gt;func; lib++)
+    {
+        lua_pushcfunction(L, lib-&gt;func);
+        lua_setfield(L, -2, lib-&gt;name);
+    }
+    lua_pop(L, 2);
+
+    // load extensions script
+    luaopen_socket_scripts(L);
+}
+
+#if __cplusplus
+} // extern "C"
+#endif</code></pre>
+
+<h2>Note on debugging in the iOS simulator.</h2>
+
+<p>As Lua files included with your application are copied to a different location when the application is packaged to run in the simulator, the debugging may be triggered for files in the packaged application, rather than in your project folder. This may affect some of the debugging features as the breakpoints you toggle in the <span class="caps">IDE </span>are set on files in your project folder, not on files in the packaged application.</p>
+
+<p>The current version of ZeroBrane Studio in the <a href="https://github.com/pkulchenko/ZeroBraneStudio">repository</a> starts debugging using the project files, but earlier versions of <span class="caps">ZBS </span>(v0.38 and before) may use files in the packaged application (which is likely to break breakpoints).</p>
+
+<p>When this remapping is active (this should work in v0.39 and later), you may see a message similar to the one below in the Output window:</p>
+
+<p><code>Mapped remote request for '/users/..../library/application support/iphone simulator/6.1/applications/13e34ef7-594a-4d62-a2c7-9451d726275c/luatest2.app/' to '/Users/..../Documents/Projects/LuaTest2/LuaTest2/Resources/'.</code></p></div>
+    </content>
+    <updated>2013-07-26T03:06:49Z</updated>
+    <published>2013-07-25T22:25:44Z</published>
+    <category scheme="http://www.sixapart.com/ns/types#category" term="zerobrane"/>
+    <category label="lua" scheme="http://www.sixapart.com/ns/types#tag" term="lua"/>
+    <category label="zerobrane" scheme="http://www.sixapart.com/ns/types#tag" term="zerobrane"/>
+    <author>
+      <name>Paul Kulchenko</name>
+    </author>
+    <source>
+      <id>tag:notebook.kulchenko.com,2009-04-10://2</id>
+      <link href="http://notebook.kulchenko.com/" rel="alternate" type="text/html"/>
+      <link href="http://notebook.kulchenko.com/atom.xml" rel="self" type="application/atom+xml"/>
+      <subtitle>By seeking, you will discover...</subtitle>
+      <title>ZeroBrane</title>
+      <updated>2013-12-08T01:09:05Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:notebook.kulchenko.com,2013://2.169</id>
+    <link href="http://notebook.kulchenko.com/zerobrane/zerobrane-studio-in-seven-languages" rel="alternate" type="text/html"/>
+    <title>ZeroBrane Studio in seven languages</title>
+    <summary>ZeroBrane Studio is now available in seven languages! Thanks to all who contributed translations: toiffel for Russian translation; Roland Yonaba and Alexis Jarreau for French translation; Inigo Sola for Spahish translation; Leo Bartoloni for Italian translation; riidom for German translation;...</summary>
+    <content type="xhtml" xml:lang="en"><div xmlns="http://www.w3.org/1999/xhtml"><p><a href="http://studio.zerobrane.com">ZeroBrane Studio</a> is now <b>available in seven languages</b>! Thanks to all who contributed translations:</p>
+
+
+<ul>
+<li><a href="https://github.com/toiffel">toiffel</a> for <b>Russian</b> translation;</li>
+<li><a href="https://github.com/yonaba">Roland Yonaba</a> and <a href="https://github.com/Fringale">Alexis Jarreau</a> for <b>French</b> translation;</li>
+<li><a href="https://github.com/isola009">Inigo Sola</a> for <b>Spahish</b> translation;</li>
+<li><a href="https://github.com/bartoleo">Leo Bartoloni</a> for <b>Italian</b> translation;</li>
+<li><a href="https://github.com/riidom">riidom</a> for <b>German</b> translation; and</li>
+<li>Chow CheeWen for <b>Chinese</b> translation.</li>
+</ul></div>
+    </content>
+    <updated>2013-07-24T06:30:14Z</updated>
+    <published>2013-07-23T06:20:33Z</published>
+    <category scheme="http://www.sixapart.com/ns/types#category" term="zerobrane"/>
+    <category label="lua" scheme="http://www.sixapart.com/ns/types#tag" term="lua"/>
+    <category label="zerobrane" scheme="http://www.sixapart.com/ns/types#tag" term="zerobrane"/>
+    <author>
+      <name>Paul Kulchenko</name>
+    </author>
+    <source>
+      <id>tag:notebook.kulchenko.com,2009-04-10://2</id>
+      <link href="http://notebook.kulchenko.com/" rel="alternate" type="text/html"/>
+      <link href="http://notebook.kulchenko.com/atom.xml" rel="self" type="application/atom+xml"/>
+      <subtitle>By seeking, you will discover...</subtitle>
+      <title>ZeroBrane</title>
+      <updated>2013-12-08T01:09:05Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:notebook.kulchenko.com,2013://2.166</id>
+    <link href="http://notebook.kulchenko.com/zerobrane/scope-aware-variable-indicators-zerobrane-studio" rel="alternate" type="text/html"/>
+    <title>Scope aware variable indicators</title>
+    <summary>Starting from v0.38 ZeroBrane Studio includes experimental support for scope aware variable indicators. These indicators are added to mark local, global, masked, and masking variables and are calculated in real-time as the code is being written. Having this ability changes...</summary>
+    <content type="xhtml" xml:lang="en"><div xmlns="http://www.w3.org/1999/xhtml"><p>Starting from v0.38 <a href="http://studio.zerobrane.com">ZeroBrane Studio</a> includes experimental support for <b>scope aware variable indicators</b>. These indicators are added to <b>mark local, global, masked, and masking variables</b> and are calculated in real-time as the code is being written. Having this ability <a href="https://github.com/pkulchenko/ZeroBraneStudio/issues/168">changes the way you write code, and does catch a lot of errors and 'wrong thinking' cases</a>.</p>
+
+<p><img alt="" height="370" src="http://notebook.kulchenko.com/images/zerobrane-studio-variable-indicators.png" width="540"/></p>
+
+<p>ZeroBrane Studio provides default indicators that can be updated; both the colors and the appearance can be changed as described in the <a href="http://studio.zerobrane.com/doc-styles-color-schemes.html#indicators">documentation</a>. For example, <code>styles.indicator.varmasked = nil</code> will disable masked indicator.</p>
+
+<p>In addition to providing real-time indicators, the <span class="caps">IDE </span>uses the same mechanism to provide "Go To Definition" and "Rename All Instances" options available from the popup menu in the editor. The items in the popup menu also show the number of instances detected and the line where the definition is found. "Go To Definition" item is enabled for local variables/functions, function parameters, and loop variables.</p>
+
+<p>You can <b>quickly select instances of a variable</b> by doing <code>Ctrl/Cmd-DblClick on</code> it. All instances get selected with the main one having slightly darker background and can be <b>edited to update the name</b>. In addition to that you can <b>navigate selected instances</b> using <code>Find Next/F3</code> and <code>Find Previous/Shift-F3</code>; it will move the selection to the next/previous instance (and scroll the editor to make it visible).</p></div>
+    </content>
+    <updated>2013-07-13T14:55:17Z</updated>
+    <published>2013-06-22T21:08:55Z</published>
+    <category scheme="http://www.sixapart.com/ns/types#category" term="zerobrane"/>
+    <category label="lua" scheme="http://www.sixapart.com/ns/types#tag" term="lua"/>
+    <category label="zerobrane" scheme="http://www.sixapart.com/ns/types#tag" term="zerobrane"/>
+    <author>
+      <name>Paul Kulchenko</name>
+    </author>
+    <source>
+      <id>tag:notebook.kulchenko.com,2009-04-10://2</id>
+      <link href="http://notebook.kulchenko.com/" rel="alternate" type="text/html"/>
+      <link href="http://notebook.kulchenko.com/atom.xml" rel="self" type="application/atom+xml"/>
+      <subtitle>By seeking, you will discover...</subtitle>
+      <title>ZeroBrane</title>
+      <updated>2013-12-08T01:09:05Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:blogger.com,1999:blog-8696405790788556158.post-3686766259161624312</id>
+    <link href="http://puntoblogspot.blogspot.com/feeds/3686766259161624312/comments/default" rel="replies" title="Enviar comentarios" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/comment.g?blogID=8696405790788556158&amp;postID=3686766259161624312" rel="replies" title="0 comentarios" type="text/html"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/3686766259161624312" rel="edit" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/3686766259161624312" rel="self" type="application/atom+xml"/>
+    <link href="http://puntoblogspot.blogspot.com/2013/07/iterating-through-closures.html" rel="alternate" title="Iterating through closures" type="text/html"/>
+    <title>Iterating through closures</title>
+    <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">At <a href="http://www.3scale.net/">3scale</a> we're developing a product using <a href="http://www.lua.org/">lua</a>.<br/><br/>It's kind of fun to work in a new project and even more to work with a small and malleable language (and even *more* working with a top-notch <a href="https://github.com/kikito">lua guy</a>).<br/><br/>Part of the fun working with lua is that the language is so minimal that you have to build your own helpers for some functions that you'd have in other languages, but lua makes it really easy and straighforward.<br/><br/>Here's an example that just appeared when I was writing some tests (using busted, of course)<br/><br/><br/><pre>                <br/>                local f = function()<br/>                  local c = false<br/>                  return function()<br/>                    c = not c<br/>                    return c<br/>                  end<br/>                end<br/>                local l = f()<br/></pre><br/>It's a plain simple closure, I know, but maybe it'll be ilustrative to some ppl not used to this approach.<br/><br/>It's just an iterator that returns true/false as you keep calling it.<br/><br/>You know, closures are the poor-man's objects, and objects are the poor-man's closures. <br/><br/></div>
+    </content>
+    <updated>2013-07-10T15:57:14Z</updated>
+    <published>2013-07-10T15:56:00Z</published>
+    <category scheme="http://www.blogger.com/atom/ns#" term="lua"/>
+    <author>
+      <name>Raimon Grau</name>
+      <email>noreply@blogger.com</email>
+      <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+    </author>
+    <source>
+      <id>tag:blogger.com,1999:blog-8696405790788556158</id>
+      <category term="linux"/>
+      <category term="ruby"/>
+      <category term="screen"/>
+      <category term="scheme"/>
+      <category term="gtd"/>
+      <category term="squeak"/>
+      <category term="emacs"/>
+      <category term="javascript"/>
+      <category term="erlang"/>
+      <category term="lftp"/>
+      <category term="security"/>
+      <category term="smalltalk"/>
+      <category term="latex"/>
+      <category term="conkeror"/>
+      <category term="perl"/>
+      <category term="genetic algorithms"/>
+      <category term="vector linux"/>
+      <category term="lisp"/>
+      <category term="irclog"/>
+      <category term="lua"/>
+      <category term="git"/>
+      <category term="python"/>
+      <category term="rails"/>
+      <category term="zsh"/>
+      <category term="TodayILearnt"/>
+      <category term="scp"/>
+      <category term="vim"/>
+      <category term="general programming"/>
+      <category term="Io"/>
+      <category term="mercurial"/>
+      <category term="mis cosas"/>
+      <author>
+        <name>Raimon Grau</name>
+        <email>noreply@blogger.com</email>
+        <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+      </author>
+      <link href="http://puntoblogspot.blogspot.com/feeds/posts/default" rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml"/>
+      <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/-/lua" rel="self" type="application/atom+xml"/>
+      <link href="http://puntoblogspot.blogspot.com/search/label/lua" rel="alternate" type="text/html"/>
+      <link href="http://pubsubhubbub.appspot.com/" rel="hub" type="text/html"/>
+      <subtitle>Technical stuff, mostly</subtitle>
+      <title>puntoblogspot</title>
+      <updated>2013-12-19T02:01:23Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:notebook.kulchenko.com,2013://2.167</id>
+    <link href="http://notebook.kulchenko.com/zerobrane/debugging-embedded-code-fragments-zerobrane-studio" rel="alternate" type="text/html"/>
+    <title>Debugging embedded code fragments</title>
+    <summary>From its very first version ZeroBrane Studio supported debugging of embedded Lua code; it was only a matter of adding require('mobdebug').start() (when running on the same computer) and it would start a debugging session in the IDE. There was one...</summary>
+    <content type="xhtml" xml:lang="en"><div xmlns="http://www.w3.org/1999/xhtml"><p>From its very first version <a href="http://studio.zerobrane.com">ZeroBrane Studio</a> supported <b>debugging of embedded Lua code</b>; it was only a matter of adding <code>require('mobdebug').start()</code> (when running on the same computer) and it would start a debugging session in the <span class="caps">IDE.</span></p>
+
+<p>There was one case though when it didn't work: if the environment that loads some Lua code doesn't provide a file name, the <span class="caps">IDE </span>doesn't have information about what resource to load for debugging. The simplest example to see this to try to try to do something like <code>loadstring("print(1); print(2)")</code>. When this code is executed under the debugger, the source of this code is shown as <code>print(1); print(2)</code>. One workaround for this was to specify the second parameter to <code>loadstring</code>: chunkname, which is then used by the Lua debug interface where it reports the source.</p>
+
+<p>This workaround only works when you can modify the fragment that loads Lua code and in those cases where this is not an option (for example, when  you need to use <code>luaL_loadstring</code>, which provides no way to label the chunk with its file path) you were out of luck.</p>
+
+<p>This situation has changed now. Starting from v0.38, <b>ZeroBrane Studio provides a way to debug these code chunks without any additional configuration</b>. When it gets a request that has a code fragment instead of a file name as its source, it will try to find an open editor with the content that matches that source and if there is no match will open a new editor and load the fragment in it.</p>
+
+<p>This allows to use the debugger to "step into" calls to functions returned by <code>loadstring</code> and also debug Lua scripts executed in environments like LuaJava. You can also look at the stack trace, set breakpoints, and use local console as you can normally do in the debugger.</p></div>
+    </content>
+    <updated>2013-06-22T22:22:42Z</updated>
+    <published>2013-06-14T21:45:34Z</published>
+    <category scheme="http://www.sixapart.com/ns/types#category" term="zerobrane"/>
+    <category label="lua" scheme="http://www.sixapart.com/ns/types#tag" term="lua"/>
+    <category label="zerobrane" scheme="http://www.sixapart.com/ns/types#tag" term="zerobrane"/>
+    <author>
+      <name>Paul Kulchenko</name>
+    </author>
+    <source>
+      <id>tag:notebook.kulchenko.com,2009-04-10://2</id>
+      <link href="http://notebook.kulchenko.com/" rel="alternate" type="text/html"/>
+      <link href="http://notebook.kulchenko.com/atom.xml" rel="self" type="application/atom+xml"/>
+      <subtitle>By seeking, you will discover...</subtitle>
+      <title>ZeroBrane</title>
+      <updated>2013-12-08T01:09:05Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:blogger.com,1999:blog-8696405790788556158.post-6723780142699280324</id>
+    <link href="http://puntoblogspot.blogspot.com/feeds/6723780142699280324/comments/default" rel="replies" title="Enviar comentarios" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/comment.g?blogID=8696405790788556158&amp;postID=6723780142699280324" rel="replies" title="0 comentarios" type="text/html"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/6723780142699280324" rel="edit" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/6723780142699280324" rel="self" type="application/atom+xml"/>
+    <link href="http://puntoblogspot.blogspot.com/2013/05/lua-vs-javascript.html" rel="alternate" title="Lua vs javascript" type="text/html"/>
+    <title>Lua vs javascript</title>
+    <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">I <a href="https://love2d.org/">love</a> <a href="http://www.lua.org/">lua</a>.  Well, I <a href="http://luvit.io/">luvit</a> so far.<br/><br/>I haven't programmed many many things in lua, but the simplicity of it reminds me of smalltalk (in a veery different meaning of simplicity), or scheme.  <br/><br/>The fact that it relies in very few known concepts as lexical scope, tables, and.... and that's it.<br/><br/>More that a language, is a language builder toolset.  It lets you do metaprogramming without really feeling that you're doing metaprogramming.  It makes it so simple you'd say it's "the normal thing".<br/><ul><li>loops? ok, you have 'for', and iterators. made from closures, or whatever, but that's it.</li><li>TCO? yes, but just if it's explicit.</li><li>splat arrays by default? as in Perl?... yes, just in the last position, perfect for apply-like calls. or you have unpack.</li><li>Varargs functions? yup.</li></ul><div>With that and a bit of syntax sugar here and there, you have a really powerful language with near to no friction.  Provided you know a few other languages, you can always say: "ah, it behaves like js in the everything is hash, but it has proper scoping, and TCO ...."</div><div><br/></div><div>I don't know much js, but I think lua is like a well done js.  Here's some funny Hacker News opinion</div><div><br/></div><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-xVYSjddS8ms/UZyBnfaJHcI/AAAAAAAAAhk/upTWyzauwqw/s1600/large-lua.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="146" src="http://1.bp.blogspot.com/-xVYSjddS8ms/UZyBnfaJHcI/AAAAAAAAAhk/upTWyzauwqw/s640/large-lua.png" width="640"/></a></div><div><br/></div><div><br/></div><div>That and the community. #lua is <a href="https://github.com/hoelzro">full</a> of <a href="https://github.com/mniip">people</a> with background in many other languages, wise and helpful. and quite hacker style. I like it :)</div><div><br/></div><br/>Ah! and there's also <a href="http://metalua.luaforge.net/">metalua</a>, which sounds like great fun. something like tcl's block syntax or lisp quasiquoting to mold lua to your needs.<br/><br/><br/></div>
+    </content>
+    <updated>2013-05-23T13:58:41Z</updated>
+    <published>2013-05-22T08:32:00Z</published>
+    <category scheme="http://www.blogger.com/atom/ns#" term="lua"/>
+    <author>
+      <name>Raimon Grau</name>
+      <email>noreply@blogger.com</email>
+      <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+    </author>
+    <source>
+      <id>tag:blogger.com,1999:blog-8696405790788556158</id>
+      <category term="linux"/>
+      <category term="ruby"/>
+      <category term="screen"/>
+      <category term="scheme"/>
+      <category term="gtd"/>
+      <category term="squeak"/>
+      <category term="emacs"/>
+      <category term="javascript"/>
+      <category term="erlang"/>
+      <category term="lftp"/>
+      <category term="security"/>
+      <category term="smalltalk"/>
+      <category term="latex"/>
+      <category term="conkeror"/>
+      <category term="perl"/>
+      <category term="genetic algorithms"/>
+      <category term="vector linux"/>
+      <category term="lisp"/>
+      <category term="irclog"/>
+      <category term="lua"/>
+      <category term="git"/>
+      <category term="python"/>
+      <category term="rails"/>
+      <category term="zsh"/>
+      <category term="TodayILearnt"/>
+      <category term="scp"/>
+      <category term="vim"/>
+      <category term="general programming"/>
+      <category term="Io"/>
+      <category term="mercurial"/>
+      <category term="mis cosas"/>
+      <author>
+        <name>Raimon Grau</name>
+        <email>noreply@blogger.com</email>
+        <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+      </author>
+      <link href="http://puntoblogspot.blogspot.com/feeds/posts/default" rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml"/>
+      <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/-/lua" rel="self" type="application/atom+xml"/>
+      <link href="http://puntoblogspot.blogspot.com/search/label/lua" rel="alternate" type="text/html"/>
+      <link href="http://pubsubhubbub.appspot.com/" rel="hub" type="text/html"/>
+      <subtitle>Technical stuff, mostly</subtitle>
+      <title>puntoblogspot</title>
+      <updated>2013-12-19T02:01:23Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:notebook.kulchenko.com,2013://2.164</id>
+    <link href="http://notebook.kulchenko.com/zerobrane/marmalade-quick-debugging-with-zerobrane-studio" rel="alternate" type="text/html"/>
+    <title>Marmalade Quick debugging with ZeroBrane Studio</title>
+    <summary>Marmalade SDK is a cross-platform toolkit for developing games and mobile applications on a variety of desktop and mobile platforms. It also provides Marmalade Quick, a flexible programming environment based on Cocos2d-x with Lua scripting, which makes it a good...</summary>
+    <content type="xhtml" xml:lang="en"><div xmlns="http://www.w3.org/1999/xhtml"><p><a href="http://www.madewithmarmalade.com">Marmalade <span class="caps">SDK</span></a> is a cross-platform toolkit for developing games and mobile applications on a variety of desktop and mobile platforms. It also provides <a href="http://www.madewithmarmalade.com/marmaladesdk/benefits/marmalade-quick-%E2%80%93-fast-cross-platform-2d-application-development">Marmalade Quick</a>, a flexible programming environment based on Cocos2d-x with Lua scripting, which makes it a good fit to support in ZeroBrane Studio. Starting from v0.35, <a href="http://studio.zerobrane.com/">ZeroBrane Studio</a> provides integration with Marmalade Quick and implements debugging support for Quick scripts; the video below demonstrates these capabilities (you may need to switch the video to 720p to make the text more readable):</p>
+
+<p/>
+
+<p>The first thing you need to do is to open <code>main.lua</code> file from the project you want to work with (you can do this by using <code>File | Open...</code>) and then set the project directory to the directory with your <code>main.lua</code> file. You can do this by going to <code>Project | Project Directory | Choose...</code><br/>
+or using <code>Project | Project Directory | Set From Current File</code>.</p>
+
+<p>To enable the integration shown in the demo, you need to select Marmalade Quick as an interpreter in ZeroBrane Studio by going to <code>Program | Lua Interpreters | Marmalade Quick</code>. If you installed Marmalade in the default location on <span class="caps">OSX </span>(<code>/Developer/Marmalade</code>) or on Windows (<code>C:\Marmalade</code> or <code>D:\Marmalade</code>, or in <code>\Program Files\Marmalade</code>), it will be found and used by the <span class="caps">IDE.</span> The <span class="caps">IDE </span>will also check for the Marmalade .MKB file in the project folder or its parent folder and will use the information from that file to set the environment for running your project.</p>
+
+<p>After this is done, you can use <code>Project | Run</code> command to run the application. If there is a problem with finding the Marmalade Quick environment, you will see an error message in the Output window. </p>
+
+<h2>Enabling debugging</h2>
+
+<p>Add <code>require("mobdebug").start()</code> line to your <code>main.lua</code> script. This will allow you to use <code>Project | Start Debugging</code> to debug your application.</p>
+        <h2>Debugger functions</h2>
+
+<p>The debugger in the <span class="caps">IDE </span>provides access to all debugging functions you would expect: <strong>breakpoints</strong>, <strong>stepping in/over/out</strong>, the <strong>stack view</strong> (to access a stack trace and all local/upvalue values, including complex ones), the <strong>watch view</strong> (to evaluate arbitrary expressions), and <strong>the console</strong> (to run code fragments and modify values in your application while it is suspended in the debugger). You may want to spend few minutes reviewing the <a href="http://studio.zerobrane.com/doc-getting-started.html">Getting Started</a> page to get familiar with <a href="http://studio.zerobrane.com/doc-getting-started.html#debugging_programs">debugging</a> and other functions in the <span class="caps">IDE.</span></p>
+
+<p>Two things to keep in mind: (1) you need to <em>set a breakpoint before you start debugging your application</em>, and (2) you can <em>step through only those files from your application that have been opened in the <span class="caps">IDE</span></em>; you can configure the <span class="caps">IDE </span>to auto-open files you are trying to step into by setting <code>editor.autoactivate = true</code> in <code>cfg/user.lua file</code> (see <a href="http://studio.zerobrane.com/doc-configuration.html">configuration documentation</a> and this <a href="https://github.com/pkulchenko/ZeroBraneStudio/blob/master/cfg/user-sample.lua#L70">configuration sample</a> for details).</p>
+
+<h2>Selective debugging</h2>
+
+<p>You may notice that in some cases the application you are debugging runs slow; when you run it without the debugger the speed is likely to be at least ten times faster. This may be okay for some situations, but in many cases when the application is complex, things may get slow.</p>
+
+<p>The debugger provides two methods that allow you to <strong>temporarily turn the debugging on and off</strong>. If you turn it on/off right around where the changes need to be applied, you can get almost the same performance you see without the debugger.</p>
+
+<p>For example, you may want to break when a body collision is detected in <code>Physics/Collision Events</code> example. You can turn the debugging off at the end of <code>main.lua</code> script (<code>require("mobdebug").off()</code>) and then turn it on and off around the section you are interested in:</p>
+
+<pre><code>function bodyCollision(event)
+    local target = event.target
+    if event.phase == "began" then
+        require("mobdebug").on() --&lt;-- turn the debugger on
+        local c = director:createSprite(event.x, event.y, "textures/redcross8.png")
+        c.xAnchor = 0.5; c.yAnchor = 0.5
+        tween:to(c, {time=0.25, xScale=3, yScale=3})
+        tween:to(c, {delay=0.25, time=0.25, xScale=0, yScale=0, onComplete=crossDestroy})
+        require("mobdebug").off() --&lt;-- turn the debugger off
+    end
+end</code></pre>
+
+<p>If you set a breakpoint somewhere between <code>on@ and @off</code> calls, it will fire as expected. The rest of the application is running with a "normal" speed in this case (you can see the difference if you remove all <code>off()</code> calls).</p>
+
+<h2>Opening other files</h2>
+
+<p>You can step into functions and put breakpoints into other files (including those Lua files that are part of Quick itself), but they either need to be opened in the <span class="caps">IDE </span>or you need to configure the <span class="caps">IDE </span>to <a href="http://studio.zerobrane.com/doc-faq.html#why_stepping_into_function_calls_doesnt_work_in_some_cases">auto-open</a> those files for you. </p>
+
+<h2>Known bugs and limitations</h2>
+
+<p><s>Some user events (like clicking on a button) may not reliably trigger breakpoints set in them (even though the event handler is executed as expected). This is likely to be fixed in the future; one possible workaround is to add <code>require("socket").select = function() return {} end</code> at the end of the <code>main.lua</code> script. Other non-user triggered events (like collisions) are not affected by this and should trigger a breakpoint every time the event handler is called.</s> This has been addressed in Marmalade Quick 1.1, so the workaround is no longer needed.</p>
+
+<p><s>Another current limitation is that it is not possible to break into a running application using <code>Project | Break</code> functionality. This will also be fixed in a future version.</s> This has been fixed in Marmalade Quick 1.1 and ZeroBrane Studio 0.36+.</p></div>
+    </content>
+    <updated>2013-05-03T23:26:14Z</updated>
+    <published>2013-02-11T09:48:02Z</published>
+    <category scheme="http://www.sixapart.com/ns/types#category" term="zerobrane"/>
+    <category label="lua" scheme="http://www.sixapart.com/ns/types#tag" term="lua"/>
+    <category label="zerobrane" scheme="http://www.sixapart.com/ns/types#tag" term="zerobrane"/>
+    <author>
+      <name>Paul Kulchenko</name>
+    </author>
+    <source>
+      <id>tag:notebook.kulchenko.com,2009-04-10://2</id>
+      <link href="http://notebook.kulchenko.com/" rel="alternate" type="text/html"/>
+      <link href="http://notebook.kulchenko.com/atom.xml" rel="self" type="application/atom+xml"/>
+      <subtitle>By seeking, you will discover...</subtitle>
+      <title>ZeroBrane</title>
+      <updated>2013-12-08T01:09:05Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:blogger.com,1999:blog-8696405790788556158.post-1340207357385685190</id>
+    <link href="http://puntoblogspot.blogspot.com/feeds/1340207357385685190/comments/default" rel="replies" title="Enviar comentarios" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/comment.g?blogID=8696405790788556158&amp;postID=1340207357385685190" rel="replies" title="0 comentarios" type="text/html"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/1340207357385685190" rel="edit" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/1340207357385685190" rel="self" type="application/atom+xml"/>
+    <link href="http://puntoblogspot.blogspot.com/2013/04/embedding-lua-embedding-guile.html" rel="alternate" title=" Embedding Lua, embedding Guile" type="text/html"/>
+    <title>Embedding Lua, embedding Guile</title>
+    <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>  Lately I've spent a quite few hours hacking on <a href="http://www.lua.org/versions.html#5.2">Lua</a>.  I love its   simplicity, and the way it exposes lots of inner aspects of the   programming language, that are usually hidden from the user in other   programming languages. </p><p>  One of the cool aspects of lua is the easiness of embedding it into   your C app.  But let's make it more fun. Embed Guile also inthere. </p>  <h3 id="sec-1-1">Lua</h3><div class="outline-text-3" id="text-1-1">  <p>   The process to embed Lua in a C app is quite easy, and simple (for     really simple things), but I guess it gets more cumbersome when the     complexity of the embedding system increases.  Being a stack based     vm makes it non-trivial to write some embedding functions     (recursive functions, for example).   </p></div> <h3 id="sec-1-2">Guile.</h3><div class="outline-text-3" id="text-1-2">  <p>   The way to embed <a href="http://www.gnu.org/software/guile/">guile</a>      into an app is also, really easy.  And     Powerful. And you're not bound to interact with it using a stack     based machine, but you just register your functions, and use the     generic SCM type for all inputs and outputs. I find it easier than Lua   </p></div> <h3 id="sec-1-3">The Code</h3><div class="outline-text-3" id="text-1-3">  <p>   Here's a minimal example that does some trivial calculations and     the flux of the code passes from C to guile, guile calls another C     function, and after this, we call lua which also calls a function     we have defined in C. In the end it's doing something like (n! +     1).   </p>  </div></div>
+    </content>
+    <updated>2013-04-14T21:16:55Z</updated>
+    <published>2013-04-14T18:42:00Z</published>
+    <category scheme="http://www.blogger.com/atom/ns#" term="scheme"/>
+    <category scheme="http://www.blogger.com/atom/ns#" term="lua"/>
+    <author>
+      <name>Raimon Grau</name>
+      <email>noreply@blogger.com</email>
+      <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+    </author>
+    <source>
+      <id>tag:blogger.com,1999:blog-8696405790788556158</id>
+      <category term="linux"/>
+      <category term="ruby"/>
+      <category term="screen"/>
+      <category term="scheme"/>
+      <category term="gtd"/>
+      <category term="squeak"/>
+      <category term="emacs"/>
+      <category term="javascript"/>
+      <category term="erlang"/>
+      <category term="lftp"/>
+      <category term="security"/>
+      <category term="smalltalk"/>
+      <category term="latex"/>
+      <category term="conkeror"/>
+      <category term="perl"/>
+      <category term="genetic algorithms"/>
+      <category term="vector linux"/>
+      <category term="lisp"/>
+      <category term="irclog"/>
+      <category term="lua"/>
+      <category term="git"/>
+      <category term="python"/>
+      <category term="rails"/>
+      <category term="zsh"/>
+      <category term="TodayILearnt"/>
+      <category term="scp"/>
+      <category term="vim"/>
+      <category term="general programming"/>
+      <category term="Io"/>
+      <category term="mercurial"/>
+      <category term="mis cosas"/>
+      <author>
+        <name>Raimon Grau</name>
+        <email>noreply@blogger.com</email>
+        <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+      </author>
+      <link href="http://puntoblogspot.blogspot.com/feeds/posts/default" rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml"/>
+      <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/-/lua" rel="self" type="application/atom+xml"/>
+      <link href="http://puntoblogspot.blogspot.com/search/label/lua" rel="alternate" type="text/html"/>
+      <link href="http://pubsubhubbub.appspot.com/" rel="hub" type="text/html"/>
+      <subtitle>Technical stuff, mostly</subtitle>
+      <title>puntoblogspot</title>
+      <updated>2013-12-19T02:01:23Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:blogger.com,1999:blog-8696405790788556158.post-1673733724746959270</id>
+    <link href="http://puntoblogspot.blogspot.com/feeds/1673733724746959270/comments/default" rel="replies" title="Enviar comentarios" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/comment.g?blogID=8696405790788556158&amp;postID=1673733724746959270" rel="replies" title="0 comentarios" type="text/html"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/1673733724746959270" rel="edit" type="application/atom+xml"/>
+    <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/1673733724746959270" rel="self" type="application/atom+xml"/>
+    <link href="http://puntoblogspot.blogspot.com/2013/02/armagetron-advanced.html" rel="alternate" title="Armagetron advanced, a few years after" type="text/html"/>
+    <title>Armagetron advanced, a few years after</title>
+    <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Some years ago I got really addicted to <a href="http://www.blogger.com/www.armagetronad.net/">armagetron advanced</a>. A Snake-like game where you drive Tron Light cycles.<br/><br/> It's dead simple, but the simplicity itself is what makes it so awesome. In fact, The only kind of games that trapped me in the last 10 years where playable with 4 buttons max. (sdmkun, elastomania, *cave, and most ABA games).<br/><br/> So I installed armagetronad again and went to the internetz to play some styball. It's a bummer that there are no styball servers anymore. But thanks to that I fetched the source to see if I could find the styball mode, and.... besides finding it, I also found a branch which embeded <a href="http://www.lua.org/">lua</a> into armagetronad.  Yeah, modding arma in lua will be great.<br/><br/> I hope I don't get addicted again.<br/><br/> And, as a gift, here you have an <a href="http://wiki.armagetronad.org/index.php?title=Rubber">explanation of rubber</a>, a great concept to deal with latency in armagetron. I think it's one of the things that make aa so amazing.<br/><br/> Ah, and here's a <a href="http://wiki.armagetronad.org/index.php/Console_Commands">cheatlist</a> for armagetronad. nice to have, eh? :)<br/><br/> Btw, it's funny that I loved that game before watching the movie, and before knowing that this movie was somehow related to smalltalk. Hey, even in the 'Tron legacy' movie, there's <a href="http://jtnimoy.net/workviewer.php?q=178">emacs appearing </a>in some occasion :)</div>
+    </content>
+    <updated>2013-02-24T03:06:19Z</updated>
+    <published>2013-02-24T00:13:00Z</published>
+    <category scheme="http://www.blogger.com/atom/ns#" term="mis cosas"/>
+    <category scheme="http://www.blogger.com/atom/ns#" term="lua"/>
+    <author>
+      <name>Raimon Grau</name>
+      <email>noreply@blogger.com</email>
+      <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+    </author>
+    <source>
+      <id>tag:blogger.com,1999:blog-8696405790788556158</id>
+      <category term="linux"/>
+      <category term="ruby"/>
+      <category term="screen"/>
+      <category term="scheme"/>
+      <category term="gtd"/>
+      <category term="squeak"/>
+      <category term="emacs"/>
+      <category term="javascript"/>
+      <category term="erlang"/>
+      <category term="lftp"/>
+      <category term="security"/>
+      <category term="smalltalk"/>
+      <category term="latex"/>
+      <category term="conkeror"/>
+      <category term="perl"/>
+      <category term="genetic algorithms"/>
+      <category term="vector linux"/>
+      <category term="lisp"/>
+      <category term="irclog"/>
+      <category term="lua"/>
+      <category term="git"/>
+      <category term="python"/>
+      <category term="rails"/>
+      <category term="zsh"/>
+      <category term="TodayILearnt"/>
+      <category term="scp"/>
+      <category term="vim"/>
+      <category term="general programming"/>
+      <category term="Io"/>
+      <category term="mercurial"/>
+      <category term="mis cosas"/>
+      <author>
+        <name>Raimon Grau</name>
+        <email>noreply@blogger.com</email>
+        <uri>http://www.blogger.com/profile/15545476302081532235</uri>
+      </author>
+      <link href="http://puntoblogspot.blogspot.com/feeds/posts/default" rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml"/>
+      <link href="http://www.blogger.com/feeds/8696405790788556158/posts/default/-/lua" rel="self" type="application/atom+xml"/>
+      <link href="http://puntoblogspot.blogspot.com/search/label/lua" rel="alternate" type="text/html"/>
+      <link href="http://pubsubhubbub.appspot.com/" rel="hub" type="text/html"/>
+      <subtitle>Technical stuff, mostly</subtitle>
+      <title>puntoblogspot</title>
+      <updated>2013-12-19T02:01:23Z</updated>
+    </source>
+  </entry>
+
+  <entry>
+    <id>tag:notebook.kulchenko.com,2013://2.159</id>
+    <link href="http://notebook.kulchenko.com/zerobrane/debugging-and-live-coding-with-corona-sdk-applications-and-zerobrane-studio" rel="alternate" type="text/html"/>
+    <title>Debugging and live coding with Corona SDK</title>
+    <summary>Corona SDK is a mobile application development framework that supports Lua scripting. While the integration and debugging of Corona applications has been available in ZeroBrane Studio since v0.34, starting from v0.35, ZeroBrane Studio also provides live coding. The video below...</summary>
+    <content type="xhtml" xml:lang="en"><div xmlns="http://www.w3.org/1999/xhtml"><p><a href="http://www.coronalabs.com/products/corona-sdk/">Corona <span class="caps">SDK</span></a> is a mobile application development framework that supports Lua scripting. While the integration and debugging of Corona applications has been available in ZeroBrane Studio since v0.34, starting from v0.35, <a href="http://studio.zerobrane.com/">ZeroBrane Studio</a> also provides live coding. The video below demonstrates how you can use debugging and live coding with Corona applications (you may need to switch the video to 720p to make the text more readable):</p>
+
+<p/>
+
+<p>The first thing you need to do is to open <code>main.lua</code> file from the project you want to work with (you can do this by using <code>File | Open...</code>) and then set the project directory to the directory with your <code>main.lua</code> file. You can do this by going to <code>Project | Project Directory | Choose...</code><br/>
+or using <code>Project | Project Directory | Set From Current File</code>.</p>
+
+<p>To enable the integration shown in the demo, you need to select Corona as an interpreter in ZeroBrane Studio by going to <code>Program | Lua Interpreters | Corona</code>. If you installed Corona in the default location on <span class="caps">OSX </span>(<code>/Applications/CoronaSDK</code>) or on Windows (<code>C:\Program Files\Corona Labs\Corona SDK</code> or <code>D:\Program Files\Corona Labs\Corona SDK</code>), it will be found and used by the <span class="caps">IDE.</span></p>
+
+<p>After this is done, you can use <code>Project | Run</code> command to run the application. If there is a problem with finding the Corona simulator, you will see an error message in the Output window. </p>
+
+<h2>Enabling debugging</h2>
+
+<p>Add <code>require("mobdebug").start()</code> line to your <code>main.lua</code> script. This will allow you to use <code>Project | Start Debugging</code> to debug your application.</p>
+        <h2>Debugger functions</h2>
+
+<p>The debugger in the <span class="caps">IDE </span>provides access to all debugging functions you would expect: <strong>breakpoints</strong>, <strong>stepping in/over/out</strong>, the <strong>stack view</strong> (to access a stack trace and all local/upvalue values, including complex ones), the <strong>watch view</strong> (to evaluate arbitrary expressions), and <strong>the console</strong> (to run code fragments and modify values in your application while it is suspended in the debugger). Some additional details are available in the <a href="http://studio.zerobrane.com/doc-getting-started.html">Getting Started</a> section of the documentation.</p>
+
+<p>If you don't set a breakpoint before you start debugging your application, you can go to <code>Project | Break</code> (or use the toolbar button) to pause your application and inspect its state and set breakpoints you need. If the exact location where the application is stopped cannot be determined (as it may be inside the Corona engine itself), you may see a message <code>Debugging suspended at =?:0 (couldn't activate the file).</code> in the Output window. The application is indeed suspended and after you are done inspecting it and changing breakpoints, you can continue its execution by going to <code>Project | Continue</code>.</p>
+
+<p>There is one more thing that is worth mentioning. The Corona <span class="caps">SDK </span>engine seems to include a check that automatically restarts your application when it detects that the application is "stalled". This is exactly what happens when the application is being debugged as it passes the control back to the <span class="caps">IDE </span>(even though for a short time), so it may look like the application is started twice (if you put a breakpoint in your main script). To avoid this effect, you can start debugging inside <code>enterFrame</code> event handler, which I'm going to demonstrate in the next section.</p>
+
+<h2>Live coding</h2>
+
+<p>Live coding allows you to make changes to your application and immediately see the effect of those changes (as you saw in the demo). This is enabled by going to <code>Project | Run as Scratchpad</code>, but before showing you the code, it may be useful to review how live coding works with ZeroBrane Studio. When a change is detected in the <span class="caps">IDE, </span>three things have to happen:</p>
+
+<p>1. The currently executed application is suspended or aborted (this is configurable, but for Corona interpreter the application is suspended).<br/>
+2. The new code is being executed in the environment of your application, thus making effective all changes to global variables and functions.<br/>
+3. The application is then continued from the same point where it's suspended.</p>
+
+<p>These aspects are important, because you may need to apply small changes to your code to make it "live coding" friendly. For example, a usual way to registering an event handler is this (assuming <code>onUpdate</code> is the event handler function):</p>
+
+<pre><code>Runtime:addEventListener("enterFrame", onUpdate)</code></pre>
+
+<p>However, if you modify this function while running as scratchpad, nothing visible happens. As you may guess, when you register an event listener, the engine stores a reference to the <code>onUpdate</code> function and any change to the function doesn't invalidate the reference. You may remove and re-add the event listener, but there is a simpler way: we can wrap a call to <code>onUpdate</code> into an anonymous function, thus allowing us make changes to <code>onUpdate</code> that the engine will see:</p>
+
+<pre><code>Runtime:addEventListener("enterFrame", function(event) pcall(onUpdate, event) end)</code></pre>
+
+<p>We can also add <code>pcall</code> around a call to <code>onUpdate</code> so that any run-time errors happening in that function when you make changes, don't kill your application. All the compilation error will be reported to you in the <span class="caps">IDE </span>and only valid Lua code will be executed in the application.</p>
+
+<p>Now we can look at the <code>onUpdate</code> handler:</p>
+
+<pre><code>done = nil
+function onUpdate(event)
+  -- let the first call to onUpdate to return quickly;
+  -- start the debugging during the second call to trick Corona SDK
+  -- and avoid restarting the app.
+  if done == nil then done = false return end
+  if not done then
+    require("mobdebug").start()
+    done = true
+  end
+  -- try to modify the following three lines while running this code live
+  -- (using `Project | Run as Scratchpad`)
+  ball:setFillColor(0, 127, 255, 255)
+  bkgd:setFillColor(127, 0, 127)
+  xspeed, yspeed = 6, 9
+end</code></pre>
+
+<p>In this fragment we use a global variable <code>done</code> to control the logic in the <code>onUpdate</code> handled. The first time the handler is called, the variable is <code>nil</code>, which sets <code>done</code> to <code>false</code> and returns from the method. On the second call the debugger is started and the variable is set to <code>true</code> to avoid starting the debugger again. The reason why we want to return quickly from the method during the first call is to trick that check that Corona <span class="caps">SDK </span>does that causes the app to be restarted when doing debugging.</p>
+
+<p>The last three lines in the <code>onUpdate</code> method can be modified during live coding (as shown in the demo) and the changes are immediately executed with results immediately shown. You can apply the same type of structure to your projects to pick a code fragment  you want to experiment with. Note that <code>ball, bkgd, xspeed, and yspeed</code> are global variables; the current implementation will not work with upvalues as the newly created version of <code>onUpdate</code> will not "see" the current values of those upvalues.</p>
+
+<p>The code for this demo application is available in <a href="https://github.com/pkulchenko/ZeroBraneEduPack/tree/master/corona-samples/live-coding-simple">corona samples</a> as part of the <a href="https://github.com/pkulchenko/ZeroBraneEduPack">ZeroBraneEduPack</a>.</p></div>
+    </content>
+    <updated>2013-02-12T00:50:59Z</updated>
+    <published>2013-02-10T21:43:29Z</published>
+    <category scheme="http://www.sixapart.com/ns/types#category" term="zerobrane"/>
+    <category label="corona" scheme="http://www.sixapart.com/ns/types#tag" term="corona"/>
+    <category label="lua" scheme="http://www.sixapart.com/ns/types#tag" term="lua"/>
+    <category label="zerobrane" scheme="http://www.sixapart.com/ns/types#tag" term="zerobrane"/>
+    <author>
+      <name>Paul Kulchenko</name>
+    </author>
+    <source>
+      <id>tag:notebook.kulchenko.com,2009-04-10://2</id>
+      <link href="http://notebook.kulchenko.com/" rel="alternate" type="text/html"/>
+      <link href="http://notebook.kulchenko.com/atom.xml" rel="self" type="application/atom+xml"/>
+      <subtitle>By seeking, you will discover...</subtitle>
+      <title>ZeroBrane</title>
+      <updated>2013-12-08T01:09:05Z</updated>
+    </source>
+  </entry>
+</feed>

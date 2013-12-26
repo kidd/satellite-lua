@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<opml version="1.1">
+  <head>
+    <title>Planet Lua</title>
+    <dateModified>Wed, 25 Dec 2013 23:34:27 GMT</dateModified>
+    <ownerName>Raimon Grau</ownerName>
+    <ownerEmail>raimonster@gmail.com</ownerEmail>
+  </head>
+  <body>
+    <outline type="rss" text="Paul Kulchenko" title="ZeroBrane" xmlUrl="http://notebook.kulchenko.com/atom.xml"/>
+    <outline type="rss" text="Raimon Grau" title="puntoblogspot" xmlUrl="http://www.blogger.com/feeds/8696405790788556158/posts/default/-/lua"/>
+  </body>
+</opml>
